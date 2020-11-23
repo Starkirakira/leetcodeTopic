@@ -1,18 +1,27 @@
 package main
 
-
-import (
-	"fmt"
-)
-
+import "fmt"
 
 func main()  {
-	//a := []string{"1","2","3","null","null","4","5"}
-	b := Constructor()
-	res := b.deserialize("1,2,3,null,null,4,null,null,5,null,null")
-	fmt.Printf("%+v",res)
+	///***二叉树的序列化与反序列化***///
+	//b := Constructor()
+	//res := b.deserialize("1,2,3,null,null,4,null,null,5,null,null")
+	//fmt.Printf("%+v",res)
+
+	//***1838水域大小***//
+	//***你有一个用于表示一片土地的整数矩阵land，该矩阵中每个点的值代表对应地点的海拔高度。若值为0则表示水域。由垂直、水平或对角
+	//连接的水域为池塘。池塘的大小是指相连接的水域的个数。编写一个方法来计算矩阵中所有池塘的大小，返回值需要从小到大排序。 ***//
+	//###input:
+	//[
+	//[0,2,1,0],
+	//[0,1,0,1],
+	//[1,1,0,1],
+	//[0,1,1,1]
+	//]
+	//target:[1,2,4]###//
+	a := [][]int{{0,2,1,0},{0,1,0,1},{1,1,0,1},{0,1,0,1}}
+	fmt.Println(pondSizes(a))
+
 }
-
-
 
 

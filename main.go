@@ -24,8 +24,13 @@ func main()  {
 
 	//***375.猜数字大小***//
 	//***对于一个数组[1,n],每次猜错数字需要支付x元。直到猜对为止，求可以赢得游戏至少应该准备多少钱***//
-	n := 10
-	fmt.Println(getMoneyAmount(n))
+	//n := 10
+	//fmt.Println(getMoneyAmount(n))
+
+	///***368.最大整除子集***///
+	///***给出一个无重复的正整数集合，找出其中最大的整除子集，子集中任何一对(Si,Sj)都满足Si%Sj=0或者Sj%Si=0,多子集返回任意一个即可***///
+	nums := []int{1,2,3}
+	fmt.Println(largestDivisibleSubset(nums))
 
 
 }

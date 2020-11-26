@@ -29,8 +29,13 @@ func main()  {
 
 	///***368.最大整除子集***///
 	///***给出一个无重复的正整数集合，找出其中最大的整除子集，子集中任何一对(Si,Sj)都满足Si%Sj=0或者Sj%Si=0,多子集返回任意一个即可***///
-	nums := []int{1,2,3}
-	fmt.Println(largestDivisibleSubset(nums))
+	//nums := []int{1,2,3}
+	//fmt.Println(largestDivisibleSubset(nums))
+
+	///***414.第三大的数***///
+	///***给定非空数组，返回此数组里第三大的数，若不存在，则返回最大的数***///
+	nums := []int{1,1,2}
+	fmt.Println(thirdMax(nums))
 
 
 }

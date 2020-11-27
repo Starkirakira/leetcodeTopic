@@ -41,11 +41,15 @@ func main()  {
 	///***1310.有一个正整数数组arr，现给你一个对应的查询数组queries，其中queries[i] = [Li,Ri]。
 	//对于每个查询i，请你计算从Li到Ri的XOR值（即arr[Li] xor arr[Li+1] xor ... xor arr[Ri]）作为本次查询的结果。
 	//并返回一个包含给定查询queries所有结果的数组。***///
-	arr := []int{1,3,4,8}
-	queries := [][]int{{0,1},{1,2},{0,3},{3,3}}
-	fmt.Println(xorQueries(arr, queries))
+	//arr := []int{1,3,4,8}
+	//queries := [][]int{{0,1},{1,2},{0,3},{3,3}}
+	//fmt.Println(xorQueries(arr, queries))
 
-
+	///***782.变成棋盘
+	//NxN矩阵，随意交换任意行列，直到任选一个位置，上下左右各不相同，若不可能输出1
+	//***
+	board := [][]int{{0,1,1,0},{0,1,1,0},{1,0,0,1},{1,0,0,1}}
+	fmt.Println(movesToChessboard(board))
 
 }
 

@@ -35,8 +35,16 @@ func main()  {
 
 	///***414.第三大的数***///
 	///***给定非空数组，返回此数组里第三大的数，若不存在，则返回最大的数***///
-	nums := []int{1,1,2}
-	fmt.Println(thirdMax(nums))
+	//nums := []int{1,1,2}
+	//fmt.Println(thirdMax(nums))
+
+	///***1310.有一个正整数数组arr，现给你一个对应的查询数组queries，其中queries[i] = [Li,Ri]。
+	//对于每个查询i，请你计算从Li到Ri的XOR值（即arr[Li] xor arr[Li+1] xor ... xor arr[Ri]）作为本次查询的结果。
+	//并返回一个包含给定查询queries所有结果的数组。***///
+	arr := []int{1,3,4,8}
+	queries := [][]int{{0,1},{1,2},{0,3},{3,3}}
+	fmt.Println(xorQueries(arr, queries))
+
 
 
 }

@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main()  {
 
 	///***二叉树的序列化与反序列化***///
@@ -36,9 +38,13 @@ func main()  {
 	//nums := []int{1,1,2}
 	//fmt.Println(thirdMax(nums))
 
-	///***1326.灌溉花园最少水龙头***///
-	///***x轴有个一维花园，长度n，一共n+1个水龙头，位于[0,1,...,n]，给定一个n和长度n+1的整数数组ranges，
-	//ranges[i]表示打开i处水龙头，灌溉[i-ranges[i],i+ranges[i]]的区域，求出灌溉整个花园的最少水龙头数，若存在始终无法灌溉的地方，返回-1***///
+	///***1310.有一个正整数数组arr，现给你一个对应的查询数组queries，其中queries[i] = [Li,Ri]。
+	//对于每个查询i，请你计算从Li到Ri的XOR值（即arr[Li] xor arr[Li+1] xor ... xor arr[Ri]）作为本次查询的结果。
+	//并返回一个包含给定查询queries所有结果的数组。***///
+	arr := []int{1,3,4,8}
+	queries := [][]int{{0,1},{1,2},{0,3},{3,3}}
+	fmt.Println(xorQueries(arr, queries))
+
 
 
 }

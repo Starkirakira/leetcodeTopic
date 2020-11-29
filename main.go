@@ -41,10 +41,20 @@ func main()  {
 	///***1310.有一个正整数数组arr，现给你一个对应的查询数组queries，其中queries[i] = [Li,Ri]。
 	//对于每个查询i，请你计算从Li到Ri的XOR值（即arr[Li] xor arr[Li+1] xor ... xor arr[Ri]）作为本次查询的结果。
 	//并返回一个包含给定查询queries所有结果的数组。***///
-	arr := []int{1,3,4,8}
-	queries := [][]int{{0,1},{1,2},{0,3},{3,3}}
-	fmt.Println(xorQueries(arr, queries))
+	//arr := []int{1,3,4,8}
+	//queries := [][]int{{0,1},{1,2},{0,3},{3,3}}
+	//fmt.Println(xorQueries(arr, queries))
 
+	//***
+	//在 x 轴上有一个一维的花园。花园长度为n，从点0开始，到点n结束。
+	//花园里总共有n + 1 个水龙头，分别位于[0, 1, ..., n] 。
+	//给你一个整数n和一个长度为n + 1 的整数数组ranges，其中ranges[i] （下标从 0 开始）表示：如果打开点i处的水龙头，可以灌溉的区域为[i - ranges[i], i + ranges[i]]。
+	//请你返回可以灌溉整个花园的最少水龙头数目。如果花园始终存在无法灌溉到的地方，请你返回-1。
+	//***//
+
+	n := 7
+	ranges := []int{1,2,1,0,2,1,0,1}
+	fmt.Println(minTaps(n , ranges))
 
 
 }

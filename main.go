@@ -59,9 +59,27 @@ func main()  {
 	//一个 Nx N的 board仅由0和1组成。每次移动，你能任意交换两列或是两行的位置。
 	//输出将这个矩阵变为 “棋盘” 所需的最小移动次数。“棋盘” 是指任意一格的上下左右四个方向的值均与本身不同的矩阵。如果不存在可行的变换，输出 -1。
 	//***//
+	//board := [][]int{{0,1,1,0},{0,1,1,0},{1,0,0,1},{1,0,0,1}}
+	//fmt.Println(movesToChessboard(board))
 
-	board := [][]int{{0,1,1,0},{0,1,1,0},{1,0,0,1},{1,0,0,1}}
-	fmt.Println(movesToChessboard(board))
+	//***
+	//1743.如何得到一个数据流中的中位数？如果从数据流中读出奇数个数值，那么中位数就是所有数值排序之后位于中间的数值。如果从数据流中读出偶数个数值，那么中位数就是所有数值排序之后中间两个数的平均值。
+	//例如，
+	//[2,3,4]的中位数是 3
+	//[2,3] 的中位数是 (2 + 3) / 2 = 2.5
+	//设计一个支持以下两种操作的数据结构：
+	//void addNum(int num) - 从数据流中添加一个整数到数据结构中。
+	//double findMedian() - 返回目前所有元素的中位数。
+	//***//
+	obj := ConstructorMedian();
+	obj.AddNum(1)
+	obj.FindMedian()
+	obj.AddNum(2)
+	fmt.Println(obj.FindMedian())
+	obj.AddNum(3)
+	fmt.Println(obj.FindMedian())
+	obj.AddNum(4)
+	fmt.Println(obj.FindMedian())
 
 
 }

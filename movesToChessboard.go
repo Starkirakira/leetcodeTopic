@@ -2,7 +2,6 @@ package main
 
 
 
-
 func movesToChessboard(board [][]int) int {
 	n := len(board)
 	row := board[0]
@@ -81,6 +80,7 @@ func movesToChessboard(board [][]int) int {
 			errorColCount = n - errorColCount
 		}
 
+
 		if sameRowCount*2 < n {
 			errorRowCount = n - errorRowCount
 		}
@@ -95,6 +95,7 @@ func isSameSlice(line1 []int, line2 []int) bool {
 		}
 	}
 	return true
+
 }
 
 func isOppoSlice(line1 []int, line2 []int) bool {

@@ -45,6 +45,7 @@ func main()  {
 	//queries := [][]int{{0,1},{1,2},{0,3},{3,3}}
 	//fmt.Println(xorQueries(arr, queries))
 
+
 	//***
 	//在 x 轴上有一个一维的花园。花园长度为n，从点0开始，到点n结束。
 	//花园里总共有n + 1 个水龙头，分别位于[0, 1, ..., n] 。
@@ -54,6 +55,7 @@ func main()  {
 	//n := 7
 	//ranges := []int{1,2,1,0,2,1,0,1}
 	//fmt.Println(minTaps(n , ranges))
+
 
 	//***
 	//一个 Nx N的 board仅由0和1组成。每次移动，你能任意交换两列或是两行的位置。
@@ -71,7 +73,7 @@ func main()  {
 	//void addNum(int num) - 从数据流中添加一个整数到数据结构中。
 	//double findMedian() - 返回目前所有元素的中位数。
 	//***//
-	obj := ConstructorMedian();
+	obj := ConstructorMedian()
 	obj.AddNum(1)
 	obj.FindMedian()
 	obj.AddNum(2)
@@ -80,6 +82,7 @@ func main()  {
 	fmt.Println(obj.FindMedian())
 	obj.AddNum(4)
 	fmt.Println(obj.FindMedian())
+
 
 
 }

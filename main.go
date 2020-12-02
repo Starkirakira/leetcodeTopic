@@ -73,15 +73,25 @@ func main()  {
 	//void addNum(int num) - 从数据流中添加一个整数到数据结构中。
 	//double findMedian() - 返回目前所有元素的中位数。
 	//***//
-	obj := ConstructorMedian()
-	obj.AddNum(1)
-	obj.FindMedian()
-	obj.AddNum(2)
-	fmt.Println(obj.FindMedian())
-	obj.AddNum(3)
-	fmt.Println(obj.FindMedian())
-	obj.AddNum(4)
-	fmt.Println(obj.FindMedian())
+	//obj := ConstructorMedian()
+	//obj.AddNum(1)
+	//obj.FindMedian()
+	//obj.AddNum(2)
+	//fmt.Println(obj.FindMedian())
+	//obj.AddNum(3)
+	//fmt.Println(obj.FindMedian())
+	//obj.AddNum(4)
+	//fmt.Println(obj.FindMedian())
+
+	//***
+	//最初在一个记事本上只有一个字符 'A'。你每次可以对这个记事本进行两种操作：
+	//Copy All (复制全部) : 你可以复制这个记事本中的所有字符(部分的复制是不允许的)。
+	//Paste (粘贴) : 你可以粘贴你上一次复制的字符。
+	//给定一个数字n。你需要使用最少的操作次数，在记事本中打印出恰好n个 'A'。输出能够打印出n个 'A' 的最少操作次数。
+	//***//
+	n := 3
+	fmt.Println(minSteps(n))
+
 
 
 

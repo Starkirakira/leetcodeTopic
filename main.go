@@ -114,9 +114,15 @@ func main()  {
 	//数字日志 应该按原来的顺序排列。
 	//返回日志的最终顺序。
 	//***//
-	logs := []string{"a1 9 2 3 1","g1 act car","zo4 4 7","ab1 off key dog","a8 act zoo"}
-	fmt.Println(reorderLogFiles(logs))
+	//logs := []string{"a1 9 2 3 1","g1 act car","zo4 4 7","ab1 off key dog","a8 act zoo"}
+	//fmt.Println(reorderLogFiles(logs))
 
+	///***
+	//377.给定一个由正整数组成且不存在重复数字的数组，找出和为给定目标正整数的组合的个数。
+	//***///
+	nums := []int{1,2,3}
+	target := 4
+	fmt.Println(combinationSum4(nums, target))
 
 
 

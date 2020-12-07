@@ -1,6 +1,6 @@
-package main
+package lc
 
-func combinationSum4(nums []int, target int) int {
+func CombinationSum4(nums []int, target int) int {
 	dp := make([]int, target+1)
 	dp[0] = 1
 	for i := 1; i <= target; i++{

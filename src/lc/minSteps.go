@@ -1,6 +1,6 @@
-package main
+package lc
 
-func minSteps(n int) int {
+func MinSteps(n int) int {
 	ans := 0
 	d := 2
 	for n>1 {

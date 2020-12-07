@@ -1,12 +1,13 @@
 package main
 
 import "fmt"
+import "leetcode/lc"
 
 func main()  {
 
 	///***二叉树的序列化与反序列化***///
-	//b := Constructor()
-	//res := b.deserialize("1,2,3,null,null,4,null,null,5,null,null")
+	//b := lc.Constructor()
+	//res := b.Deserialize("1,2,3,null,null,4,null,null,5,null,null")
 	//fmt.Printf("%+v",res)
 
 	//***1838水域大小***//
@@ -21,29 +22,29 @@ func main()  {
 	//]
 	//target:[1,2,4]###//
 	//a := [][]int{{0,2,1,0},{0,1,0,1},{1,1,0,1},{0,1,0,1}}
-	//fmt.Println(pondSizes(a))
+	//fmt.Println(lc.PondSizes(a))
 
 	//***375.猜数字大小***//
 	//***对于一个数组[1,n],每次猜错数字需要支付x元。直到猜对为止，求可以赢得游戏至少应该准备多少钱***//
 	//n := 10
-	//fmt.Println(getMoneyAmount(n))
+	//fmt.Println(lc.GetMoneyAmount(n))
 
 	///***368.最大整除子集***///
 	///***给出一个无重复的正整数集合，找出其中最大的整除子集，子集中任何一对(Si,Sj)都满足Si%Sj=0或者Sj%Si=0,多子集返回任意一个即可***///
 	//nums := []int{1,2,3}
-	//fmt.Println(largestDivisibleSubset(nums))
+	//fmt.Println(lc.LargestDivisibleSubset(nums))
 
 	///***414.第三大的数***///
 	///***给定非空数组，返回此数组里第三大的数，若不存在，则返回最大的数***///
 	//nums := []int{1,1,2}
-	//fmt.Println(thirdMax(nums))
+	//fmt.Println(lc.ThirdMax(nums))
 
 	///***1310.有一个正整数数组arr，现给你一个对应的查询数组queries，其中queries[i] = [Li,Ri]。
 	//对于每个查询i，请你计算从Li到Ri的XOR值（即arr[Li] xor arr[Li+1] xor ... xor arr[Ri]）作为本次查询的结果。
 	//并返回一个包含给定查询queries所有结果的数组。***///
 	//arr := []int{1,3,4,8}
 	//queries := [][]int{{0,1},{1,2},{0,3},{3,3}}
-	//fmt.Println(xorQueries(arr, queries))
+	//fmt.Println(lc.XorQueries(arr, queries))
 
 
 	//***
@@ -54,7 +55,7 @@ func main()  {
 	//***//
 	//n := 7
 	//ranges := []int{1,2,1,0,2,1,0,1}
-	//fmt.Println(minTaps(n , ranges))
+	//fmt.Println(lc.MinTaps(n , ranges))
 
 
 	//***
@@ -62,7 +63,7 @@ func main()  {
 	//输出将这个矩阵变为 “棋盘” 所需的最小移动次数。“棋盘” 是指任意一格的上下左右四个方向的值均与本身不同的矩阵。如果不存在可行的变换，输出 -1。
 	//***//
 	//board := [][]int{{0,1,1,0},{0,1,1,0},{1,0,0,1},{1,0,0,1}}
-	//fmt.Println(movesToChessboard(board))
+	//fmt.Println(lc.MovesToChessboard(board))
 
 	//***
 	//1743.如何得到一个数据流中的中位数？如果从数据流中读出奇数个数值，那么中位数就是所有数值排序之后位于中间的数值。如果从数据流中读出偶数个数值，那么中位数就是所有数值排序之后中间两个数的平均值。
@@ -73,7 +74,7 @@ func main()  {
 	//void addNum(int num) - 从数据流中添加一个整数到数据结构中。
 	//double findMedian() - 返回目前所有元素的中位数。
 	//***//
-	//obj := ConstructorMedian()
+	//obj := lc.ConstructorMedian()
 	//obj.AddNum(1)
 	//obj.FindMedian()
 	//obj.AddNum(2)
@@ -90,7 +91,7 @@ func main()  {
 	//给定一个数字n。你需要使用最少的操作次数，在记事本中打印出恰好n个 'A'。输出能够打印出n个 'A' 的最少操作次数。
 	//***//
 	//n := 3
-	//fmt.Println(minSteps(n))
+	//fmt.Println(lc.MinSteps(n))
 
 	//***
 	//1482.给你一个整数数组 bloomDay，以及两个整数 m 和 k 。
@@ -100,7 +101,7 @@ func main()  {
 	//***//
 	//bloomDay := []int{1,10,3,10,2}
 	//m,k := 3,1
-	//fmt.Println(minDays(bloomDay,m,k))
+	//fmt.Println(lc.MinDays(bloomDay,m,k))
 
 	//***
 	//你有一个日志数组 logs。每条日志都是以空格分隔的字串。
@@ -115,25 +116,25 @@ func main()  {
 	//返回日志的最终顺序。
 	//***//
 	//logs := []string{"a1 9 2 3 1","g1 act car","zo4 4 7","ab1 off key dog","a8 act zoo"}
-	//fmt.Println(reorderLogFiles(logs))
+	//fmt.Println(lc.ReorderLogFiles(logs))
 
 	///***
 	//377.给定一个由正整数组成且不存在重复数字的数组，找出和为给定目标正整数的组合的个数。
-	//***///
+	//***
 	//nums := []int{1,2,3}
 	//target := 4
-	//fmt.Println(combinationSum4(nums, target))
+	//fmt.Println(lc.CombinationSum4(nums, target))
 
 	//***
 	//序列化是将数据结构或对象转换为一系列位的过程，以便它可以存储在文件或内存缓冲区中，或通过网络连接链路传输，以便稍后在同一个或另一个计算机环境中重建。
 	//设计一个算法来序列化和反序列化 二叉搜索树 。 对序列化/反序列化算法的工作方式没有限制。 您只需确保二叉搜索树可以序列化为字符串，并且可以将该字符串反序列化为最初的二叉搜索树。
 	//编码的字符串应尽可能紧凑。
 	//***//
-	//root := TreeNodeii{1,&TreeNodeii{2,nil,nil},&TreeNodeii{3,nil,nil}}
-	//ser := Constructorii()
-	//deser := Constructorii()
-	//tree := ser.serializeii(&root)
-	//ans := deser.deserializeii(tree)
+	//root := lc.TreeNodeii{1,&lc.TreeNodeii{2,nil,nil},&lc.TreeNodeii{3,nil,nil}}
+	//ser := lc.Constructorii()
+	//deser := lc.Constructorii()
+	//tree := ser.Serializeii(&root)
+	//ans := deser.Deserializeii(tree)
 	//fmt.Println(ans)
 
 	//***
@@ -150,7 +151,7 @@ func main()  {
 	//给你输入字符串text，请你实现一个 HTML实体解析器，返回解析器解析后的结果。
 	//***//
 	text := "and I quote: &quot;...&quot;"
-	fmt.Println(entityParser(text))
+	fmt.Println(lc.EntityParser(text))
 
 
 

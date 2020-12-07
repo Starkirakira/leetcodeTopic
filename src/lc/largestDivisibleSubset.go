@@ -1,10 +1,10 @@
-package main
+package lc
 
 import (
 	"sort"
 )
 
-func largestDivisibleSubset(nums []int) []int {
+func LargestDivisibleSubset(nums []int) []int {
 	if len(nums)==0 {
 		return []int{}
 	}

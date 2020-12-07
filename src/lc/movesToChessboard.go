@@ -1,8 +1,8 @@
-package main
+package lc
 
 
 
-func movesToChessboard(board [][]int) int {
+func MovesToChessboard(board [][]int) int {
 	n := len(board)
 	row := board[0]
 

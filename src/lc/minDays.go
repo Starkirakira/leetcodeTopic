@@ -1,6 +1,6 @@
-package main
+package lc
 
-func minDays(bloomDay []int,m,k int) int {
+func MinDays(bloomDay []int,m,k int) int {
 	if m*k > len(bloomDay){
 		return -1
 	}

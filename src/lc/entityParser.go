@@ -1,6 +1,6 @@
-package main
+package lc
 
-func entityParser(text string)	string  {
+func EntityParser(text string)	string  {
 	elementPool := map[string]string{
 		"&quot": "\"",
 		"&apos": "'",
@@ -9,6 +9,6 @@ func entityParser(text string)	string  {
 		"&lt": "<",
 		"&frasl": "/",
 	}
-	
+
 	return ""
 }

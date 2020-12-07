@@ -1,4 +1,4 @@
-package main
+package lc
 
 import (
 	"strconv"
@@ -20,7 +20,7 @@ func Constructorii() Codecii {
 }
 
 // Serializes a tree to a single string.
-func (this *Codecii) serializeii(root *TreeNodeii) string {
+func (this *Codecii) Serializeii(root *TreeNodeii) string {
 	if root == nil {
 		return ""
 	}
@@ -41,7 +41,7 @@ func (this *Codecii) serializeii(root *TreeNodeii) string {
 }
 
 // Deserializes your encoded data to tree.
-func (this *Codecii) deserializeii(data string) *TreeNodeii {
+func (this *Codecii) Deserializeii(data string) *TreeNodeii {
 	if len(data) == 0 {
 		return nil
 	}

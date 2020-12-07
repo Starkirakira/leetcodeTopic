@@ -1,11 +1,11 @@
-package main
+package lc
 
 import (
 	"sort"
 	"strings"
 )
 
-func reorderLogFiles(logs []string) []string {
+func ReorderLogFiles(logs []string) []string {
 	sort.SliceStable(logs, func(i, j int) bool {
 		l1 := strings.Split(logs[i], " ")
 		l2 := strings.Split(logs[j], " ")

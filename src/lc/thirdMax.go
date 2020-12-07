@@ -1,8 +1,8 @@
-package main
+package lc
 
 import "math"
 
-func thirdMax(nums []int) int {
+func ThirdMax(nums []int) int {
 	if len(nums) == 1 {
 		return nums[0]
 	}

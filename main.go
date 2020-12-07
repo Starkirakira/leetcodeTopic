@@ -129,14 +129,28 @@ func main()  {
 	//设计一个算法来序列化和反序列化 二叉搜索树 。 对序列化/反序列化算法的工作方式没有限制。 您只需确保二叉搜索树可以序列化为字符串，并且可以将该字符串反序列化为最初的二叉搜索树。
 	//编码的字符串应尽可能紧凑。
 	//***//
+	//root := TreeNodeii{1,&TreeNodeii{2,nil,nil},&TreeNodeii{3,nil,nil}}
+	//ser := Constructorii()
+	//deser := Constructorii()
+	//tree := ser.serializeii(&root)
+	//ans := deser.deserializeii(tree)
+	//fmt.Println(ans)
 
-	root := TreeNodeii{1,&TreeNodeii{2,nil,nil},&TreeNodeii{3,nil,nil}}
-	ser := Constructorii()
-	deser := Constructorii()
-	tree := ser.serializeii(&root)
-	ans := deser.deserializeii(tree)
-	fmt.Println(ans)
-
+	//***
+	//「HTML实体解析器」 是一种特殊的解析器，它将 HTML 代码作为输入，并用字符本身替换掉所有这些特殊的字符实体。
+	//
+	//HTML 里这些特殊字符和它们对应的字符实体包括：
+	//
+	//双引号：字符实体为&quot;，对应的字符是"。
+	//单引号：字符实体为&apos;，对应的字符是'。
+	//与符号：字符实体为&amp;，对应对的字符是&。
+	//大于号：字符实体为&gt;，对应的字符是>。
+	//小于号：字符实体为&lt;，对应的字符是<。
+	//斜线号：字符实体为&frasl;，对应的字符是/。
+	//给你输入字符串text，请你实现一个 HTML实体解析器，返回解析器解析后的结果。
+	//***//
+	text := "and I quote: &quot;...&quot;"
+	fmt.Println(entityParser(text))
 
 
 

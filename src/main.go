@@ -150,7 +150,8 @@ func main()  {
 	//斜线号：字符实体为&frasl;，对应的字符是/。
 	//给你输入字符串text，请你实现一个 HTML实体解析器，返回解析器解析后的结果。
 	//***//
-	text := "and I quote: &quot;...&quot;"
+	//text := "and I quote: &quot;...&quot;"
+	text := "x &gt; y &amp;&amp; x &lt; y is always fals"
 	fmt.Println(lc.EntityParser(text))
 
 

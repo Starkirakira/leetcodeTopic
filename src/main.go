@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
-import "leetcode/lc"
+import (
+	"fmt"
+	"leetcode/lc"
+)
 
 func main()  {
 
@@ -151,8 +153,22 @@ func main()  {
 	//给你输入字符串text，请你实现一个 HTML实体解析器，返回解析器解析后的结果。
 	//***//
 	//text := "and I quote: &quot;...&quot;"
-	text := "x &gt; y &amp;&amp; x &lt; y is always fals"
-	fmt.Println(lc.EntityParser(text))
+	//text := "x &gt; y &amp;&amp; x &lt; y is always fals"
+	//fmt.Println(lc.EntityParser(text))
+
+
+	//***
+	//在给定的网格中，每个单元格可以有以下三个值之一：
+	//
+	//值0代表空单元格；
+	//值1代表新鲜橘子；
+	//值2代表腐烂的橘子。
+	//每分钟，任何与腐烂的橘子（在 4 个正方向上）相邻的新鲜橘子都会腐烂。
+	//返回直到单元格中没有新鲜橘子为止所必须经过的最小分钟数。如果不可能，返回-1。
+	//***//
+	grid := [][]int{{2,1,1},{1,1,0},{0,1,1}}
+	//grid := [][]int{{0}}
+	fmt.Println(lc.OrangesRotting(grid))
 
 
 

@@ -14,7 +14,7 @@ func ConstructorMedian() MedianFinder {
 
 func (this *MedianFinder) AddNum(num int)  {
 	if len(this.listA) != len(this.listB) {
-		
+
 	}
 }
 

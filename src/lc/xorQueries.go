@@ -1,6 +1,6 @@
-package main
+package lc
 
-func xorQueries(arr []int , queries [][]int) []int {
+func XorQueries(arr []int , queries [][]int) []int {
 	n := len(arr)
 	pre := make([]int,n+1)
 	for i:=1;i<=n;i++{

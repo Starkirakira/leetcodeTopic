@@ -1,8 +1,8 @@
-package main
+package lc
 
 import "math"
 
-func  minTaps(n int , ranges []int) int {
+func MinTaps(n int , ranges []int) int {
 	//dp
 	//prev := make([]int, n+1)//0,1,2,3,4,5,...,n+1
 	//for i:=range prev{

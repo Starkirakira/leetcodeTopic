@@ -1,4 +1,4 @@
-package main
+package lc
 
 import (
 	"strconv"
@@ -33,7 +33,7 @@ func rserialize(root *TreeNode, str string) string {
 	return str
 }
 
-func (this *Codec) deserialize(data string)	*TreeNode  {
+func (this *Codec) Deserialize(data string)	*TreeNode  {
 	l := strings.Split(data, ",")
 	for i :=0; i < len(l); i++ {
 		if l[i] != ""{

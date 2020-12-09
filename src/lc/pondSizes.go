@@ -1,8 +1,8 @@
-package main
+package lc
 
 import "sort"
 
-func pondSizes(land [][]int) []int{
+func PondSizes(land [][]int) []int{
 	recBakc := []int{}
 	for i := 0; i < len(land); i++ {
 		for j:=0; j<len(land[i]);j++{

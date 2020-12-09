@@ -1,8 +1,8 @@
-package main
+package lc
 
 import "math"
 
-func getMoneyAmount(n int) int {
+func GetMoneyAmount(n int) int {
 	if(n == 1){
 		return 0
 	}

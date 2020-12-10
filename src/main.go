@@ -166,9 +166,16 @@ func main()  {
 	//每分钟，任何与腐烂的橘子（在 4 个正方向上）相邻的新鲜橘子都会腐烂。
 	//返回直到单元格中没有新鲜橘子为止所必须经过的最小分钟数。如果不可能，返回-1。
 	//***//
-	grid := [][]int{{2,1,1},{1,1,0},{0,1,1}}
-	//grid := [][]int{{0}}
-	fmt.Println(lc.OrangesRotting(grid))
+	//grid := [][]int{{2,1,1},{1,1,0},{0,1,1}}
+	//fmt.Println(lc.OrangesRotting(grid))
+
+	///***给你一个整数num，请你找出同时满足下面全部要求的两个整数：
+	//两数乘积等于 num + 1或num + 2
+	//以绝对差进行度量，两数大小最接近
+	//你可以按任意顺序返回这两个整数。***///
+
+	num := 8
+	fmt.Println(lc.ClosestDivisors(num))
 
 
 

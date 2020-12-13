@@ -184,8 +184,25 @@ func main()  {
 	//返回获取所有钥匙所需要的移动的最少次数。如果无法获取所有钥匙，返回-1。
 	//链接：https://leetcode-cn.com/problems/shortest-path-to-get-all-keys
 	//***//
-	grid := []string{"@.a.#","###.#","b.A.B"}
-	fmt.Println(lc.ShortestPathAllKeys(grid))
+	//grid := []string{"@.a.#","###.#","b.A.B"}
+	//fmt.Println(lc.ShortestPathAllKeys(grid))
+
+	///***
+	//给定一个整数数组和一个整数k，你需要在数组里找到不同的k-diff 数对，并返回不同的 k-diff 数对 的数目。
+	//
+	//这里将k-diff数对定义为一个整数对 (nums[i], nums[j])，并满足下述全部条件：
+	//
+	//0 <= i, j < nums.length
+	//i != j
+	//|nums[i] - nums[j]| == k
+	//注意，|val| 表示 val 的绝对值。
+	//链接：https://leetcode-cn.com/problems/k-diff-pairs-in-an-array
+	//***///
+
+	//num := []int{1,2,4,4,3,3,0,9,2,3}
+	num := []int{1,3,1,5,40}
+	k := 0
+	fmt.Println(lc.FindPairs(num , k))
 
 
 

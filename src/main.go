@@ -184,8 +184,15 @@ func main()  {
 	//返回获取所有钥匙所需要的移动的最少次数。如果无法获取所有钥匙，返回-1。
 	//链接：https://leetcode-cn.com/problems/shortest-path-to-get-all-keys
 	//***//
-	grid := []string{"@.a.#","###.#","b.A.B"}
-	fmt.Println(lc.ShortestPathAllKeys(grid))
+	//grid := []string{"@.a.#","###.#","b.A.B"}
+	//fmt.Println(lc.ShortestPathAllKeys(grid))
+
+	//***
+	//给你一个整数数组 arr。你可以从中选出一个整数集合，并删除这些整数在数组中的每次出现。
+	//返回 至少 能删除数组中的一半整数的整数集合的最小大小。
+	//***//
+	arr := []int{3,3,3,3,5,5,5,2,2,7}
+	fmt.Println(lc.MinSetSize(arr))
 
 
 

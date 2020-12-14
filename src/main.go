@@ -228,8 +228,15 @@ func main()  {
 	//***
 	//数字 n 代表生成括号的对数，请你设计一个函数，用于能够生成所有可能的并且 有效的 括号组合。
 	//***//
-	n := 3
-	fmt.Println(lc.GenerateParenthesis(n))
+	//n := 3
+	//fmt.Println(lc.GenerateParenthesis(n))
+
+	//***
+	//给你一个整数数组 arr。你可以从中选出一个整数集合，并删除这些整数在数组中的每次出现。
+	//返回 至少 能删除数组中的一半整数的整数集合的最小大小。
+	//***//
+	arr := []int{3,3,3,3,5,5,5,2,2,7}
+	fmt.Println(lc.MinSetSize(arr))
 
 
 

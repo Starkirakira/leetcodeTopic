@@ -187,6 +187,51 @@ func main()  {
 	//grid := []string{"@.a.#","###.#","b.A.B"}
 	//fmt.Println(lc.ShortestPathAllKeys(grid))
 
+
+	///***
+	//给定一个整数数组和一个整数k，你需要在数组里找到不同的k-diff 数对，并返回不同的 k-diff 数对 的数目。
+	//
+	//这里将k-diff数对定义为一个整数对 (nums[i], nums[j])，并满足下述全部条件：
+	//
+	//0 <= i, j < nums.length
+	//i != j
+	//|nums[i] - nums[j]| == k
+	//注意，|val| 表示 val 的绝对值。
+	//链接：https://leetcode-cn.com/problems/k-diff-pairs-in-an-array
+	//***///
+	//num := []int{1,2,4,4,3,3,0,9,2,3}
+	//num := []int{1,3,1,5,40}
+	//k := 0
+	//fmt.Println(lc.FindPairs(num , k))
+
+	//***
+	//电子游戏“辐射4”中，任务“通向自由”要求玩家到达名为“Freedom Trail Ring”的金属表盘，并使用表盘拼写特定关键词才能开门。
+	//给定一个字符串ring，表示刻在外环上的编码；给定另一个字符串key，表示需要拼写的关键词。您需要算出能够拼写关键词中所有字符的最少步数。
+	//最初，ring的第一个字符与12:00方向对齐。您需要顺时针或逆时针旋转 ring 以使key的一个字符在 12:00 方向对齐，然后按下中心按钮，以此逐个拼写完key中的所有字符。
+	//旋转ring拼出 key 字符key[i]的阶段中：
+	//您可以将ring顺时针或逆时针旋转一个位置，计为1步。旋转的最终目的是将字符串ring的一个字符与 12:00 方向对齐，并且这个字符必须等于字符key[i] 。
+	//如果字符key[i]已经对齐到12:00方向，您需要按下中心按钮进行拼写，这也将算作1 步。按完之后，您可以开始拼写key的下一个字符（下一阶段）, 直至完成所有拼写。
+	//链接：https://leetcode-cn.com/problems/freedom-trail
+	//***//
+	//ring := "godding"
+	//key := "gd"
+	//fmt.Println(lc.FindRotateSteps(ring , key))
+
+	//***给你一个长度固定的整数数组arr，请你将该数组中出现的每个零都复写一遍，并将其余的元素向右平移。
+	//
+	//注意：请不要在超过该数组长度的位置写入元素。
+	//
+	//要求：请对输入的数组就地进行上述修改，不要从函数返回任何东西。
+	//链接：https://leetcode-cn.com/problems/duplicate-zeros ***//
+	//arr := []int{1,0,2,3,0,4,5,0}
+	//lc.DuplicateZeros(arr)
+
+	//***
+	//数字 n 代表生成括号的对数，请你设计一个函数，用于能够生成所有可能的并且 有效的 括号组合。
+	//***//
+	//n := 3
+	//fmt.Println(lc.GenerateParenthesis(n))
+
 	//***
 	//给你一个整数数组 arr。你可以从中选出一个整数集合，并删除这些整数在数组中的每次出现。
 	//返回 至少 能删除数组中的一半整数的整数集合的最小大小。

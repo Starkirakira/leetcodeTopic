@@ -260,9 +260,18 @@ func main()  {
 	//请返回这个数组中「优美子数组」的数目。
 	//链接：https://leetcode-cn.com/problems/count-number-of-nice-subarrays
 	//***//
-	nums := []int{2,2,2,1,2,2,1,2,2,2}
-	k := 2
-	fmt.Println(lc.NumberOfSubarrays(nums, k))
+	//nums := []int{2,2,2,1,2,2,1,2,2,2}
+	//k := 2
+	//fmt.Println(lc.NumberOfSubarrays(nums, k))
+
+	//***
+	//给定一种规律 pattern和一个字符串str，判断 str 是否遵循相同的规律。
+	//这里的遵循指完全匹配，例如，pattern里的每个字母和字符串str中的每个非空单词之间存在着双向连接的对应规律。
+	//链接：https://leetcode-cn.com/problems/word-pattern
+	//***//
+	pattern := "abba"
+	str := "dog cat cat dog"
+	fmt.Println(lc.WordPattern(pattern,str))
 
 
 

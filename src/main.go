@@ -246,13 +246,23 @@ func main()  {
 	//int sum(string prefix) 返回所有以该前缀 prefix 开头的键 key 的值的总和。
 	//链接：https://leetcode-cn.com/problems/map-sum-pairs
 	//***//
-	obj := lc.ConstructorMapSum()
-	obj.Insert("apple", 3)
-	param_2 := obj.Sum("ap")
-	fmt.Println(param_2)
-	obj.Insert("app", 2)
-	param_3 := obj.Sum("ap")
-	fmt.Println(param_3)
+	//obj := lc.ConstructorMapSum()
+	//obj.Insert("apple", 3)
+	//param_2 := obj.Sum("ap")
+	//fmt.Println(param_2)
+	//obj.Insert("app", 2)
+	//param_3 := obj.Sum("ap")
+	//fmt.Println(param_3)
+
+	//***
+	//给你一个整数数组nums 和一个整数 k。
+	//如果某个 连续 子数组中恰好有 k 个奇数数字，我们就认为这个子数组是「优美子数组」。
+	//请返回这个数组中「优美子数组」的数目。
+	//链接：https://leetcode-cn.com/problems/count-number-of-nice-subarrays
+	//***//
+	nums := []int{2,2,2,1,2,2,1,2,2,2}
+	k := 2
+	fmt.Println(lc.NumberOfSubarrays(nums, k))
 
 
 

@@ -280,9 +280,18 @@ func main()  {
 	//注意：这里的一笔交易指买入持有并卖出股票的整个过程，每笔交易你只需要为支付一次手续费。
 	//链接：https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee
 	//***//
-	prices := []int{1,3,2,8,4,9}
-	fee := 2
-	fmt.Println(lc.MaxProfit(prices, fee))
+	//prices := []int{1,3,2,8,4,9}
+	//fee := 2
+	//fmt.Println(lc.MaxProfit(prices, fee))
+
+	//***
+	//小A 和 小B 在玩猜数字。小B 每次从 1, 2, 3 中随机选择一个，小A 每次也从 1, 2, 3 中选择一个猜。他们一共进行三次这个游戏，请返回 小A 猜对了几次？
+	//输入的guess数组为 小A 每次的猜测，answer数组为 小B 每次的选择。guess和answer的长度都等于3。
+	//链接：https://leetcode-cn.com/problems/guess-numbers
+	//***//
+	guess := []int{1,2,3}
+	answer := []int{1,2,3}
+	fmt.Println(lc.Game(guess, answer))
 
 
 

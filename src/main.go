@@ -1,10 +1,5 @@
 package main
 
-import (
-	"fmt"
-	"leetcode/lc"
-)
-
 func main()  {
 
 	///***二叉树的序列化与反序列化***///
@@ -310,9 +305,22 @@ func main()  {
 	//字符串 t 由字符串 s 随机重排，然后在随机位置添加一个字母。
 	//请找出在 t 中被添加的字母。
 	//***//
-	s := "abcd"
-	t := "abcde"
-	fmt.Println(lc.FindTheDifference(s, t))
+	//s := "abcd"
+	//t := "abcde"
+	//fmt.Println(lc.FindTheDifference(s, t))
+
+	//***
+	//给定一个 n×n 的二维矩阵表示一个图像。
+	//将图像顺时针旋转 90 度。
+	//说明：
+	//你必须在原地旋转图像，这意味着你需要直接修改输入的二维矩阵。请不要使用另一个矩阵来旋转图像。
+	//链接：https://leetcode-cn.com/problems/rotate-image
+	//***//
+	//matrix := [][]int{{1,2,3},{4,5,6},{7,8,9}}
+	//lc.Rotate(matrix)
+	//fmt.Println(matrix)
+
+	
 
 
 

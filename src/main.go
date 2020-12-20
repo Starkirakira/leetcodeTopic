@@ -350,8 +350,15 @@ func main()  {
 	//***
 	//给你一个字符串 s ，请你去除字符串中重复的字母，使得每个字母只出现一次。需保证 返回结果的字典序最小（要求不能打乱其他字符的相对位置）。
 	//***//
-	s := "bcabc"
-	fmt.Println(lc.RemoveDuplicateLetters(s))
+	//s := "bcabc"
+	//fmt.Println(lc.RemoveDuplicateLetters(s))
+
+	//***
+	//给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。
+	//***//
+	nums := []int{1,3,5,6}
+	target := 5
+	fmt.Println(lc.SearchInsert(nums, target))
 
 
 

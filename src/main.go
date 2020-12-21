@@ -364,9 +364,17 @@ func main()  {
 	//给你 n 个非负整数 a1，a2，...，an，每个数代表坐标中的一个点(i,ai) 。在坐标内画 n 条垂直线，垂直线 i的两个端点分别为(i,ai) 和 (i, 0) 。找出其中的两条线，使得它们与x轴共同构成的容器可以容纳最多的水。
 	//链接：https://leetcode-cn.com/problems/container-with-most-water
 	//***//
-	height := []int{1,8,6,2,5,4,8,3,7}
-	fmt.Println(lc.MaxArea(height))
+	//height := []int{1,8,6,2,5,4,8,3,7}
+	//fmt.Println(lc.MaxArea(height))
 
+	//***
+	//数组的每个索引作为一个阶梯，第i个阶梯对应着一个非负数的体力花费值cost[i](索引从0开始)。
+	//每当你爬上一个阶梯你都要花费对应的体力花费值，然后你可以选择继续爬一个阶梯或者爬两个阶梯。
+	//您需要找到达到楼层顶部的最低花费。在开始时，你可以选择从索引为 0 或 1 的元素作为初始阶梯。
+	//链接：https://leetcode-cn.com/problems/min-cost-climbing-stairs
+	//***//
+	cots := []int{10,15,20}
+	fmt.Println(lc.MinCostClimbingStairs(cots))
 
 
 

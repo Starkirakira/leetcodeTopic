@@ -356,9 +356,18 @@ func main()  {
 	//***
 	//给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。
 	//***//
-	nums := []int{1,3,5,6}
-	target := 5
-	fmt.Println(lc.SearchInsert(nums, target))
+	//nums := []int{1,3,5,6}
+	//target := 5
+	//fmt.Println(lc.SearchInsert(nums, target))
+
+	//***
+	//给你 n 个非负整数 a1，a2，...，an，每个数代表坐标中的一个点(i,ai) 。在坐标内画 n 条垂直线，垂直线 i的两个端点分别为(i,ai) 和 (i, 0) 。找出其中的两条线，使得它们与x轴共同构成的容器可以容纳最多的水。
+	//链接：https://leetcode-cn.com/problems/container-with-most-water
+	//***//
+	height := []int{1,8,6,2,5,4,8,3,7}
+	fmt.Println(lc.MaxArea(height))
+
+
 
 
 

@@ -373,9 +373,40 @@ func main()  {
 	//您需要找到达到楼层顶部的最低花费。在开始时，你可以选择从索引为 0 或 1 的元素作为初始阶梯。
 	//链接：https://leetcode-cn.com/problems/min-cost-climbing-stairs
 	//***//
-	cots := []int{10,15,20}
-	fmt.Println(lc.MinCostClimbingStairs(cots))
+	//cots := []int{10,15,20}
+	//fmt.Println(lc.MinCostClimbingStairs(cots))
 
+	//***
+	//给定一个二叉树，返回其节点值的锯齿形层序遍历。（即先从左往右，再从右往左进行下一层遍历，以此类推，层与层之间交替进行）。
+	//	  3
+	//   / \
+	//  9  20
+	//    /  \
+	//   15   7
+	//[[3],[20,9],[15,7]]
+	//***//
+	root := &lc.TreeNode{
+		3,
+		&lc.TreeNode{
+			9,
+			nil,
+			nil,
+		},
+		&lc.TreeNode{
+			20,
+			&lc.TreeNode{
+				15,
+				nil,
+				nil,
+			},
+			&lc.TreeNode{
+				7,
+				nil,
+				nil,
+			},
+		},
+	}
+	fmt.Println(lc.ZigzagLevelOrder(root))
 
 
 

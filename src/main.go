@@ -385,28 +385,38 @@ func main()  {
 	//   15   7
 	//[[3],[20,9],[15,7]]
 	//***//
-	root := &lc.TreeNode{
-		3,
-		&lc.TreeNode{
-			9,
-			nil,
-			nil,
-		},
-		&lc.TreeNode{
-			20,
-			&lc.TreeNode{
-				15,
-				nil,
-				nil,
-			},
-			&lc.TreeNode{
-				7,
-				nil,
-				nil,
-			},
-		},
-	}
-	fmt.Println(lc.ZigzagLevelOrder(root))
+	//root := &lc.TreeNode{
+	//	3,
+	//	&lc.TreeNode{
+	//		9,
+	//		nil,
+	//		nil,
+	//	},
+	//	&lc.TreeNode{
+	//		20,
+	//		&lc.TreeNode{
+	//			15,
+	//			nil,
+	//			nil,
+	//		},
+	//		&lc.TreeNode{
+	//			7,
+	//			nil,
+	//			nil,
+	//		},
+	//	},
+	//}
+	//fmt.Println(lc.ZigzagLevelOrder(root))
+
+	//***
+	//给定字符串J代表石头中宝石的类型，和字符串S代表你拥有的石头。S中每个字符代表了一种你拥有的石头的类型，你想知道你拥有的石头中有多少是宝石。
+	//
+	//J中的字母不重复，J和S中的所有字符都是字母。字母区分大小写，因此"a"和"A"是不同类型的石头。
+	//链接：https://leetcode-cn.com/problems/jewels-and-stones
+	//***//
+	J := "aA"
+	S := "aAAbbbb"
+	fmt.Println(lc.NumJewelsInStones(J, S))
 
 
 

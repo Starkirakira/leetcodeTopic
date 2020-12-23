@@ -429,9 +429,17 @@ func main()  {
 	//0.1(6) 或0.1666(6) 或0.166(66) 都是1 / 6 的正确表示形式。
 	//链接：https://leetcode-cn.com/problems/equal-rational-numbers
 	//***//
-	S := "0.(52)"
-	T := "0.5(25)"
-	fmt.Println(lc.IsRationalEqual(S, T))
+	//S := "0.(52)"
+	//T := "0.5(25)"
+	//fmt.Println(lc.IsRationalEqual(S, T))
+
+	//***
+	//给定一个字符串，找到它的第一个不重复的字符，并返回它的索引。如果不存在，则返回 -1。
+	//***//
+	s := "leetcode"
+	fmt.Println(lc.FirstUniqChar(s))
+
+
 
 
 

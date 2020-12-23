@@ -414,10 +414,24 @@ func main()  {
 	//J中的字母不重复，J和S中的所有字符都是字母。字母区分大小写，因此"a"和"A"是不同类型的石头。
 	//链接：https://leetcode-cn.com/problems/jewels-and-stones
 	//***//
-	J := "aA"
-	S := "aAAbbbb"
-	fmt.Println(lc.NumJewelsInStones(J, S))
+	//J := "aA"
+	//S := "aAAbbbb"
+	//fmt.Println(lc.NumJewelsInStones(J, S))
 
+	//***
+	//给定两个字符串 S 和 T，每个字符串代表一个非负有理数，只有当它们表示相同的数字时才返回 true；否则，返回 false。字符串中可以使用括号来表示有理数的重复部分。
+	//通常，有理数最多可以用三个部分来表示：整数部分<IntegerPart>、小数非重复部分<NonRepeatingPart>和小数重复部分<(><RepeatingPart><)>。数字可以用以下三种方法之一来表示：
+	//<IntegerPart>（例：0，12，123）
+	//<IntegerPart><.><NonRepeatingPart> （例：0.5，2.12，2.0001）
+	//<IntegerPart><.><NonRepeatingPart><(><RepeatingPart><)>（例：0.1(6)，0.9(9)，0.00(1212)）
+	//十进制展开的重复部分通常在一对圆括号内表示。例如：
+	//1 / 6 = 0.16666666... = 0.1(6) = 0.1666(6) = 0.166(66)
+	//0.1(6) 或0.1666(6) 或0.166(66) 都是1 / 6 的正确表示形式。
+	//链接：https://leetcode-cn.com/problems/equal-rational-numbers
+	//***//
+	S := "0.(52)"
+	T := "0.5(25)"
+	fmt.Println(lc.IsRationalEqual(S, T))
 
 
 

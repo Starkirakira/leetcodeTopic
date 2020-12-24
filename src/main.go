@@ -436,8 +436,18 @@ func main()  {
 	//***
 	//给定一个字符串，找到它的第一个不重复的字符，并返回它的索引。如果不存在，则返回 -1。
 	//***//
-	s := "leetcode"
-	fmt.Println(lc.FirstUniqChar(s))
+	//s := "leetcode"
+	//fmt.Println(lc.FirstUniqChar(s))
+
+	//***
+	//给你一个长度为 偶数 n 的整数数组 nums 和一个整数 limit 。每一次操作，你可以将 nums 中的任何整数替换为1到limit 之间的另一个整数。
+	//如果对于所有下标 i（下标从 0 开始），nums[i] + nums[n - 1 - i]都等于同一个数，则数组 nums 是 互补的 。例如，数组 [1,2,3,4] 是互补的，因为对于所有下标i ，nums[i] + nums[n - 1 - i] = 5 。
+	//返回使数组 互补 的 最少操作次数。
+	//链接：https://leetcode-cn.com/problems/minimum-moves-to-make-array-complementary
+	//***//
+	nums,limit := []int{1,2,2,1},2
+	fmt.Println(lc.MinMoves(nums, limit))
+
 
 
 

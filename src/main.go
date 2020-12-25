@@ -465,9 +465,44 @@ func main()  {
 	//你的目标是尽可能满足越多数量的孩子，并输出这个最大数值。
 	//链接：https://leetcode-cn.com/problems/assign-cookies
 	//***//
-	g,s := []int{1,2,3},[]int{1,1}
-	fmt.Println(lc.FindContentChildren(g,s))
+	//g,s := []int{1,2,3},[]int{1,1}
+	//fmt.Println(lc.FindContentChildren(g,s))
 
+	//***
+	//给定一棵二叉树，返回所有重复的子树。对于同一类的重复子树，你只需要返回其中任意一棵的根结点即可。
+	//两棵树重复是指它们具有相同的结构以及相同的结点值。
+	//***//
+	root := &lc.TreeNode{
+		1,
+		&lc.TreeNode{
+			2,
+			&lc.TreeNode{
+				4,
+				nil,
+				nil,
+			},
+			nil,
+		},
+		&lc.TreeNode{
+			3,
+			&lc.TreeNode{
+				2,
+				&lc.TreeNode{
+					4,
+					nil,
+					nil,
+				},
+				nil,
+
+			},
+			&lc.TreeNode{
+				4,
+				nil,
+				nil,
+			},
+		},
+	}
+	fmt.Println(lc.FindDuplicateSubtrees(root))
 
 
 

@@ -472,37 +472,41 @@ func main()  {
 	//给定一棵二叉树，返回所有重复的子树。对于同一类的重复子树，你只需要返回其中任意一棵的根结点即可。
 	//两棵树重复是指它们具有相同的结构以及相同的结点值。
 	//***//
-	root := &lc.TreeNode{
-		1,
-		&lc.TreeNode{
-			2,
-			&lc.TreeNode{
-				4,
-				nil,
-				nil,
-			},
-			nil,
-		},
-		&lc.TreeNode{
-			3,
-			&lc.TreeNode{
-				2,
-				&lc.TreeNode{
-					4,
-					nil,
-					nil,
-				},
-				nil,
+	//root := &lc.TreeNode{
+	//	1,
+	//	&lc.TreeNode{
+	//		2,
+	//		&lc.TreeNode{
+	//			4,
+	//			nil,
+	//			nil,
+	//		},
+	//		nil,
+	//	},
+	//	&lc.TreeNode{
+	//		3,
+	//		&lc.TreeNode{
+	//			2,
+	//			&lc.TreeNode{
+	//				4,
+	//				nil,
+	//				nil,
+	//			},
+	//			nil,
+	//
+	//		},
+	//		&lc.TreeNode{
+	//			4,
+	//			nil,
+	//			nil,
+	//		},
+	//	},
+	//}
+	//fmt.Println(lc.FindDuplicateSubtrees(root))
 
-			},
-			&lc.TreeNode{
-				4,
-				nil,
-				nil,
-			},
-		},
-	}
-	fmt.Println(lc.FindDuplicateSubtrees(root))
+	//***给定一个仅包含 0 和 1 、大小为 rows x cols 的二维二进制矩阵，找出只包含 1 的最大矩形，并返回其面积。***//
+	matrix := [][]byte{{1,0,1,0,0},{1,0,1,1,1},{1,1,1,1,1},{1,0,0,1,0}}
+	fmt.Println(lc.MaximalRectangle(matrix))
 
 
 

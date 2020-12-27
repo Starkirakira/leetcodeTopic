@@ -505,8 +505,16 @@ func main()  {
 	//fmt.Println(lc.FindDuplicateSubtrees(root))
 
 	//***给定一个仅包含 0 和 1 、大小为 rows x cols 的二维二进制矩阵，找出只包含 1 的最大矩形，并返回其面积。***//
-	matrix := [][]byte{{1,0,1,0,0},{1,0,1,1,1},{1,1,1,1,1},{1,0,0,1,0}}
-	fmt.Println(lc.MaximalRectangle(matrix))
+	//matrix := [][]byte{{1,0,1,0,0},{1,0,1,1,1},{1,1,1,1,1},{1,0,0,1,0}}
+	//fmt.Println(lc.MaximalRectangle(matrix))
+
+	//***
+	//给定一个方形整数数组A，我们想要得到通过 A 的下降路径的最小和。
+	//下降路径可以从第一行中的任何元素开始，并从每一行中选择一个元素。在下一行选择的元素和当前行所选元素最多相隔一列。
+	//链接：https://leetcode-cn.com/problems/minimum-falling-path-sum
+	//***//
+	A := [][]int{{1,2,3},{4,5,6},{7,8,9}}
+	fmt.Println(lc.MinFallingPathSum(A))
 
 
 

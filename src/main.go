@@ -513,9 +513,18 @@ func main()  {
 	//下降路径可以从第一行中的任何元素开始，并从每一行中选择一个元素。在下一行选择的元素和当前行所选元素最多相隔一列。
 	//链接：https://leetcode-cn.com/problems/minimum-falling-path-sum
 	//***//
-	A := [][]int{{1,2,3},{4,5,6},{7,8,9}}
-	fmt.Println(lc.MinFallingPathSum(A))
+	//A := [][]int{{1,2,3},{4,5,6},{7,8,9}}
+	//fmt.Println(lc.MinFallingPathSum(A))
 
+	//***
+	//给定两个字符串s和t，判断它们是否是同构的。
+	//如果s中的字符可以被替换得到t，那么这两个字符串是同构的。
+	//所有出现的字符都必须用另一个字符替换，同时保留字符的顺序。两个字符不能映射到同一个字符上，但字符可以映射自己本身。
+	//链接：https://leetcode-cn.com/problems/isomorphic-strings
+	//***//
+	s := "egg"
+	t := "add"
+	fmt.Println(lc.IsIsomorphic(s,t))
 
 
 }

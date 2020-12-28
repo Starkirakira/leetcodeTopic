@@ -1,9 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"leetcode/lc"
-)
+import "fmt"
 
 func main()  {
 
@@ -522,9 +519,19 @@ func main()  {
 	//所有出现的字符都必须用另一个字符替换，同时保留字符的顺序。两个字符不能映射到同一个字符上，但字符可以映射自己本身。
 	//链接：https://leetcode-cn.com/problems/isomorphic-strings
 	//***//
-	s := "egg"
-	t := "add"
-	fmt.Println(lc.IsIsomorphic(s,t))
+	//s := "egg"
+	//t := "add"
+	//fmt.Println(lc.IsIsomorphic(s,t))
+
+	//***
+	//给定一个整数数组prices ，它的第 i 个元素prices[i] 是一支给定的股票在第 i 天的价格。
+	//设计一个算法来计算你所能获取的最大利润。你最多可以完成 k 笔交易。
+	//注意：你不能同时参与多笔交易（你必须在再次购买前出售掉之前的股票）。
+	//链接：https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iv
+	//***//
+	k,prices := 2,[]int{2,4,1}
+	fmt.Println(k,prices)
+
 
 
 }

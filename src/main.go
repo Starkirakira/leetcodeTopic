@@ -540,10 +540,16 @@ func main()  {
 	//数字都可以用nums中某几个数字的和来表示。请输出满足上述要求的最少需要补充的数字个数。
 	//链接：https://leetcode-cn.com/problems/patching-array
 	//***//
-	nums := []int{1,3}
-	n := 6
-	fmt.Println(lc.MinPatches(nums, n))
+	//nums := []int{1,3}
+	//n := 6
+	//fmt.Println(lc.MinPatches(nums, n))
 
+	//***
+	//给定一个包括n 个整数的数组nums和 一个目标值target。找出nums中的三个整数，使得它们的和与target最接近。返回这三个数的和。假定每组输入只存在唯一答案。
+	//链接：https://leetcode-cn.com/problems/3sum-closest
+	//***//
+	nums,target := []int{-1,2,1,-4},1
+	fmt.Println(lc.ThreeSumClosest(nums, target))
 
 
 

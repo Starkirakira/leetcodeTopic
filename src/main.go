@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"leetcode/lc"
+)
 
 func main()  {
 
@@ -529,8 +532,49 @@ func main()  {
 	//注意：你不能同时参与多笔交易（你必须在再次购买前出售掉之前的股票）。
 	//链接：https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iv
 	//***//
-	k,prices := 2,[]int{2,4,1}
-	fmt.Println(k,prices)
+	//k,prices := 2,[]int{2,4,1}
+	//fmt.Println(k,prices)
+
+	//***
+	//给定一个已排序的正整数数组 nums，和一个正整数n 。从[1, n]区间内选取任意个数字补充到nums中，使得[1, n]区间内的任何
+	//数字都可以用nums中某几个数字的和来表示。请输出满足上述要求的最少需要补充的数字个数。
+	//链接：https://leetcode-cn.com/problems/patching-array
+	//***//
+	nums := []int{1,3}
+	n := 6
+	fmt.Println(lc.MinPatches(nums, n))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

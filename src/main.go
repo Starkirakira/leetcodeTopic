@@ -548,8 +548,26 @@ func main()  {
 	//给定一个包括n 个整数的数组nums和 一个目标值target。找出nums中的三个整数，使得它们的和与target最接近。返回这三个数的和。假定每组输入只存在唯一答案。
 	//链接：https://leetcode-cn.com/problems/3sum-closest
 	//***//
-	nums,target := []int{-1,2,1,-4},1
-	fmt.Println(lc.ThreeSumClosest(nums, target))
+	//nums,target := []int{-1,2,1,-4},1
+	//fmt.Println(lc.ThreeSumClosest(nums, target))
+
+	//***
+	//给定一个二叉树的根节点 root ，返回它的 中序 遍历。
+	//***//
+	root := &lc.TreeNode{
+		1,
+		nil,
+		&lc.TreeNode{
+			2,
+			&lc.TreeNode{
+				3,
+				nil,
+				nil,
+			},
+			nil,
+		},
+	}
+	fmt.Println(lc.InorderTraversal(root))
 
 
 

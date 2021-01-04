@@ -577,7 +577,38 @@ func main()  {
 	//***
 	//给定一个整数 n，求以 1 ... n 为节点组成的二叉搜索树有多少种？
 	//***//
-	fmt.Println(lc.NumTrees(3))
+	//fmt.Println(lc.NumTrees(3))
+
+	//***
+	//给定一个二叉树，判断其是否是一个有效的二叉搜索树。
+	//假设一个二叉搜索树具有如下特征：
+	//节点的左子树只包含小于当前节点的数。
+	//节点的右子树只包含大于当前节点的数。
+	//所有左子树和右子树自身必须也是二叉搜索树。
+	//链接：https://leetcode-cn.com/problems/validate-binary-search-tree
+	//***//
+	root := &lc.TreeNode{
+		5,
+		&lc.TreeNode{
+			1,
+			nil,
+			nil,
+		},
+		&lc.TreeNode{
+			4,
+			&lc.TreeNode{
+				3,
+				nil,
+				nil,
+			},
+			&lc.TreeNode{
+				6,
+				nil,nil,
+			},
+		},
+	}
+	fmt.Println(lc.IsValidBST(root))
+
 
 
 

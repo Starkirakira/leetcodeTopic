@@ -587,28 +587,47 @@ func main()  {
 	//所有左子树和右子树自身必须也是二叉搜索树。
 	//链接：https://leetcode-cn.com/problems/validate-binary-search-tree
 	//***//
+	//root := &lc.TreeNode{
+	//	5,
+	//	&lc.TreeNode{
+	//		1,
+	//		nil,
+	//		nil,
+	//	},
+	//	&lc.TreeNode{
+	//		4,
+	//		&lc.TreeNode{
+	//			3,
+	//			nil,
+	//			nil,
+	//		},
+	//		&lc.TreeNode{
+	//			6,
+	//			nil,nil,
+	//		},
+	//	},
+	//}
+	//fmt.Println(lc.IsValidBST(root))
+
+	//***
+	//给你一个二叉树，请你返回其按 层序遍历 得到的节点值。 （即逐层地，从左到右访问所有节点）。
+	//***//
 	root := &lc.TreeNode{
-		5,
+		3,
 		&lc.TreeNode{
-			1,
-			nil,
-			nil,
+			9,nil,nil,
 		},
 		&lc.TreeNode{
-			4,
+			20,
 			&lc.TreeNode{
-				3,
-				nil,
-				nil,
+				15,nil,nil,
 			},
 			&lc.TreeNode{
-				6,
-				nil,nil,
+				7,nil,nil,
 			},
 		},
 	}
-	fmt.Println(lc.IsValidBST(root))
-
+	fmt.Println(lc.LevelOrder(root))
 
 
 

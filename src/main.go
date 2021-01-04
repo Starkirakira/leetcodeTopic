@@ -554,21 +554,25 @@ func main()  {
 	//***
 	//给定一个二叉树的根节点 root ，返回它的 中序 遍历。
 	//***//
-	root := &lc.TreeNode{
-		1,
-		nil,
-		&lc.TreeNode{
-			2,
-			&lc.TreeNode{
-				3,
-				nil,
-				nil,
-			},
-			nil,
-		},
-	}
-	fmt.Println(lc.InorderTraversal(root))
+	//root := &lc.TreeNode{
+	//	1,
+	//	nil,
+	//	&lc.TreeNode{
+	//		2,
+	//		&lc.TreeNode{
+	//			3,
+	//			nil,
+	//			nil,
+	//		},
+	//		nil,
+	//	},
+	//}
+	//fmt.Println(lc.InorderTraversal(root))
 
+	//***
+	//给定一个整数 n，生成所有由 1 ... n 为节点所组成的 二叉搜索树 。
+	//***//
+	fmt.Println(lc.GenerateTrees(3))
 
 
 

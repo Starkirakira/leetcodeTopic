@@ -612,23 +612,40 @@ func main()  {
 	//***
 	//给你一个二叉树，请你返回其按 层序遍历 得到的节点值。 （即逐层地，从左到右访问所有节点）。
 	//***//
-	root := &lc.TreeNode{
-		3,
-		&lc.TreeNode{
-			9,nil,nil,
-		},
-		&lc.TreeNode{
-			20,
-			&lc.TreeNode{
-				15,nil,nil,
-			},
-			&lc.TreeNode{
-				7,nil,nil,
-			},
-		},
-	}
-	fmt.Println(lc.LevelOrder(root))
+	//root := &lc.TreeNode{
+	//	3,
+	//	&lc.TreeNode{
+	//		9,nil,nil,
+	//	},
+	//	&lc.TreeNode{
+	//		20,
+	//		&lc.TreeNode{
+	//			15,nil,nil,
+	//		},
+	//		&lc.TreeNode{
+	//			7,nil,nil,
+	//		},
+	//	},
+	//}
+	//fmt.Println(lc.LevelOrder(root))
 
+	//***
+	//根据一棵树的前序遍历与中序遍历构造二叉树。
+	//注意: 你可以假设树中没有重复的元素。
+	//
+	//二叉树前序遍历的顺序为： 先遍历根节点； 随后递归地遍历左子树； 最后递归地遍历右子树。
+	//二叉树中序遍历的顺序为： 先递归地遍历左子树； 随后遍历根节点； 最后递归地遍历右子树。
+	//***//
+	//preorder, inorder := []int{3,9,20,15,7}, []int{9,3,15,20,7}
+	//fmt.Println(lc.BuildTree(preorder, inorder))
+
+	//***
+	//根据一棵树的中序遍历与后序遍历构造二叉树。
+	//后序遍历的顺序是每次遍历左孩子，再遍历右孩子，最后遍历根节点
+	//***//
+
+	inorder, postorder := []int{9,3,15,20,7},[]int{9,15,7,20,3}
+	fmt.Println(lc.BuildTreePostorder(inorder, postorder))
 
 
 

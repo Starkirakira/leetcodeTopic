@@ -643,10 +643,38 @@ func main()  {
 	//根据一棵树的中序遍历与后序遍历构造二叉树。
 	//后序遍历的顺序是每次遍历左孩子，再遍历右孩子，最后遍历根节点
 	//***//
+	//inorder, postorder := []int{9,3,15,20,7},[]int{9,15,7,20,3}
+	//fmt.Println(lc.BuildTreePostorder(inorder, postorder))
 
-	inorder, postorder := []int{9,3,15,20,7},[]int{9,15,7,20,3}
-	fmt.Println(lc.BuildTreePostorder(inorder, postorder))
-
+	//***
+	//给定一个二叉树和一个目标和，找到所有从根节点到叶子节点路径总和等于给定目标和的路径。
+	//说明: 叶子节点是指没有子节点的节点。
+	//***//
+	root := &lc.TreeNode{
+		5,
+		&lc.TreeNode{
+			4,
+			&lc.TreeNode{
+				11,
+				&lc.TreeNode{7,nil,nil,},
+				&lc.TreeNode{2,nil,nil,},
+			},
+			nil,
+		},
+		&lc.TreeNode{
+			8,
+			&lc.TreeNode{
+				13,nil,nil,
+			},
+			&lc.TreeNode{
+				4,
+				&lc.TreeNode{5,nil,nil,},
+				&lc.TreeNode{1,nil,nil,},
+			},
+		},
+	}
+	sum := 22
+	fmt.Println(lc.PathSum(root,sum))
 
 
 

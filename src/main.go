@@ -679,6 +679,25 @@ func main()  {
 	//***
 	//给定一个二叉树，原地将它展开为一个单链表。
 	//***//
+	//root := &lc.TreeNode{
+	//	1,
+	//	&lc.TreeNode{
+	//		2,
+	//		&lc.TreeNode{3,nil,nil,},
+	//		&lc.TreeNode{4,nil,nil,},
+	//	},
+	//	&lc.TreeNode{
+	//		5,
+	//		nil,
+	//		&lc.TreeNode{6,nil,nil,},
+	//	},
+	//}
+	//lc.Flatten(root)
+	//fmt.Println(root)
+
+	//***
+	//给定一个二叉树，检查它是否是镜像对称的。
+	//***//
 	root := &lc.TreeNode{
 		1,
 		&lc.TreeNode{
@@ -687,14 +706,12 @@ func main()  {
 			&lc.TreeNode{4,nil,nil,},
 		},
 		&lc.TreeNode{
-			5,
-			nil,
-			&lc.TreeNode{6,nil,nil,},
+			2,
+			&lc.TreeNode{4,nil,nil,},
+			&lc.TreeNode{3,nil,nil,},
 		},
 	}
-	lc.Flatten(root)
-	fmt.Println(root)
-
+	fmt.Println(lc.IsSymmetric(root))
 
 
 

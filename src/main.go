@@ -650,31 +650,50 @@ func main()  {
 	//给定一个二叉树和一个目标和，找到所有从根节点到叶子节点路径总和等于给定目标和的路径。
 	//说明: 叶子节点是指没有子节点的节点。
 	//***//
+	//root := &lc.TreeNode{
+	//	5,
+	//	&lc.TreeNode{
+	//		4,
+	//		&lc.TreeNode{
+	//			11,
+	//			&lc.TreeNode{7,nil,nil,},
+	//			&lc.TreeNode{2,nil,nil,},
+	//		},
+	//		nil,
+	//	},
+	//	&lc.TreeNode{
+	//		8,
+	//		&lc.TreeNode{
+	//			13,nil,nil,
+	//		},
+	//		&lc.TreeNode{
+	//			4,
+	//			&lc.TreeNode{5,nil,nil,},
+	//			&lc.TreeNode{1,nil,nil,},
+	//		},
+	//	},
+	//}
+	//sum := 22
+	//fmt.Println(lc.PathSum(root,sum))
+
+	//***
+	//给定一个二叉树，原地将它展开为一个单链表。
+	//***//
 	root := &lc.TreeNode{
-		5,
+		1,
 		&lc.TreeNode{
-			4,
-			&lc.TreeNode{
-				11,
-				&lc.TreeNode{7,nil,nil,},
-				&lc.TreeNode{2,nil,nil,},
-			},
-			nil,
+			2,
+			&lc.TreeNode{3,nil,nil,},
+			&lc.TreeNode{4,nil,nil,},
 		},
 		&lc.TreeNode{
-			8,
-			&lc.TreeNode{
-				13,nil,nil,
-			},
-			&lc.TreeNode{
-				4,
-				&lc.TreeNode{5,nil,nil,},
-				&lc.TreeNode{1,nil,nil,},
-			},
+			5,
+			nil,
+			&lc.TreeNode{6,nil,nil,},
 		},
 	}
-	sum := 22
-	fmt.Println(lc.PathSum(root,sum))
+	lc.Flatten(root)
+	fmt.Println(root)
 
 
 

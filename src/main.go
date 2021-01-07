@@ -698,21 +698,36 @@ func main()  {
 	//***
 	//给定一个二叉树，检查它是否是镜像对称的。
 	//***//
+	//root := &lc.TreeNode{
+	//	1,
+	//	&lc.TreeNode{
+	//		2,
+	//		&lc.TreeNode{3,nil,nil,},
+	//		&lc.TreeNode{4,nil,nil,},
+	//	},
+	//	&lc.TreeNode{
+	//		2,
+	//		&lc.TreeNode{4,nil,nil,},
+	//		&lc.TreeNode{3,nil,nil,},
+	//	},
+	//}
+	//fmt.Println(lc.IsSymmetric(root))
+
+	//***
+	//给定一个二叉树，找出其最大深度。
+	//二叉树的深度为根节点到最远叶子节点的最长路径上的节点数。
+	//说明: 叶子节点是指没有子节点的节点。
+	//***//
 	root := &lc.TreeNode{
-		1,
+		3,
+		&lc.TreeNode{9,nil,nil},
 		&lc.TreeNode{
-			2,
-			&lc.TreeNode{3,nil,nil,},
-			&lc.TreeNode{4,nil,nil,},
-		},
-		&lc.TreeNode{
-			2,
-			&lc.TreeNode{4,nil,nil,},
-			&lc.TreeNode{3,nil,nil,},
+			20,
+			&lc.TreeNode{15,nil,nil,},
+			&lc.TreeNode{7,nil,nil,},
 		},
 	}
-	fmt.Println(lc.IsSymmetric(root))
-
+	fmt.Println(lc.MaxDepth(root))
 
 
 

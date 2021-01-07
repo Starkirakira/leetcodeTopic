@@ -732,16 +732,26 @@ func main()  {
 	//***
 	//给定一个二叉树，返回其节点值自底向上的层序遍历。 （即按从叶子节点所在层到根节点所在的层，逐层从左向右遍历）
 	//***//
-	root := &lc.TreeNode{
-		3,
-		&lc.TreeNode{9,nil,nil,},
-		&lc.TreeNode{
-			20,
-			&lc.TreeNode{15,nil,nil,},
-			&lc.TreeNode{7,nil,nil,},
-		},
-	}
-	fmt.Println(lc.LevelOrderBottom(root))
+	//root := &lc.TreeNode{
+	//	3,
+	//	&lc.TreeNode{9,nil,nil,},
+	//	&lc.TreeNode{
+	//		20,
+	//		&lc.TreeNode{15,nil,nil,},
+	//		&lc.TreeNode{7,nil,nil,},
+	//	},
+	//}
+	//fmt.Println(lc.LevelOrderBottom(root))
+
+	//***
+	//有 n 个城市，其中一些彼此相连，另一些没有相连。如果城市 a 与城市 b 直接相连，且城市 b 与城市 c 直接相连，那么城市 a 与城市 c 间接相连。
+	//省份 是一组直接或间接相连的城市，组内不含其他没有相连的城市。
+	//给你一个 n x n 的矩阵 isConnected ，其中 isConnected[i][j] = 1 表示第 i 个城市和第 j 个城市直接相连，而 isConnected[i][j] = 0 表示二者不直接相连。
+	//返回矩阵中 省份 的数量。
+	//链接：https://leetcode-cn.com/problems/number-of-provinces
+	//***//
+	isConnected := [][]int{{1,1,0},{1,1,0},{0,0,1}}
+	fmt.Println(lc.FindCircleNum(isConnected))
 
 
 

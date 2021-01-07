@@ -718,18 +718,30 @@ func main()  {
 	//二叉树的深度为根节点到最远叶子节点的最长路径上的节点数。
 	//说明: 叶子节点是指没有子节点的节点。
 	//***//
+	//root := &lc.TreeNode{
+	//	3,
+	//	&lc.TreeNode{9,nil,nil},
+	//	&lc.TreeNode{
+	//		20,
+	//		&lc.TreeNode{15,nil,nil,},
+	//		&lc.TreeNode{7,nil,nil,},
+	//	},
+	//}
+	//fmt.Println(lc.MaxDepth(root))
+
+	//***
+	//给定一个二叉树，返回其节点值自底向上的层序遍历。 （即按从叶子节点所在层到根节点所在的层，逐层从左向右遍历）
+	//***//
 	root := &lc.TreeNode{
 		3,
-		&lc.TreeNode{9,nil,nil},
+		&lc.TreeNode{9,nil,nil,},
 		&lc.TreeNode{
 			20,
 			&lc.TreeNode{15,nil,nil,},
 			&lc.TreeNode{7,nil,nil,},
 		},
 	}
-	fmt.Println(lc.MaxDepth(root))
-
-
+	fmt.Println(lc.LevelOrderBottom(root))
 
 
 

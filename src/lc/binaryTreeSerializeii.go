@@ -5,11 +5,7 @@ import (
 	"strings"
 )
 
-type TreeNodeii struct {
-	Val int
-	Left *TreeNodeii
-	Right *TreeNodeii
-}
+
 
 type Codecii struct {
 

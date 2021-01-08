@@ -757,10 +757,16 @@ func main()  {
 	//将一个按照升序排列的有序数组，转换为一棵高度平衡二叉搜索树。
 	//本题中，一个高度平衡二叉树是指一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过 1。
 	//***//
+	//nums := []int{-10, -3, 0, 5, 9}
+	//fmt.Println(lc.SortedArrayToBST(nums))
 
-	nums := []int{-10, -3, 0, 5, 9}
-	fmt.Println(lc.SortedArrayToBST(nums))
-
+	//***
+	//给定一个单链表，其中的元素按升序排序，将其转换为高度平衡的二叉搜索树。
+	//本题中，一个高度平衡二叉树是指一个二叉树每个节点的左右两个子树的高度差的绝对值不超过 1。
+	//链接：https://leetcode-cn.com/problems/convert-sorted-list-to-binary-search-tree
+	//***//
+	list := &lc.ListNode{-10,&lc.ListNode{-3,&lc.ListNode{0, &lc.ListNode{5, &lc.ListNode{9,nil}}}}}
+	fmt.Println(lc.SortedListToBST(list))
 
 
 

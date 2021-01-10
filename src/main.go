@@ -765,11 +765,13 @@ func main()  {
 	//本题中，一个高度平衡二叉树是指一个二叉树每个节点的左右两个子树的高度差的绝对值不超过 1。
 	//链接：https://leetcode-cn.com/problems/convert-sorted-list-to-binary-search-tree
 	//***//
-	list := &lc.ListNode{-10,&lc.ListNode{-3,&lc.ListNode{0, &lc.ListNode{5, &lc.ListNode{9,nil}}}}}
-	fmt.Println(lc.SortedListToBST(list))
+	//list := &lc.ListNode{-10,&lc.ListNode{-3,&lc.ListNode{0, &lc.ListNode{5, &lc.ListNode{9,nil}}}}}
+	//fmt.Println(lc.SortedListToBST(list))
 
-
-
+	//***
+	//寻找最长的回文字串
+	//***//
+	fmt.Println(lc.LongestPalindrome("aabbbbbaaa"))
 
 
 

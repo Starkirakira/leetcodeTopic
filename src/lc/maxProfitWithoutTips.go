@@ -32,12 +32,4 @@ func MaxProfitWithoutTips(k int, prices []int) int {
 
 	return maxP(sell[n - 1]...)
 }
-func maxP(a ...int) int {
-	res := a[0]
-	for _, v := range a[1:] {
-		if v > res {
-			res = v
-		}
-	}
-	return res
-}
+

@@ -778,8 +778,19 @@ func main()  {
 	//子序列是由数组派生而来的序列，删除（或不删除）数组中的元素而不改变其余元素的顺序。例如，[3,6,2,7] 是数组 [0,3,1,6,2,2,7] 的子序列。
 	//链接：https://leetcode-cn.com/problems/longest-increasing-subsequence
 	//***//
-	nums := []int{10,9,2,5,3,7,101,18}
-	fmt.Println(lc.LengthOfLIS(nums))
+	//nums := []int{10,9,2,5,3,7,101,18}
+	//fmt.Println(lc.LengthOfLIS(nums))
+
+	//***
+	//当 A的子数组A[i], A[i+1], ..., A[j]满足下列条件时，我们称其为湍流子数组：
+	//若i <= k < j，当 k为奇数时，A[k] > A[k+1]，且当 k 为偶数时，A[k] < A[k+1]；
+	//或 若i <= k < j，当 k 为偶数时，A[k] > A[k+1]，且当 k为奇数时，A[k] < A[k+1]。
+	//也就是说，如果比较符号在子数组中的每个相邻元素对之间翻转，则该子数组是湍流子数组。
+	//返回 A 的最大湍流子数组的长度。
+	//链接：https://leetcode-cn.com/problems/longest-turbulent-subarray
+	//***//
+	arr := []int{9,4,2,10,7,8,8,1,9}
+	fmt.Println(lc.MaxTurbulenceSize(arr))
 
 
 

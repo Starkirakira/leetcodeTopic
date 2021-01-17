@@ -814,9 +814,16 @@ func main()  {
 	//注意，消除可能指向是没有砖块的空白位置，如果发生这种情况，则没有砖块掉落。
 	//链接：https://leetcode-cn.com/problems/bricks-falling-when-hit
 	//***//
-	grid := [][]int{{1,0,0,0},{1,1,1,0}}
-	hits := [][]int{{1,0}}
-	fmt.Println(lc.HitBricks(grid, hits))
+	//grid := [][]int{{1,0,0,0},{1,1,1,0}}
+	//hits := [][]int{{1,0}}
+	//fmt.Println(lc.HitBricks(grid, hits))
+
+	//***
+	//给定一个数字，我们按照如下规则把它翻译为字符串：0 翻译成 “a” ，1 翻译成 “b”，……，11 翻译成 “l”，……，25 翻译成 “z”。一个数字可能有多个翻译。请编程实现一个函数，用来计算一个数字有多少种不同的翻译方法。
+	//链接：https://leetcode-cn.com/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof
+	//***//
+	num := 12258
+	fmt.Println(lc.TranslateNum(num))
 
 
 

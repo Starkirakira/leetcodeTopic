@@ -822,8 +822,17 @@ func main()  {
 	//给定一个数字，我们按照如下规则把它翻译为字符串：0 翻译成 “a” ，1 翻译成 “b”，……，11 翻译成 “l”，……，25 翻译成 “z”。一个数字可能有多个翻译。请编程实现一个函数，用来计算一个数字有多少种不同的翻译方法。
 	//链接：https://leetcode-cn.com/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof
 	//***//
-	num := 12258
-	fmt.Println(lc.TranslateNum(num))
+	//num := 12258
+	//fmt.Println(lc.TranslateNum(num))
+
+
+	//***
+	//在一个XY 坐标系中有一些点，我们用数组coordinates来分别记录它们的坐标，其中coordinates[i] = [x, y]表示横坐标为 x、纵坐标为 y的点。
+	//请你来判断，这些点是否在该坐标系中属于同一条直线上，是则返回 true，否则请返回 false。
+	//链接：https://leetcode-cn.com/problems/check-if-it-is-a-straight-line
+	//***//
+	coordinates := [][]int{{1,2},{2,3},{3,4},{4,5},{5,6}}
+	fmt.Println(lc.CheckStraightLine(coordinates))
 
 
 

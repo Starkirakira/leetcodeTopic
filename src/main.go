@@ -840,9 +840,17 @@ func main()  {
 	//合并账户后，按以下格式返回账户：每个账户的第一个元素是名称，其余元素是按字符 ASCII 顺序排列的邮箱地址。账户本身可以以任意顺序返回。
 	//链接：https://leetcode-cn.com/problems/accounts-merge
 	//***//
-	accounts := [][]string{{"John", "johnsmith@mail.com", "john00@mail.com"}, {"John", "johnnybravo@mail.com"}, {"John", "johnsmith@mail.com", "john_newyork@mail.com"}, {"Mary", "mary@mail.com"}}
-	fmt.Println(lc.AccountsMerge(accounts))
+	//accounts := [][]string{{"John", "johnsmith@mail.com", "john00@mail.com"}, {"John", "johnnybravo@mail.com"}, {"John", "johnsmith@mail.com", "john_newyork@mail.com"}, {"Mary", "mary@mail.com"}}
+	//fmt.Println(lc.AccountsMerge(accounts))
 
+	//***
+	//给你一个points数组，表示 2D 平面上的一些点，其中points[i] = [xi, yi]。
+	//连接点[xi, yi] 和点[xj, yj]的费用为它们之间的 曼哈顿距离：|xi - xj| + |yi - yj|，其中|val|表示val的绝对值。
+	//请你返回将所有点连接的最小总费用。只有任意两点之间 有且仅有一条简单路径时，才认为所有点都已连接。
+	//链接：https://leetcode-cn.com/problems/min-cost-to-connect-all-points
+	//***//
+	points := [][]int{{0,0},{2,2},{3,10},{5,2},{7,0}}
+	fmt.Println(lc.MinCostConnectPoints(points))
 
 
 

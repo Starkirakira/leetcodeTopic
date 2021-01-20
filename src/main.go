@@ -855,9 +855,14 @@ func main()  {
 	//***
 	//给定一个整型数组，在数组中找出由三个数组成的最大乘积，并输出这个乘积。
 	//***//
-	fmt.Println(lc.MaximumProduct([]int{1,2,3}))
+	//fmt.Println(lc.MaximumProduct([]int{1,2,3}))
 
-
+	//***
+	//给定一个整数数组A，返回 A中最长等差子序列的长度。
+	//回想一下，A的子序列是列表A[i_1], A[i_2], ..., A[i_k] 其中0 <= i_1 < i_2 < ... < i_k <= A.length - 1。并且如果B[i+1] - B[i](0 <= i < B.length - 1) 的值都相同，那么序列B是等差的。
+	//链接：https://leetcode-cn.com/problems/longest-arithmetic-subsequence
+	//***//
+	fmt.Println(lc.LongestArithSeqLength([]int{3,6,9,12}))
 
 
 

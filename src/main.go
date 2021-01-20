@@ -849,8 +849,13 @@ func main()  {
 	//请你返回将所有点连接的最小总费用。只有任意两点之间 有且仅有一条简单路径时，才认为所有点都已连接。
 	//链接：https://leetcode-cn.com/problems/min-cost-to-connect-all-points
 	//***//
-	points := [][]int{{0,0},{2,2},{3,10},{5,2},{7,0}}
-	fmt.Println(lc.MinCostConnectPoints(points))
+	//points := [][]int{{0,0},{2,2},{3,10},{5,2},{7,0}}
+	//fmt.Println(lc.MinCostConnectPoints(points))
+
+	//***
+	//给定一个整型数组，在数组中找出由三个数组成的最大乘积，并输出这个乘积。
+	//***//
+	fmt.Println(lc.MaximumProduct([]int{1,2,3}))
 
 
 

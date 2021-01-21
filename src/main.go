@@ -862,7 +862,17 @@ func main()  {
 	//回想一下，A的子序列是列表A[i_1], A[i_2], ..., A[i_k] 其中0 <= i_1 < i_2 < ... < i_k <= A.length - 1。并且如果B[i+1] - B[i](0 <= i < B.length - 1) 的值都相同，那么序列B是等差的。
 	//链接：https://leetcode-cn.com/problems/longest-arithmetic-subsequence
 	//***//
-	fmt.Println(lc.LongestArithSeqLength([]int{3,6,9,12}))
+	//fmt.Println(lc.LongestArithSeqLength([]int{3,6,9,12}))
+
+	//***
+	//给你一个 n个点的带权无向连通图，节点编号为 0到 n-1，同时还有一个数组 edges，其中 edges[i] = [fromi, toi, weighti]表示在fromi和toi节点之间有一条带权无向边。最小生成树(MST) 是给定图中边的一个子集，它连接了所有节点且没有环，而且这些边的权值和最小。
+	//请你找到给定图中最小生成树的所有关键边和伪关键边。如果从图中删去某条边，会导致最小生成树的权值和增加，那么我们就说它是一条关键边。伪关键边则是可能会出现在某些最小生成树中但不会出现在所有最小生成树中的边。
+	//请注意，你可以分别以任意顺序返回关键边的下标和伪关键边的下标。
+	//链接：https://leetcode-cn.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree
+	//***//
+	n := 5
+	edges := [][]int{{0,1,1},{1,2,1},{2,3,2},{0,3,2},{0,4,3},{3,4,3},{1,4,6}}
+	fmt.Println(lc.FindCriticalAndPseudoCriticalEdges(n, edges))
 
 
 

@@ -870,10 +870,17 @@ func main()  {
 	//请注意，你可以分别以任意顺序返回关键边的下标和伪关键边的下标。
 	//链接：https://leetcode-cn.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree
 	//***//
-	n := 5
-	edges := [][]int{{0,1,1},{1,2,1},{2,3,2},{0,3,2},{0,4,3},{3,4,3},{1,4,6}}
-	fmt.Println(lc.FindCriticalAndPseudoCriticalEdges(n, edges))
+	//n := 5
+	//edges := [][]int{{0,1,1},{1,2,1},{2,3,2},{0,3,2},{0,4,3},{3,4,3},{1,4,6}}
+	//fmt.Println(lc.FindCriticalAndPseudoCriticalEdges(n, edges))
 
+	//***
+	//对于非负整数X而言，X的数组形式是每位数字按从左到右的顺序形成的数组。例如，如果X = 1231，那么其数组形式为[1,2,3,1]。
+	//给定非负整数 X 的数组形式A，返回整数X+K的数组形式。
+	//链接：https://leetcode-cn.com/problems/add-to-array-form-of-integer
+	//***//
+	A,K := []int{1,2,0,0}, 34
+	fmt.Println(lc.AddToArrayForm(A,K))
 
 
 

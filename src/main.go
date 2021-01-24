@@ -888,10 +888,17 @@ func main()  {
 	//给你这个计算机网络的初始布线connections，你可以拔开任意两台直连计算机之间的线缆，并用它连接一对未直连的计算机。请你计算并返回使所有计算机都连通所需的最少操作次数。如果不可能，则返回-1 。
 	//链接：https://leetcode-cn.com/problems/number-of-operations-to-make-network-connected
 	//***//
-	n := 4
-	connections := [][]int{{0,1},{0,2},{1,2}}
-	fmt.Println(lc.MakeConnected(n ,connections))
+	//n := 4
+	//connections := [][]int{{0,1},{0,2},{1,2}}
+	//fmt.Println(lc.MakeConnected(n ,connections))
 
+	//***
+	//给定一个未经排序的整数数组，找到最长且 连续递增的子序列，并返回该序列的长度。
+	//连续递增的子序列 可以由两个下标 l 和 r（l < r）确定，如果对于每个 l <= i < r，都有 nums[i] < nums[i + 1] ，那么子序列 [nums[l], nums[l + 1], ..., nums[r - 1], nums[r]] 就是连续递增子序列。
+	//链接：https://leetcode-cn.com/problems/longest-continuous-increasing-subsequence
+	//***//
+	nums := []int{1,3,5,4,7}
+	fmt.Println(lc.FindLengthOfLCIS(nums))
 
 
 

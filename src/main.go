@@ -897,9 +897,16 @@ func main()  {
 	//连续递增的子序列 可以由两个下标 l 和 r（l < r）确定，如果对于每个 l <= i < r，都有 nums[i] < nums[i + 1] ，那么子序列 [nums[l], nums[l + 1], ..., nums[r - 1], nums[r]] 就是连续递增子序列。
 	//链接：https://leetcode-cn.com/problems/longest-continuous-increasing-subsequence
 	//***//
-	nums := []int{1,3,5,4,7}
-	fmt.Println(lc.FindLengthOfLCIS(nums))
+	//nums := []int{1,3,5,4,7}
+	//fmt.Println(lc.FindLengthOfLCIS(nums))
 
+	//***
+	//在由 1 x 1 方格组成的 N x N 网格grid 中，每个 1 x 1方块由 /、\ 或空格构成。这些字符会将方块划分为一些共边的区域。
+	//（请注意，反斜杠字符是转义的，因此 \ 用 "\\"表示。）。
+	//返回区域的数目。
+	//链接：https://leetcode-cn.com/problems/regions-cut-by-slashes
+	//***//
+	fmt.Println(lc.RegionsBySlashes([]string{"/\\","\\/"}))
 
 
 

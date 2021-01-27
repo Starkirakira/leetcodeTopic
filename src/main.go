@@ -915,8 +915,23 @@ func main()  {
 	//在0 <= i < j < dominoes.length的前提下，找出满足dominoes[i] 和dominoes[j]等价的骨牌对 (i, j) 的数量。
 	//链接：https://leetcode-cn.com/problems/number-of-equivalent-domino-pairs
 	//***//
-	dominoes := [][]int{{1,2},{2,1},{3,4},{5,6}}
-	fmt.Println(lc.NumEquivDominoPairs(dominoes))
+	//dominoes := [][]int{{1,2},{2,1},{3,4},{5,6}}
+	//fmt.Println(lc.NumEquivDominoPairs(dominoes))
+
+	//***
+	//Alice 和 Bob 共有一个无向图，其中包含 n 个节点和 3 种类型的边：
+	//
+	//类型 1：只能由 Alice 遍历。
+	//类型 2：只能由 Bob 遍历。
+	//类型 3：Alice 和 Bob 都可以遍历。
+	//给你一个数组 edges ，其中 edges[i] = [typei, ui, vi]表示节点 ui 和 vi 之间存在类型为 typei 的双向边。请你在保证图仍能够被 Alice和 Bob 完全遍历的前提下，找出可
+	//以删除的最大边数。如果从任何节点开始，Alice 和 Bob 都可以到达所有其他节点，则认为图是可以完全遍历的。
+	//返回可以删除的最大边数，如果 Alice 和 Bob 无法完全遍历图，则返回 -1 。
+	//链接：https://leetcode-cn.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable
+	//***//
+	n := 4
+	edges := [][]int{{3,1,2},{3,2,3},{1,1,3},{1,2,4},{1,1,2},{2,3,4}}
+	fmt.Println(lc.MaxNumEdgesToRemove(n, edges))
 
 
 

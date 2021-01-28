@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"leetcode/lc"
+	"leetcode/myLab"
 )
 
 func main()  {
@@ -929,9 +929,18 @@ func main()  {
 	//返回可以删除的最大边数，如果 Alice 和 Bob 无法完全遍历图，则返回 -1 。
 	//链接：https://leetcode-cn.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable
 	//***//
-	n := 4
-	edges := [][]int{{3,1,2},{3,2,3},{1,1,3},{1,2,4},{1,1,2},{2,3,4}}
-	fmt.Println(lc.MaxNumEdgesToRemove(n, edges))
+	//n := 4
+	//edges := [][]int{{3,1,2},{3,2,3},{1,1,3},{1,2,4},{1,1,2},{2,3,4}}
+	//fmt.Println(lc.MaxNumEdgesToRemove(n, edges))
+
+	//***
+	//channel接收阻塞测试
+	//***//
+	//done := make(chan bool)
+	go myLab.AGoroutine()
+ 
+	myLab.Done <- true
+	fmt.Println(myLab.Msg)
 
 
 

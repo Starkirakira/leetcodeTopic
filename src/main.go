@@ -949,8 +949,18 @@ func main()  {
 	//注意：中心索引可能出现在数组的两端。
 	//链接：https://leetcode-cn.com/problems/find-pivot-index
 	//***//
-	nums := []int{1,7,3,6,5,6}
-	fmt.Println(lc.PivotIndex(nums))
+	//nums := []int{1,7,3,6,5,6}
+	//fmt.Println(lc.PivotIndex(nums))
+
+	//***
+	//你准备参加一场远足活动。给你一个二维rows x columns的地图heights，其中heights[row][col]表示格子(row, col)的高度。一开始你在最左上角的格子(0, 0)，且你希望去最右下角的格子(rows-1, columns-1)
+	//（注意下标从 0 开始编号）。你每次可以往 上，下，左，右 四个方向之一移动，你想要找到耗费 体力 最小的一条路径。
+	//一条路径耗费的 体力值是路径上相邻格子之间 高度差绝对值的 最大值决定的。
+	//请你返回从左上角走到右下角的最小体力消耗值。
+	//链接：https://leetcode-cn.com/problems/path-with-minimum-effort
+	//***//
+	heights := [][]int{{1,2,2},{3,8,2},{5,3,5}}
+	fmt.Println(lc.MinimumEffortPath(heights))
 
 
 

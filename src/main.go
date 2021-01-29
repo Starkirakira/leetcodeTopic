@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"sync"
+	"leetcode/lc"
 )
 
 func main()  {
@@ -941,18 +941,16 @@ func main()  {
 	//myLab.Done <- true
 	//fmt.Println(myLab.Msg)
 
-	//---
-	//互斥量
-	//---
-	//主线程加锁-主线程第二次加锁阻塞状态下等待并发线程解放资源
-	var mu sync.Mutex
-	mu.Lock()
-	go func() {
-		fmt.Println("helloworld")
-		mu.Unlock()
-	}()
-	mu.Lock()
 
+	//***
+	//给你一个整数数组nums，请编写一个能够返回数组 “中心索引” 的方法。
+	//数组 中心索引 是数组的一个索引，其左侧所有元素相加的和等于右侧所有元素相加的和。
+	//如果数组不存在中心索引，返回 -1 。如果数组有多个中心索引，应该返回最靠近左边的那一个。
+	//注意：中心索引可能出现在数组的两端。
+	//链接：https://leetcode-cn.com/problems/find-pivot-index
+	//***//
+	nums := []int{1,7,3,6,5,6}
+	fmt.Println(lc.PivotIndex(nums))
 
 
 

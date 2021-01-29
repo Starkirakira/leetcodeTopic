@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"leetcode/myLab"
+	"sync"
 )
 
 func main()  {
@@ -933,14 +933,25 @@ func main()  {
 	//edges := [][]int{{3,1,2},{3,2,3},{1,1,3},{1,2,4},{1,1,2},{2,3,4}}
 	//fmt.Println(lc.MaxNumEdgesToRemove(n, edges))
 
-	//***
+	//---
 	//channel接收阻塞测试
-	//***//
+	//---
 	//done := make(chan bool)
-	go myLab.AGoroutine()
- 
-	myLab.Done <- true
-	fmt.Println(myLab.Msg)
+	//go myLab.AGoroutine()
+	//myLab.Done <- true
+	//fmt.Println(myLab.Msg)
+
+	//---
+	//互斥量
+	//---
+	//主线程加锁-主线程第二次加锁阻塞状态下等待并发线程解放资源
+	var mu sync.Mutex
+	mu.Lock()
+	go func() {
+		fmt.Println("helloworld")
+		mu.Unlock()
+	}()
+	mu.Lock()
 
 
 

@@ -1,10 +1,5 @@
 package main
 
-import (
-	"fmt"
-	"leetcode/lc"
-)
-
 func main()  {
 
 	///***二叉树的序列化与反序列化***///
@@ -933,13 +928,14 @@ func main()  {
 	//edges := [][]int{{3,1,2},{3,2,3},{1,1,3},{1,2,4},{1,1,2},{2,3,4}}
 	//fmt.Println(lc.MaxNumEdgesToRemove(n, edges))
 
-	//***
+	//---
 	//channel接收阻塞测试
-	//***//
+	//---
 	//done := make(chan bool)
 	//go myLab.AGoroutine()
 	//myLab.Done <- true
 	//fmt.Println(myLab.Msg)
+
 
 	//***
 	//给你一个整数数组nums，请编写一个能够返回数组 “中心索引” 的方法。
@@ -950,38 +946,52 @@ func main()  {
 	//***//
 	//nums := []int{1,7,3,6,5,6}
 	//fmt.Println(lc.PivotIndex(nums))
-
 	//***
+
+	//你准备参加一场远足活动。给你一个二维rows x columns的地图heights，其中heights[row][col]表示格子(row, col)的高度。一开始你在最左上角的格子(0, 0)，且你希望去最右下角的格子(rows-1, columns-1)
+	//（注意下标从 0 开始编号）。你每次可以往 上，下，左，右 四个方向之一移动，你想要找到耗费 体力 最小的一条路径。
+	//一条路径耗费的 体力值是路径上相邻格子之间 高度差绝对值的 最大值决定的。
+	//请你返回从左上角走到右下角的最小体力消耗值。
+	//链接：https://leetcode-cn.com/problems/path-with-minimum-effort
+	//***//
+	//heights := [][]int{{1,2,2},{3,8,2},{5,3,5}}
+	//fmt.Println(lc.MinimumEffortPath(heights))
+
 	//给定两个（单向）链表，判定它们是否相交并返回交点。请注意相交的定义基于节点的引用，而不是基于节点的值。换句话说，如果一个链表的第k个节点与另一个链表的第j个节点是同一节点（引用完全相同），则这两个链表相交。
 	//链接：https://leetcode-cn.com/problems/intersection-of-two-linked-lists-lcci
 	//***//
-	listA := &lc.ListNode{
-		4,
-		&lc.ListNode{
-			1,
-			&lc.ListNode{
-				8,
-				&lc.ListNode{
-					4,
-					&lc.ListNode{5,nil},
-				},
-			},
-		},
-	}
-	listB := &lc.ListNode{
-		5,
-		&lc.ListNode{
-			0,
-			&lc.ListNode{
-				1,
-				&lc.ListNode{
-					8,
-					&lc.ListNode{4,&lc.ListNode{5,nil}},
-				},
-			},
-		},
-	}
-	fmt.Println(lc.GetIntersectionNode(listA, listB))
+	//listA := &lc.ListNode{
+	//	4,
+	//	&lc.ListNode{
+	//		1,
+	//		&lc.ListNode{
+	//			8,
+	//			&lc.ListNode{
+	//				4,
+	//				&lc.ListNode{5,nil},
+	//			},
+	//		},
+	//	},
+	//}
+	//listB := &lc.ListNode{
+	//	5,
+	//	&lc.ListNode{
+	//		0,
+	//		&lc.ListNode{
+	//			1,
+	//			&lc.ListNode{
+	//				8,
+	//				&lc.ListNode{4,&lc.ListNode{5,nil}},
+	//			},
+	//		},
+	//	},
+	//}
+	//fmt.Println(lc.GetIntersectionNode(listA, listB))
+
+
+
+
+
 
 
 

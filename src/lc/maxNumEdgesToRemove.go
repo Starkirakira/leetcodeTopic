@@ -1,8 +1,6 @@
 package lc
 
-func (uf *unionFind1) isSameSet(x, y int) bool  {
-	return uf.find(x) == uf.find(y)
-}
+
 
 func MaxNumEdgesToRemove(n int, edges [][]int) int {
 	ans := len(edges)

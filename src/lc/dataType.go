@@ -55,6 +55,9 @@ func (uf *unionFind1) union(x,y int) bool {
 	return true
 }
 
+func (uf *unionFind1) isSameSet(x, y int) bool  {
+	return uf.find(x) == uf.find(y)
+}
 
 func maxP(a ...int) int {
 	res := a[0]

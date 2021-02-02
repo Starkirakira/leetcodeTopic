@@ -1011,8 +1011,17 @@ func main()  {
 	//如果有多个答案，你可以返回其中任何一个。保证答案存在。
 	//链接：https://leetcode-cn.com/problems/fair-candy-swap
 	//***//
-	A, B := []int{1,1}, []int{2,2}
-	fmt.Println(lc.FairCandySwap(A, B))
+	//A, B := []int{1,1}, []int{2,2}
+	//fmt.Println(lc.FairCandySwap(A, B))
+
+	//***
+	//给你一个仅由大写英文字母组成的字符串，你可以将任意位置上的字符替换成另外的字符，总共可最多替换k次。在执行上述操作后，找到包含重复字母的最长子串的长度。
+	//注意：字符串长度 和 k 不会超过104。
+	//链接：https://leetcode-cn.com/problems/longest-repeating-character-replacement
+	//***//
+	s := "ABAB"
+	k := 2
+	fmt.Println(lc.CharacterReplacement(s, k))
 
 
 

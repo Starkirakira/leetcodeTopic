@@ -1050,9 +1050,9 @@ func main()  {
 	//来源：力扣（LeetCode）
 	//链接：https://leetcode-cn.com/problems/maximum-points-you-can-obtain-from-cards
 	//***//
-	cardPoints := []int{1,2,3,4,5,6,1}
-	k := 3
-	fmt.Println(lc.MaxScore(cardPoints, k))
+	//cardPoints := []int{1,2,3,4,5,6,1}
+	//k := 3
+	//fmt.Println(lc.MaxScore(cardPoints, k))
 
 	//给你两个长度相同的字符串，s 和 t。
 	//将 s中的第i个字符变到t中的第 i 个字符需要|s[i] - t[i]|的开销（开销可能为 0），也就是两个字符的 ASCII 码值的差的绝对值。
@@ -1065,6 +1065,14 @@ func main()  {
 	//t:="bcdf"
 	//cost:=3
 	//fmt.Println(lc.EqualSubstring(s,t,cost))
+
+	//***
+	//给你一个长度为n的整数数组，请你判断在 最多 改变1 个元素的情况下，该数组能否变成一个非递减数列。
+	//我们是这样定义一个非递减数列的：对于数组中所有的i (0 <= i <= n-2)，总满足 nums[i] <= nums[i + 1]。
+	//链接：https://leetcode-cn.com/problems/non-decreasing-array
+	//***//
+	nums := []int{4,2,3}
+	fmt.Println(lc.CheckPossibility(nums))
 
 
 

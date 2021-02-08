@@ -1071,8 +1071,20 @@ func main()  {
 	//我们是这样定义一个非递减数列的：对于数组中所有的i (0 <= i <= n-2)，总满足 nums[i] <= nums[i + 1]。
 	//链接：https://leetcode-cn.com/problems/non-decreasing-array
 	//***//
-	nums := []int{4,2,3}
-	fmt.Println(lc.CheckPossibility(nums))
+	//nums := []int{4,2,3}
+	//fmt.Println(lc.CheckPossibility(nums))
+
+	//***
+	//给你一个整数数组 nums 和一个整数 target 。
+	//请你统计并返回 nums 中能满足其最小元素与最大元素的 和 小于或等于 target 的 非空 子序列的数目。
+	//由于答案可能很大，请将结果对 10^9 + 7 取余后返回。
+	//链接：https://leetcode-cn.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition
+	//***//
+	nums := []int{3,5,6,7}
+	target := 9
+	fmt.Println(lc.NumSubseq(nums , target))
+
+
 
 
 

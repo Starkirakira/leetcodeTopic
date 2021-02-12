@@ -1091,12 +1091,18 @@ func main()  {
 	//int add(int val) 将 val 插入数据流 nums 后，返回当前数据流中第 k 大的元素。
 	//链接：https://leetcode-cn.com/problems/kth-largest-element-in-a-stream
 	//***//
-	pre := lc.ConstructorKth(3,[]int{4,5,8,2})
-	pre.Add(3)
-	pre.Add(5)
-	pre.Add(10)
-	pre.Add(9)
-	pre.Add(4)
+	//pre := lc.ConstructorKth(3,[]int{4,5,8,2})
+	//pre.Add(3)
+	//pre.Add(5)
+	//pre.Add(10)
+	//pre.Add(9)
+	//pre.Add(4)
+
+	//***
+	//给定一个非负索引 k，其中 k ≤ 33，返回杨辉三角的第 k 行。
+	//***//
+	k := 3
+	fmt.Println(lc.GetRow(k))
 
 
 

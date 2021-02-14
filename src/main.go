@@ -1080,9 +1080,9 @@ func main()  {
 	//由于答案可能很大，请将结果对 10^9 + 7 取余后返回。
 	//链接：https://leetcode-cn.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition
 	//***//
-	nums := []int{3,5,6,7}
-	target := 9
-	fmt.Println(lc.NumSubseq(nums , target))
+	//nums := []int{3,5,6,7}
+	//target := 9
+	//fmt.Println(lc.NumSubseq(nums , target))
 
 	//***
 	//设计一个找到数据流中第 k 大元素的类（class）。注意是排序后的第 k 大元素，不是第 k 个不同的元素。
@@ -1101,8 +1101,17 @@ func main()  {
 	//***
 	//给定一个非负索引 k，其中 k ≤ 33，返回杨辉三角的第 k 行。
 	//***//
-	k := 3
-	fmt.Println(lc.GetRow(k))
+	//k := 3
+	//fmt.Println(lc.GetRow(k))
+
+	//***
+	//N 对情侣坐在连续排列的 2N 个座位上，想要牵到对方的手。 计算最少交换座位的次数，以便每对情侣可以并肩坐在一起。 一次交换可选择任意两人，让他们站起来交换座位。
+	//人和座位用0到2N-1的整数表示，情侣们按顺序编号，第一对是(0, 1)，第二对是(2, 3)，以此类推，最后一对是(2N-2, 2N-1)。
+	//这些情侣的初始座位row[i]是由最初始坐在第 i 个座位上的人决定的。
+	//链接：https://leetcode-cn.com/problems/couples-holding-hands
+	//***//
+	row := []int{0,2,1,3}
+	fmt.Println(lc.MinSwapsCouples(row))
 
 
 

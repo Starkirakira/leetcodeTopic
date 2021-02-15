@@ -1110,10 +1110,13 @@ func main()  {
 	//这些情侣的初始座位row[i]是由最初始坐在第 i 个座位上的人决定的。
 	//链接：https://leetcode-cn.com/problems/couples-holding-hands
 	//***//
-	row := []int{0,2,1,3}
-	fmt.Println(lc.MinSwapsCouples(row))
+	//row := []int{0,2,1,3}
+	//fmt.Println(lc.MinSwapsCouples(row))
 
-
+	//***
+	//给定一个二进制数组， 计算其中最大连续1的个数。
+	//***//
+	fmt.Println(lc.FindMaxConsecutiveOnes([]int{1,1,0,1,1,1}))
 
 
 

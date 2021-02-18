@@ -1135,8 +1135,16 @@ func main()  {
 	//如果具有给定参数的reshape操作是可行且合理的，则输出新的重塑矩阵；否则，输出原始矩阵。
 	//链接：https://leetcode-cn.com/problems/reshape-the-matrix
 	//***//
-	nums := [][]int{{1,2},{3,4}}
-	fmt.Println(lc.MatrixReshape(nums,1,4))
+	//nums := [][]int{{1,2},{3,4}}
+	//fmt.Println(lc.MatrixReshape(nums,1,4))
+
+	//***
+	//在仅包含 0 和 1 的数组 A 中，一次 K 位翻转包括选择一个长度为 K 的（连续）子数组，同时将子数组中的每个 0 更改为 1，而每个 1 更改为 0。
+	//返回所需的 K 位翻转的最小次数，以便数组没有值为 0 的元素。如果不可能，返回 -1。
+	//链接：https://leetcode-cn.com/problems/minimum-number-of-k-consecutive-bit-flips
+	//***//
+	A,k := []int{0,1,0}, 1
+	fmt.Println(lc.MinKBitFlips(A,k))
 
 
 

@@ -1143,8 +1143,15 @@ func main()  {
 	//返回所需的 K 位翻转的最小次数，以便数组没有值为 0 的元素。如果不可能，返回 -1。
 	//链接：https://leetcode-cn.com/problems/minimum-number-of-k-consecutive-bit-flips
 	//***//
-	A,k := []int{0,1,0}, 1
-	fmt.Println(lc.MinKBitFlips(A,k))
+	//A,k := []int{0,1,0}, 1
+	//fmt.Println(lc.MinKBitFlips(A,k))
+
+	//***
+	//给定一个由若干 0 和 1 组成的数组 A，我们最多可以将 K 个值从 0 变成 1 。
+	//返回仅包含 1 的最长（连续）子数组的长度。
+	//***//
+	A := []int{1,1,1,0,0,0,1,1,1,1,0};k := 2
+	fmt.Println(lc.LongestOnes(A,k))
 
 
 

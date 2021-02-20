@@ -1150,8 +1150,15 @@ func main()  {
 	//给定一个由若干 0 和 1 组成的数组 A，我们最多可以将 K 个值从 0 变成 1 。
 	//返回仅包含 1 的最长（连续）子数组的长度。
 	//***//
-	A := []int{1,1,1,0,0,0,1,1,1,1,0};k := 2
-	fmt.Println(lc.LongestOnes(A,k))
+	//A := []int{1,1,1,0,0,0,1,1,1,1,0};k := 2
+	//fmt.Println(lc.LongestOnes(A,k))
+
+	//***
+	//找出数组中重复的数字
+	//在一个长度为 n 的数组 nums 里的所有数字都在 0～n-1 的范围内。数组中某些数字是重复的，但不知道有几个数字重复了，也不知道每个数字重复了几次。请找出数组中任意一个重复的数字。
+	//链接：https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof
+	//***//
+	fmt.Println(lc.FindRepeatNumbe([]int{2,3,1,0,2,5,3}))
 
 
 

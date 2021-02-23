@@ -1165,9 +1165,21 @@ func main()  {
 	//如果不存在满足条件的子数组，则返回 0 。
 	//链接：https://leetcode-cn.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit
 	//***//
-	nums := []int{8,2,4,7}
-	limit := 4
-	fmt.Println(lc.LongestSubarray(nums,limit))
+	//nums := []int{8,2,4,7}
+	//limit := 4
+	//fmt.Println(lc.LongestSubarray(nums,limit))
+
+	//***
+	//今天，书店老板有一家店打算试营业customers.length分钟。每分钟都有一些顾客（customers[i]）会进入书店，所有这些顾客都会在那一分钟结束后离开。
+	//在某些时候，书店老板会生气。 如果书店老板在第 i 分钟生气，那么 grumpy[i] = 1，否则 grumpy[i] = 0。 当书店老板生气时，那一分钟的顾客就会不满意，不生气则他们是满意的。
+	//书店老板知道一个秘密技巧，能抑制自己的情绪，可以让自己连续X 分钟不生气，但却只能使用一次。
+	//请你返回这一天营业下来，最多有多少客户能够感到满意的数量。
+	//链接：https://leetcode-cn.com/problems/grumpy-bookstore-owner
+	//***//
+	customers := []int{1,0,1,2,1,1,7,5}
+	grumpy := []int{0,1,0,1,0,1,0,1}
+	x := 3
+	fmt.Println(lc.MaxSatisfied(customers, grumpy, x))
 
 
 

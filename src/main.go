@@ -1187,8 +1187,15 @@ func main()  {
 	//反转图片的意思是图片中的0全部被1替换，1全部被0替换。例如，反转[0, 1, 1]的结果是[1, 0, 0]。
 	//链接：https://leetcode-cn.com/problems/flipping-an-image
 	//***//
-	A := [][]int{{1,1,0},{1,0,1},{0,0,0}}
-	fmt.Println(lc.FlipAndInvertImage(A))
+	//A := [][]int{{1,1,0},{1,0,1},{0,0,0}}
+	//fmt.Println(lc.FlipAndInvertImage(A))
+
+	//***
+	//给你一个二维整数数组 matrix， 返回 matrix 的 转置矩阵 。
+	//矩阵的 转置 是指将矩阵的主对角线翻转，交换矩阵的行索引与列索引。
+	//***//
+	matrix := [][]int{{1,2,3},{4,5,6},{7,8,9}}
+	fmt.Println(lc.Transpose(matrix))
 
 
 

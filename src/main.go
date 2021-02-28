@@ -1210,9 +1210,21 @@ func main()  {
 	//***
 	//给你一个字符串 s 和一个整数 k ，请你找出 s 中的最长子串， 要求该子串中的每一字符出现次数都不少于 k 。返回这一子串的长度。
 	//***//
-	s := "aaabb"
-	k := 3
-	fmt.Println(lc.LongestSubstring(s, k))
+	//s := "aaabb"
+	//k := 3
+	//fmt.Println(lc.LongestSubstring(s, k))
+
+	//***
+	//给你两个长度相同的整数数组target和arr。
+	//
+	//每一步中，你可以选择arr的任意 非空子数组并将它翻转。你可以执行此过程任意次。
+	//
+	//如果你能让 arr变得与 target相同，返回 True；否则，返回 False 。
+	//链接：https://leetcode-cn.com/problems/make-two-arrays-equal-by-reversing-sub-arrays
+	//***//
+	target := []int{1,2,3,4}
+	arr := []int{2,4,1,3}
+	fmt.Println(lc.CanBeEqual(target, arr))
 
 
 

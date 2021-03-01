@@ -1222,9 +1222,21 @@ func main()  {
 	//如果你能让 arr变得与 target相同，返回 True；否则，返回 False 。
 	//链接：https://leetcode-cn.com/problems/make-two-arrays-equal-by-reversing-sub-arrays
 	//***//
-	target := []int{1,2,3,4}
-	arr := []int{2,4,1,3}
-	fmt.Println(lc.CanBeEqual(target, arr))
+	//target := []int{1,2,3,4}
+	//arr := []int{2,4,1,3}
+	//fmt.Println(lc.CanBeEqual(target, arr))
+
+	//***
+	//给定一个整数数组 nums，求出数组从索引i到j（i≤j）范围内元素的总和，包含i、j两点。
+	//实现 NumArray 类：
+	//NumArray(int[] nums) 使用数组 nums 初始化对象
+	//int sumRange(int i, int j) 返回数组 nums 从索引i到j（i≤j）范围内元素的总和，包含i、j两点（也就是 sum(nums[i], nums[i + 1], ... , nums[j])）
+	//链接：https://leetcode-cn.com/problems/range-sum-query-immutable
+	//著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+	//***//
+	obj := lc.ConstructorRange([]int{1,2,3,4})
+	param := obj.SumRange(1,2)
+	fmt.Println(param)
 
 
 

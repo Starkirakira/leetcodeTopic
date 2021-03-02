@@ -1234,9 +1234,22 @@ func main()  {
 	//链接：https://leetcode-cn.com/problems/range-sum-query-immutable
 	//著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 	//***//
-	obj := lc.ConstructorRange([]int{1,2,3,4})
-	param := obj.SumRange(1,2)
-	fmt.Println(param)
+	//obj := lc.ConstructorRange([]int{1,2,3,4})
+	//param := obj.SumRange(1,2)
+	//fmt.Println(param)
+
+	//***
+	//给定一个二维矩阵，计算其子矩形范围内元素的总和，该子矩阵的左上角为 (row1, col1) ，右下角为 (row2, col2) 。
+	//***//
+	matrix := [][]int{
+	{3, 0, 1, 4, 2},
+	{5, 6, 3, 2, 1},
+	{1, 2, 0, 1, 5},
+	{4, 1, 0, 1, 7},
+	{1, 0, 3, 0, 5}}
+	obj := lc.ConstructorRegion(matrix)
+	param_1 := obj.SumRegion(2,1,4,3)
+	fmt.Println(param_1)
 
 
 

@@ -1241,16 +1241,20 @@ func main()  {
 	//***
 	//给定一个二维矩阵，计算其子矩形范围内元素的总和，该子矩阵的左上角为 (row1, col1) ，右下角为 (row2, col2) 。
 	//***//
-	matrix := [][]int{
-	{3, 0, 1, 4, 2},
-	{5, 6, 3, 2, 1},
-	{1, 2, 0, 1, 5},
-	{4, 1, 0, 1, 7},
-	{1, 0, 3, 0, 5}}
-	obj := lc.ConstructorRegion(matrix)
-	param_1 := obj.SumRegion(2,1,4,3)
-	fmt.Println(param_1)
+	//matrix := [][]int{
+	//{3, 0, 1, 4, 2},
+	//{5, 6, 3, 2, 1},
+	//{1, 2, 0, 1, 5},
+	//{4, 1, 0, 1, 7},
+	//{1, 0, 3, 0, 5}}
+	//obj := lc.ConstructorRegion(matrix)
+	//param_1 := obj.SumRegion(2,1,4,3)
+	//fmt.Println(param_1)
 
+	//***
+	//给定一个非负整数 num。对于 0 ≤ i ≤ num 范围中的每个数字 i ，计算其二进制数中的 1 的数目并将它们作为数组返回。
+	//***//
+	fmt.Println(lc.CountBits(2))
 
 
 

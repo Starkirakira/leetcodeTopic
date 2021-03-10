@@ -1263,8 +1263,13 @@ func main()  {
 	//注意：不允许旋转信封。
 	//链接：https://leetcode-cn.com/problems/russian-doll-envelopes
 	//***//
-	envelopes := [][]int{{5,4},{6,4},{6,7},{2,3}}
-	fmt.Println(lc.MaxEnvelopes(envelopes))
+	//envelopes := [][]int{{5,4},{6,4},{6,7},{2,3}}
+	//fmt.Println(lc.MaxEnvelopes(envelopes))
+
+	//***
+	//实现一个基本的计算器来计算一个简单的字符串表达式 s 的值。
+	//***//
+	fmt.Println(lc.Calculate("2-(1+1)"))
 
 
 

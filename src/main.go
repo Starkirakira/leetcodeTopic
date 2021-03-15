@@ -1284,12 +1284,28 @@ func main()  {
 	//void remove(key) 将给定值 key 从哈希集合中删除。如果哈希集合中没有这个值，什么也不做。
 	//链接：https://leetcode-cn.com/problems/design-hashset
 	//****//
-	set := lc.Constructoriii()
-	set.Add(222)
-	set.Add(333)
-	set.Remove(222)
-	fmt.Println(set.Contains(222))
+	//set := lc.Constructoriii()
+	//set.Add(222)
+	//set.Add(333)
+	//set.Remove(222)
+	//fmt.Println(set.Contains(222))
 
+	//不使用任何内建的哈希表库设计一个哈希映射（HashMap）。
+	//实现 MyHashMap 类：
+	//void add(key) 向哈希集合中插入值 key 。
+	//bool contains(key) 返回哈希集合中是否存在这个值 key 。
+	//void remove(key) 将给定值 key 从哈希集合中删除。如果哈希集合中没有这个值，什么也不做。
+	//set := lc.Constructoriiii()
+	//set.Put(222,222)
+	//set.Get(222)
+	//set.Remove(222)
+	//fmt.Println(set)
+
+	//***
+	//给你一个 m 行 n 列的矩阵 matrix ，请按照 顺时针螺旋顺序 ，返回矩阵中的所有元素。
+	//***//
+	matrix := [][]int{{1,2,3,4},{5,6,7,8},{9,10,11,12}}
+	fmt.Println(lc.SpiralOrder(matrix))
 
 
 

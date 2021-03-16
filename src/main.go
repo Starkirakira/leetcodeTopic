@@ -1304,9 +1304,14 @@ func main()  {
 	//***
 	//给你一个 m 行 n 列的矩阵 matrix ，请按照 顺时针螺旋顺序 ，返回矩阵中的所有元素。
 	//***//
-	matrix := [][]int{{1,2,3,4},{5,6,7,8},{9,10,11,12}}
-	fmt.Println(lc.SpiralOrder(matrix))
+	//matrix := [][]int{{1,2,3,4},{5,6,7,8},{9,10,11,12}}
+	//fmt.Println(lc.SpiralOrder(matrix))
 
+
+	//***
+	//给你一个正整数 n ，生成一个包含 1 到 n2 所有元素，且元素按顺时针顺序螺旋排列的 n x n 正方形矩阵 matrix 。
+	//***//
+	fmt.Println(lc.GenerateMatrix(3))
 
 
 

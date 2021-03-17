@@ -1311,7 +1311,17 @@ func main()  {
 	//***
 	//给你一个正整数 n ，生成一个包含 1 到 n2 所有元素，且元素按顺时针顺序螺旋排列的 n x n 正方形矩阵 matrix 。
 	//***//
-	fmt.Println(lc.GenerateMatrix(3))
+	//fmt.Println(lc.GenerateMatrix(3))
+
+	//***
+	//给定一个字符串 s 和一个字符串 t ，计算在 s 的子序列中 t 出现的个数。
+	//字符串的一个 子序列 是指，通过删除一些（也可以不删除）字符且不干扰剩余字符相对位置所组成的新字符串。（例如，"ACE"是"ABCDE"的一个子序列，而"AEC"不是）
+	//题目数据保证答案符合 32 位带符号整数范围。
+	//链接：https://leetcode-cn.com/problems/distinct-subsequences
+	//***//
+	s := "rabbbit"
+	t := "rabbit"
+	fmt.Println(lc.NumDistinct(s, t))
 
 
 

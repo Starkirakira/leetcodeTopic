@@ -1329,9 +1329,15 @@ func main()  {
 	//进阶：很容易想到时间复杂度为 O(n^2) 的解决方案，你可以设计一个时间复杂度为 O(n logn) 或 O(n) 的解决方案吗？
 	//链接：https://leetcode-cn.com/problems/132-pattern
 	//***//
-	nums := []int{1,2,3,4}
-	fmt.Println(lc.Find132pattern(nums))
+	//nums := []int{1,2,3,4}
+	//fmt.Println(lc.Find132pattern(nums))
 
+	//***
+	//存在一个按升序排列的链表，给你这个链表的头节点 head ，请你删除所有重复的元素，使每个元素 只出现一次 。
+	//返回同样按升序排列的结果链表。
+	//***//
+	list := &lc.ListNode{1,&lc.ListNode{1,&lc.ListNode{2,&lc.ListNode{2,nil}}}}
+	fmt.Println(lc.DeleteDuplicates(list))
 
 
 

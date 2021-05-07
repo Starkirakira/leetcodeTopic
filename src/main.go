@@ -1347,9 +1347,19 @@ func main()  {
 	//给你一个可能存在 重复 元素值的数组 nums ，它原来是一个升序排列的数组，并按上述情形进行了多次旋转。请你找出并返回数组中的 最小元素 。
 	//链接：https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array-ii
 	//***//
-	nums := []int{1,3,5}
-	fmt.Println(lc.FindMin(nums))
+	//nums := []int{1,3,5}
+	//fmt.Println(lc.FindMin(nums))
 
+
+	//***
+	//给你两个整数，n 和 start 。
+	//数组 nums 定义为：nums[i] = start + 2*i（下标从 0 开始）且 n == nums.length 。
+	//请返回 nums 中所有元素按位异或（XOR）后得到的结果。
+	//链接：https://leetcode-cn.com/problems/xor-operation-in-an-array
+	//***//
+	n := 5
+	start := 0
+	fmt.Println(lc.XorOperation(n, start))
 
 
 

@@ -5,7 +5,7 @@ import (
 	"leetcode/lc"
 )
 
-func main()  {
+func main() {
 
 	///***二叉树的序列化与反序列化***///
 	//b := lc.Constructor()
@@ -48,7 +48,6 @@ func main()  {
 	//queries := [][]int{{0,1},{1,2},{0,3},{3,3}}
 	//fmt.Println(lc.XorQueries(arr, queries))
 
-
 	//***
 	//在 x 轴上有一个一维的花园。花园长度为n，从点0开始，到点n结束。
 	//花园里总共有n + 1 个水龙头，分别位于[0, 1, ..., n] 。
@@ -58,7 +57,6 @@ func main()  {
 	//n := 7
 	//ranges := []int{1,2,1,0,2,1,0,1}
 	//fmt.Println(lc.MinTaps(n , ranges))
-
 
 	//***
 	//一个 Nx N的 board仅由0和1组成。每次移动，你能任意交换两列或是两行的位置。
@@ -156,7 +154,6 @@ func main()  {
 	//text := "x &gt; y &amp;&amp; x &lt; y is always fals"
 	//fmt.Println(lc.EntityParser(text))
 
-
 	//***
 	//在给定的网格中，每个单元格可以有以下三个值之一：
 	//
@@ -176,7 +173,6 @@ func main()  {
 	//num := 8
 	//fmt.Println(lc.ClosestDivisors(num))
 
-
 	//***
 	//给定一个二维网格grid。"."代表一个空房间，"#"代表一堵墙，"@"是起点，（"a","b", ...）代表钥匙，（"A","B", ...）代表锁。
 	//我们从起点开始出发，一次移动是指向四个基本方向之一行走一个单位空间。我们不能在网格外面行走，也无法穿过一堵墙。如果途经一个钥匙，我们就把它捡起来。除非我们手里有对应的钥匙，否则无法通过锁。
@@ -186,7 +182,6 @@ func main()  {
 	//***//
 	//grid := []string{"@.a.#","###.#","b.A.B"}
 	//fmt.Println(lc.ShortestPathAllKeys(grid))
-
 
 	///***
 	//给定一个整数数组和一个整数k，你需要在数组里找到不同的k-diff 数对，并返回不同的 k-diff 数对 的数目。
@@ -825,7 +820,6 @@ func main()  {
 	//num := 12258
 	//fmt.Println(lc.TranslateNum(num))
 
-
 	//***
 	//在一个XY 坐标系中有一些点，我们用数组coordinates来分别记录它们的坐标，其中coordinates[i] = [x, y]表示横坐标为 x、纵坐标为 y的点。
 	//请你来判断，这些点是否在该坐标系中属于同一条直线上，是则返回 true，否则请返回 false。
@@ -940,7 +934,6 @@ func main()  {
 	//go myLab.AGoroutine()
 	//myLab.Done <- true
 	//fmt.Println(myLab.Msg)
-
 
 	//***
 	//给你一个整数数组nums，请编写一个能够返回数组 “中心索引” 的方法。
@@ -1307,7 +1300,6 @@ func main()  {
 	//matrix := [][]int{{1,2,3,4},{5,6,7,8},{9,10,11,12}}
 	//fmt.Println(lc.SpiralOrder(matrix))
 
-
 	//***
 	//给你一个正整数 n ，生成一个包含 1 到 n2 所有元素，且元素按顺时针顺序螺旋排列的 n x n 正方形矩阵 matrix 。
 	//***//
@@ -1350,25 +1342,24 @@ func main()  {
 	//nums := []int{1,3,5}
 	//fmt.Println(lc.FindMin(nums))
 
-
 	//***
 	//给你两个整数，n 和 start 。
 	//数组 nums 定义为：nums[i] = start + 2*i（下标从 0 开始）且 n == nums.length 。
 	//请返回 nums 中所有元素按位异或（XOR）后得到的结果。
 	//链接：https://leetcode-cn.com/problems/xor-operation-in-an-array
 	//***//
-	n := 5
-	start := 0
-	fmt.Println(lc.XorOperation(n, start))
+	//n := 5
+	//start := 0
+	//fmt.Println(lc.XorOperation(n, start))
 
-
-
-
-
-
-
-
+	//*** easy
+	//给定一个整数数组 nums和一个整数目标值 target，请你在该数组中找出 和为目标值 target 的那两个整数，并返回它们的数组下标。
+	//你可以假设每种输入只会对应一个答案。但是，数组中同一个元素在答案里不能重复出现。
+	//你可以按任意顺序返回答案。
+	//链接：https://leetcode-cn.com/problems/two-sum
+	//***//
+	nums := []int{2, 7, 11, 15}
+	target := 9
+	fmt.Println(lc.TwoSum(nums, target))
 
 }
-
-

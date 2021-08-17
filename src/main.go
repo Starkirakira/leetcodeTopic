@@ -1367,7 +1367,16 @@ func main() {
 	//每一步只能移动到下一行中相邻的结点上。相邻的结点 在这里指的是 下标 与 上一层结点下标 相同或者等于 上一层结点下标 + 1 的两个结点。也就是说，如果正位于当前行的下标 i ，那么下一步可以移动到下一行的下标 i 或 i + 1 。
 	//链接：https://leetcode-cn.com/problems/triangle
 	//***//
-	triangle := [][]int{{2}, {3, 4}, {6, 5, 7}, {4, 1, 8, 3}}
-	fmt.Println(lc.MinimumTotal(triangle))
+	//triangle := [][]int{{2}, {3, 4}, {6, 5, 7}, {4, 1, 8, 3}}
+	//fmt.Println(lc.MinimumTotal(triangle))
+
+	//***
+	//剑指offer 01
+	//给定两个整数 a 和 b ，求它们的除法的商 a/b ，要求不得使用乘号 '*'、除号 '/' 以及求余符号 '%'。
+	//整数除法的结果应当截去（truncate）其小数部分，例如：truncate(8.345) = 8以及truncate(-2.7335) = -2
+	//假设我们的环境只能存储 32 位有符号整数，其数值范围是 [−231,231−1]。本题中，如果除法结果溢出，则返回 231− 1
+	//链接：https://leetcode-cn.com/problems/xoh6Oh
+	//***//
+	fmt.Println(lc.Divide(12, 3))
 
 }

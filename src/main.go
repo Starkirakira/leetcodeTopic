@@ -1,9 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"leetcode/lc"
-)
+import "leetcode/lc"
 
 func main() {
 
@@ -1384,6 +1381,12 @@ func main() {
 	//给定两个 01 字符串 a 和 b ，请计算它们的和，并以二进制字符串的形式输出。
 	//输入为 非空 字符串且只包含数字 1 和 0。
 	//***//
-	fmt.Println(lc.AddBinary("11", "10"))
+	//fmt.Println(lc.AddBinary("11", "10"))
+
+	//***
+	//剑指offer 03 计算前N位数二进制的1数量
+	//给定一个非负整数 n ，请计算 0 到 n 之间的每个数字的二进制表示中 1 的个数，并输出一个数组。
+	//***//
+	lc.CountBits(2)
 
 }

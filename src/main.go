@@ -1377,6 +1377,13 @@ func main() {
 	//假设我们的环境只能存储 32 位有符号整数，其数值范围是 [−231,231−1]。本题中，如果除法结果溢出，则返回 231− 1
 	//链接：https://leetcode-cn.com/problems/xoh6Oh
 	//***//
-	fmt.Println(lc.Divide(12, 3))
+	//fmt.Println(lc.Divide(12, 3))
+
+	//***
+	//剑指offer 02
+	//给定两个 01 字符串 a 和 b ，请计算它们的和，并以二进制字符串的形式输出。
+	//输入为 非空 字符串且只包含数字 1 和 0。
+	//***//
+	fmt.Println(lc.AddBinary("11", "10"))
 
 }

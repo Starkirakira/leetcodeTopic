@@ -1,6 +1,9 @@
 package main
 
-import "leetcode/lc"
+import (
+	"fmt"
+	"leetcode/lc"
+)
 
 func main() {
 
@@ -1387,6 +1390,21 @@ func main() {
 	//剑指offer 03 计算前N位数二进制的1数量
 	//给定一个非负整数 n ，请计算 0 到 n 之间的每个数字的二进制表示中 1 的个数，并输出一个数组。
 	//***//
-	lc.CountBits(2)
+	//lc.CountBits(2)
+
+	//***
+	//剑指offer 04 只出现一次的数字
+	//给你一个整数数组 nums ，除某个元素仅出现 一次 外，其余每个元素都恰出现 三次 。请你找出并返回那个只出现了一次的元素。
+	//***//
+	//nums := []int{2,2,3,2}
+	//fmt.Println(lc.SingleNumber(nums))
+
+	//***
+	//剑指offer 05 单词长度最大乘积
+	//给定一个字符串数组words，请计算当两个字符串 words[i] 和 words[j] 不包含相同字符时，它们长度的乘积的最大值。假设字符串中只包含英语的小写字母。如果没有不包含相同字符的一对字符串，返回 0。
+	//链接：https://leetcode-cn.com/problems/aseY1I
+	//***//
+	words := []string{"abcw", "baz", "foo", "bar", "fxyz", "abcdef"}
+	fmt.Println(lc.MaxProduct(words))
 
 }

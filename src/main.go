@@ -1414,7 +1414,15 @@ func main() {
 	//假设数组中存在且只存在一对符合条件的数字，同时一个数字不能使用两次。
 	//链接：https://leetcode-cn.com/problems/kLl5u1
 	//***//
-	numbers, target := []int{1, 2, 4, 6, 10}, 8
-	fmt.Println(lc.TwoNumberSum(numbers, target))
+	//numbers, target := []int{1, 2, 4, 6, 10}, 8
+	//fmt.Println(lc.TwoNumberSum(numbers, target))
+
+	//***
+	//剑指offer 07 排序数组中两个数字之和
+	//给定一个包含 n 个整数的数组nums，判断nums中是否存在三个元素a ，b ，c ，使得a + b + c = 0 ？请找出所有和为 0 且不重复的三元组。
+	//链接：https://leetcode-cn.com/problems/1fGaJU
+	//***//
+	nums := []int{-1, 0, 1, 2, -1, -4}
+	fmt.Println(lc.ThreeSum(nums))
 
 }

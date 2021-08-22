@@ -1422,7 +1422,28 @@ func main() {
 	//给定一个包含 n 个整数的数组nums，判断nums中是否存在三个元素a ，b ，c ，使得a + b + c = 0 ？请找出所有和为 0 且不重复的三元组。
 	//链接：https://leetcode-cn.com/problems/1fGaJU
 	//***//
-	nums := []int{-1, 0, 1, 2, -1, -4}
-	fmt.Println(lc.ThreeSum(nums))
+	//nums := []int{-1, 0, 1, 2, -1, -4}
+	//fmt.Println(lc.ThreeSum(nums))
 
+	//***
+	//剑指offer 08 和大于等于target的最短子数组
+	//给定一个含有n个正整数的数组和一个正整数 target 。
+	//找出该数组中满足其和 ≥ target 的长度最小的 连续子数组[numsl, numsl+1, ..., numsr-1, numsr] ，并返回其长度。如果不存在符合条件的子数组，返回 0 。
+	//链接：https://leetcode-cn.com/problems/2VG8Kg
+	//target, nums := 7, []int{1,1,1,1,1}
+	//fmt.Println(lc.MinSubArrayLen(target, nums))
+
+	//***
+	//剑指offer 09 乘积小于K的连续子数组数量
+	//给定一个正整数数组 nums和整数 k ，请找出该数组内乘积小于 k 的连续的子数组的个数。
+	//nums := []int{10,5,2,6}
+	//k := 100
+	//fmt.Println(lc.NumsSubarrayProductLessThank(nums,k))
+
+	//***
+	//剑指offer 10 和为k的子数组
+	//给定一个整数数组和一个整数 k ，请找到该数组中和为 k 的连续子数组的个数。
+	nums := []int{1, 2, 3}
+	k := 3
+	fmt.Println(lc.SubarraySum(nums, k))
 }

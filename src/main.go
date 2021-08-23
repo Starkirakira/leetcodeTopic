@@ -1443,7 +1443,14 @@ func main() {
 	//***
 	//剑指offer 10 和为k的子数组
 	//给定一个整数数组和一个整数 k ，请找到该数组中和为 k 的连续子数组的个数。
-	nums := []int{1, 2, 3}
-	k := 3
-	fmt.Println(lc.SubarraySum(nums, k))
+	//nums := []int{1, 2, 3}
+	//k := 3
+	//fmt.Println(lc.SubarraySum(nums, k))
+
+	//***
+	//剑指offer 11 0和1个数相同的子数组
+	//给定一个二进制数组 nums , 找到含有相同数量的 0 和 1 的最长连续子数组，并返回该子数组的长度。
+	//***//
+	nums := []int{1, 0, 1}
+	fmt.Println(lc.FindMaxLength(nums))
 }

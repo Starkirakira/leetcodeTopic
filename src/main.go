@@ -936,7 +936,7 @@ func main() {
 	//fmt.Println(myLab.Msg)
 
 	//***
-	//给你一个整数数组nums，请编写一个能够返回数组 “中心索引” 的方法。
+	//给你一个整数数组nums，请编写一个能够返回数组 “中心索引” 的方法。 ···同剑指offer12 2109···
 	//数组 中心索引 是数组的一个索引，其左侧所有元素相加的和等于右侧所有元素相加的和。
 	//如果数组不存在中心索引，返回 -1 。如果数组有多个中心索引，应该返回最靠近左边的那一个。
 	//注意：中心索引可能出现在数组的两端。
@@ -1451,6 +1451,33 @@ func main() {
 	//剑指offer 11 0和1个数相同的子数组
 	//给定一个二进制数组 nums , 找到含有相同数量的 0 和 1 的最长连续子数组，并返回该子数组的长度。
 	//***//
-	nums := []int{1, 0, 1}
-	fmt.Println(lc.FindMaxLength(nums))
+	//nums := []int{1, 0, 1}
+	//fmt.Println(lc.FindMaxLength(nums))
+
+	//***
+	//剑指offer 12 左右两边子数组和相等 ···2109···
+	//给你一个整数数组nums ，请计算数组的 中心下标 。
+	//数组 中心下标 是数组的一个下标，其左侧所有元素相加的和等于右侧所有元素相加的和。
+	//如果中心下标位于数组最左端，那么左侧数之和视为 0 ，因为在下标的左侧不存在元素。这一点对于中心下标位于数组最右端同样适用。
+	//如果数组有多个中心下标，应该返回 最靠近左边 的那一个。如果数组不存在中心下标，返回 -1 。
+	//链接：https://leetcode-cn.com/problems/tvdfij
+	//***//
+	//nums := []int{1,7,3,6,5,6}
+	//fmt.Println(lc.PivotIndex(nums))
+
+	//***
+	//剑指offer 13 二维子矩阵的和
+	//给定一个二维矩阵 matrix，以下类型的多个请求：
+	//
+	//计算其子矩形范围内元素的总和，该子矩阵的左上角为 (row1,col1) ，右下角为 (row2,col2) 。
+	//实现 NumMatrix 类：
+	//
+	//NumMatrix(int[][] matrix)给定整数矩阵 matrix 进行初始化
+	//int sumRegion(int row1, int col1, int row2, int col2)返回左上角 (row1,col1)、右下角(row2,col2)的子矩阵的元素总和。
+	//链接：https://leetcode-cn.com/problems/O4NDxx
+	//***//
+	obj := lc.Constructor2110([][]int{{3, 0, 1, 4, 2}, {5, 6, 3, 2, 1}, {1, 2, 0, 1, 5}, {4, 1, 0, 1, 7}, {1, 0, 3, 0, 5}})
+	fmt.Println(obj.SumRegion(2, 1, 4, 3))
+	fmt.Println(obj.SumRegion(1, 1, 2, 2))
+	fmt.Println(obj.SumRegion(1, 2, 2, 4))
 }

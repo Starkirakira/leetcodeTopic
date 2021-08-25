@@ -1476,8 +1476,16 @@ func main() {
 	//int sumRegion(int row1, int col1, int row2, int col2)返回左上角 (row1,col1)、右下角(row2,col2)的子矩阵的元素总和。
 	//链接：https://leetcode-cn.com/problems/O4NDxx
 	//***//
-	obj := lc.Constructor2110([][]int{{3, 0, 1, 4, 2}, {5, 6, 3, 2, 1}, {1, 2, 0, 1, 5}, {4, 1, 0, 1, 7}, {1, 0, 3, 0, 5}})
-	fmt.Println(obj.SumRegion(2, 1, 4, 3))
-	fmt.Println(obj.SumRegion(1, 1, 2, 2))
-	fmt.Println(obj.SumRegion(1, 2, 2, 4))
+	//obj := lc.Constructor2110([][]int{{3, 0, 1, 4, 2}, {5, 6, 3, 2, 1}, {1, 2, 0, 1, 5}, {4, 1, 0, 1, 7}, {1, 0, 3, 0, 5}})
+	//fmt.Println(obj.SumRegion(2, 1, 4, 3))
+	//fmt.Println(obj.SumRegion(1, 1, 2, 2))
+	//fmt.Println(obj.SumRegion(1, 2, 2, 4))
+
+	//***
+	//剑指 Offer II 014. 字符串中的变位词
+	//给定两个字符串 s1 和 s2，写一个函数来判断 s2 是否包含 s1 的某个变位词。
+	//换句话说，第一个字符串的排列之一是第二个字符串的 子串 。
+	//***//
+	s1, s2 := "ab", "eidbaooo"
+	fmt.Println(lc.CheckInclusion(s1, s2))
 }

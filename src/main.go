@@ -1495,6 +1495,13 @@ func main() {
 	//变位词 指字母相同，但排列不同的字符串。
 	//链接：https://leetcode-cn.com/problems/VabMRr
 	//***//
-	s, p := "cbaebabacd", "abc"
-	fmt.Println(lc.FindAnagrams(s, p))
+	//s, p := "cbaebabacd", "abc"
+	//fmt.Println(lc.FindAnagrams(s, p))
+
+	//***
+	//剑指offer 16 不含重复字符的最长子字符串
+	//给定一个字符串 s ，请你找出其中不含有重复字符的 最长连续子字符串 的长度。
+	//***//
+	s := "abcabcbb"
+	fmt.Println(lc.LengthOfLongestSubstring(s))
 }

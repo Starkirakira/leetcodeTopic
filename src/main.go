@@ -1486,6 +1486,15 @@ func main() {
 	//给定两个字符串 s1 和 s2，写一个函数来判断 s2 是否包含 s1 的某个变位词。
 	//换句话说，第一个字符串的排列之一是第二个字符串的 子串 。
 	//***//
-	s1, s2 := "ab", "eidbaooo"
-	fmt.Println(lc.CheckInclusion(s1, s2))
+	//s1, s2 := "ab", "eidbaooo"
+	//fmt.Println(lc.CheckInclusion(s1, s2))
+
+	//***
+	//剑指 Offer II 014 字符串中所有的变位词
+	//给定两个字符串s和p，找到s中所有 p 的变位词的子串，返回这些子串的起始索引。不考虑答案输出的顺序。
+	//变位词 指字母相同，但排列不同的字符串。
+	//链接：https://leetcode-cn.com/problems/VabMRr
+	//***//
+	s, p := "cbaebabacd", "abc"
+	fmt.Println(lc.FindAnagrams(s, p))
 }

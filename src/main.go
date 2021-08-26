@@ -1490,7 +1490,7 @@ func main() {
 	//fmt.Println(lc.CheckInclusion(s1, s2))
 
 	//***
-	//剑指 Offer II 014 字符串中所有的变位词
+	//剑指 Offer II 015 字符串中所有的变位词
 	//给定两个字符串s和p，找到s中所有 p 的变位词的子串，返回这些子串的起始索引。不考虑答案输出的顺序。
 	//变位词 指字母相同，但排列不同的字符串。
 	//链接：https://leetcode-cn.com/problems/VabMRr
@@ -1502,6 +1502,16 @@ func main() {
 	//剑指offer 16 不含重复字符的最长子字符串
 	//给定一个字符串 s ，请你找出其中不含有重复字符的 最长连续子字符串 的长度。
 	//***//
-	s := "abcabcbb"
-	fmt.Println(lc.LengthOfLongestSubstring(s))
+	//s := "abcabcbb"
+	//fmt.Println(lc.LengthOfLongestSubstring(s))
+
+	//***
+	//剑指 Offer II 017 含有所有字符串的最短字符串
+	//给定两个字符串 s 和t 。返回 s 中包含t的所有字符的最短子字符串。如果 s 中不存在符合条件的子字符串，则返回空字符串 "" 。
+	//如果 s 中存在多个符合条件的子字符串，返回任意一个。
+	//注意： 对于 t 中重复字符，我们寻找的子字符串中该字符数量必须不少于 t 中该字符数量。
+	//链接：https://leetcode-cn.com/problems/M1oyTv
+	//***//
+	s, t := "ADOBECODEBANC", "ABC"
+	fmt.Println(lc.MinWindow(s, t))
 }

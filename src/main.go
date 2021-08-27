@@ -1527,6 +1527,15 @@ func main() {
 	//剑指 Offer II 019 最多删除一个字符得到回文串
 	//给定一个非空字符串 s，请判断如果 最多 从字符串中删除一个字符能否得到一个回文字符串。
 	//***//
-	s := "abca"
-	fmt.Println(lc.ValidPalindrome(s))
+	//s := "abca"
+	//fmt.Println(lc.ValidPalindrome(s))
+
+	//***
+	//剑指 Offer II 020 计算回文子字符串的个数 2118
+	//给定一个字符串 s ，请计算这个字符串中有多少个回文子字符串。
+	//
+	//具有不同开始位置或结束位置的子串，即使是由相同的字符组成，也会被视作不同的子串。
+	//***
+	s := "abc"
+	fmt.Println(lc.CountSubstrings(s))
 }

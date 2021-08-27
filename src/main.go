@@ -1512,6 +1512,14 @@ func main() {
 	//注意： 对于 t 中重复字符，我们寻找的子字符串中该字符数量必须不少于 t 中该字符数量。
 	//链接：https://leetcode-cn.com/problems/M1oyTv
 	//***//
-	s, t := "ADOBECODEBANC", "ABC"
-	fmt.Println(lc.MinWindow(s, t))
+	//s, t := "ADOBECODEBANC", "ABC"
+	//fmt.Println(lc.MinWindow(s, t))
+
+	//***
+	////剑指 Offer II 018 有效回文
+	//给定一个字符串 s ，验证 s 是否是 回文串 ，只考虑字母和数字字符，可以忽略字母的大小写。
+	//本题中，将空字符串定义为有效的 回文串 。
+	//***//
+	s := "0P2112P0"
+	fmt.Println(lc.IsPalindrome(s))
 }

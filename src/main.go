@@ -1520,6 +1520,13 @@ func main() {
 	//给定一个字符串 s ，验证 s 是否是 回文串 ，只考虑字母和数字字符，可以忽略字母的大小写。
 	//本题中，将空字符串定义为有效的 回文串 。
 	//***//
-	s := "0P2112P0"
-	fmt.Println(lc.IsPalindrome(s))
+	//s := "0P2112P0"
+	//fmt.Println(lc.IsPalindrome(s))
+
+	//***
+	//剑指 Offer II 019 最多删除一个字符得到回文串
+	//给定一个非空字符串 s，请判断如果 最多 从字符串中删除一个字符能否得到一个回文字符串。
+	//***//
+	s := "abca"
+	fmt.Println(lc.ValidPalindrome(s))
 }

@@ -1536,6 +1536,14 @@ func main() {
 	//
 	//具有不同开始位置或结束位置的子串，即使是由相同的字符组成，也会被视作不同的子串。
 	//***
-	s := "abc"
-	fmt.Println(lc.CountSubstrings(s))
+	//s := "abc"
+	//fmt.Println(lc.CountSubstrings(s))
+
+	//***
+	//剑指 Offer II 021. 删除链表的倒数第 n 个结点 2125
+	//给定一个链表，删除链表的倒数第 n 个结点，并且返回链表的头结点。
+	//***//
+	head := &lc.ListNode{1, &lc.ListNode{2, &lc.ListNode{3, &lc.ListNode{4, &lc.ListNode{5, nil}}}}}
+	n := 2
+	fmt.Println(lc.RemoveNthFromEnd(head, n))
 }

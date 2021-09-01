@@ -1561,7 +1561,14 @@ func main() {
 	//剑指 Offer II 023. 两个链表的第一个重合节点
 	//给定两个单链表的头节点 headA 和 headB ，请找出并返回两个单链表相交的起始节点。如果两个链表没有交点，返回 null 。
 	//***//
-	A := &lc.ListNode{4, &lc.ListNode{1, &lc.ListNode{8, &lc.ListNode{4, &lc.ListNode{5, nil}}}}}
-	B := &lc.ListNode{5, &lc.ListNode{0, &lc.ListNode{1, &lc.ListNode{8, &lc.ListNode{4, &lc.ListNode{5, nil}}}}}}
-	fmt.Println(lc.GetIntersectionNode(A, B))
+	//A := &lc.ListNode{4, &lc.ListNode{1, &lc.ListNode{8, &lc.ListNode{4, &lc.ListNode{5, nil}}}}}
+	//B := &lc.ListNode{5, &lc.ListNode{0, &lc.ListNode{1, &lc.ListNode{8, &lc.ListNode{4, &lc.ListNode{5, nil}}}}}}
+	//fmt.Println(lc.GetIntersectionNode(A, B))
+
+	//***
+	//剑指 Offer II 024. 反转链表
+	//给定单链表的头节点 head ，请反转链表，并返回反转后的链表的头节点。
+	//***//
+	head := &lc.ListNode{1, &lc.ListNode{2, &lc.ListNode{3, &lc.ListNode{4, &lc.ListNode{5, nil}}}}}
+	fmt.Println(lc.ReverseList(head))
 }

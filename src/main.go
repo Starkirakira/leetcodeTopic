@@ -1569,6 +1569,16 @@ func main() {
 	//剑指 Offer II 024. 反转链表
 	//给定单链表的头节点 head ，请反转链表，并返回反转后的链表的头节点。
 	//***//
-	head := &lc.ListNode{1, &lc.ListNode{2, &lc.ListNode{3, &lc.ListNode{4, &lc.ListNode{5, nil}}}}}
-	fmt.Println(lc.ReverseList(head))
+	//head := &lc.ListNode{1, &lc.ListNode{2, &lc.ListNode{3, &lc.ListNode{4, &lc.ListNode{5, nil}}}}}
+	//fmt.Println(lc.ReverseList(head))
+
+	//***
+	//剑指 Offer II 025. 链表中的两数相加
+	//给定两个 非空链表 l1和 l2来代表两个非负整数。数字最高位位于链表开始位置。它们的每个节点只存储一位数字。将这两数相加会返回一个新的链表。
+	//可以假设除了数字 0 之外，这两个数字都不会以零开头。
+	//链接：https://leetcode-cn.com/problems/lMSNwu
+	//***//
+	l1 := &lc.ListNode{7, &lc.ListNode{2, &lc.ListNode{4, &lc.ListNode{3, nil}}}}
+	l2 := &lc.ListNode{5, &lc.ListNode{6, &lc.ListNode{4, nil}}}
+	fmt.Println(lc.AddTwoNumbers(l1, l2))
 }

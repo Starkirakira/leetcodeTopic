@@ -14,12 +14,14 @@ type ListNode struct {
 	Next *ListNode
 }
 
+//二叉树
 type TreeNodeii struct {
 	Val   int
 	Left  *TreeNodeii
 	Right *TreeNodeii
 }
 
+//二叉树
 type TreeNode struct {
 	Val   int
 	Left  *TreeNode

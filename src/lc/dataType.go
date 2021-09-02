@@ -1,27 +1,35 @@
 package lc
 
+//多级双向链表
+type ListDoublePathList struct {
+	Val   int
+	Prev  *ListDoublePathList
+	Next  *ListDoublePathList
+	Child *ListDoublePathList
+}
+
+//单向链表
 type ListNode struct {
-	Val int
+	Val  int
 	Next *ListNode
 }
 
 type TreeNodeii struct {
-	Val int
-	Left *TreeNodeii
+	Val   int
+	Left  *TreeNodeii
 	Right *TreeNodeii
 }
 
 type TreeNode struct {
-	Val int
-	Left *TreeNode
+	Val   int
+	Left  *TreeNode
 	Right *TreeNode
 }
-
 
 //带权并查集
 type unionFind1 struct {
 	parent, size []int
-	setCount int
+	setCount     int
 }
 
 func newUnionFind1(n int) *unionFind1 {
@@ -41,7 +49,7 @@ func (uf *unionFind1) find(x int) int {
 	return uf.parent[x]
 }
 
-func (uf *unionFind1) union(x,y int) bool {
+func (uf *unionFind1) union(x, y int) bool {
 	fx, fy := uf.find(x), uf.find(y)
 	if fx == fy {
 		return false
@@ -55,7 +63,7 @@ func (uf *unionFind1) union(x,y int) bool {
 	return true
 }
 
-func (uf *unionFind1) isSameSet(x, y int) bool  {
+func (uf *unionFind1) isSameSet(x, y int) bool {
 	return uf.find(x) == uf.find(y)
 }
 

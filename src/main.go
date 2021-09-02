@@ -1591,7 +1591,15 @@ func main() {
 	//不能只是单纯的改变节点内部的值，而是需要实际的进行节点交换。
 	//链接：https://leetcode-cn.com/problems/LGjMqU
 	//***//
-	l1 := &lc.ListNode{7, &lc.ListNode{2, &lc.ListNode{4, &lc.ListNode{3, nil}}}}
-	lc.ReorderList(l1)
-	fmt.Println(l1)
+	//l1 := &lc.ListNode{7, &lc.ListNode{2, &lc.ListNode{4, &lc.ListNode{3, nil}}}}
+	//lc.ReorderList(l1)
+	//fmt.Println(l1)
+
+	//***
+	//剑指 Offer II 027. 回文链表
+	//给定一个链表的 头节点 head ，请判断其是否为回文链表。
+	//如果一个链表是回文，那么链表节点序列从前往后看和从后往前看是相同的。
+	//***//
+	head := &lc.ListNode{1, &lc.ListNode{2, &lc.ListNode{2, &lc.ListNode{1, nil}}}}
+	fmt.Println(lc.IsListPalindrome(head))
 }

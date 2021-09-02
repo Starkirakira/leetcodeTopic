@@ -1578,7 +1578,20 @@ func main() {
 	//可以假设除了数字 0 之外，这两个数字都不会以零开头。
 	//链接：https://leetcode-cn.com/problems/lMSNwu
 	//***//
+	//l1 := &lc.ListNode{7, &lc.ListNode{2, &lc.ListNode{4, &lc.ListNode{3, nil}}}}
+	//l2 := &lc.ListNode{5, &lc.ListNode{6, &lc.ListNode{4, nil}}}
+	//fmt.Println(lc.AddTwoNumbers(l1, l2))
+
+	//***
+	//剑指 Offer II 026. 重排链表
+	//给定一个单链表 L 的头节点 head ，单链表 L 表示为：
+	//L0→ L1→ … → Ln-1→ Ln
+	//请将其重新排列后变为：
+	//L0→Ln→L1→Ln-1→L2→Ln-2→ …
+	//不能只是单纯的改变节点内部的值，而是需要实际的进行节点交换。
+	//链接：https://leetcode-cn.com/problems/LGjMqU
+	//***//
 	l1 := &lc.ListNode{7, &lc.ListNode{2, &lc.ListNode{4, &lc.ListNode{3, nil}}}}
-	l2 := &lc.ListNode{5, &lc.ListNode{6, &lc.ListNode{4, nil}}}
-	fmt.Println(lc.AddTwoNumbers(l1, l2))
+	lc.ReorderList(l1)
+	fmt.Println(l1)
 }

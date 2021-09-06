@@ -1610,4 +1610,33 @@ func main() {
 	//链接：https://leetcode-cn.com/problems/Qv1Da2
 	//***//
 	//懒得构筑双链表
+
+	//***
+	//剑指 Offer II 029. 排序的循环链表 2133
+	//给定循环升序列表中的一个点，写一个函数向这个列表中插入一个新元素insertVal ，使这个列表仍然是循环升序的。
+	//给定的可以是这个列表中任意一个顶点的指针，并不一定是这个列表中最小元素的指针。
+	//如果有多个满足条件的插入位置，可以选择任意一个位置插入新的值，插入后整个列表仍然保持有序。
+	//如果列表为空（给定的节点是 null），需要创建一个循环有序列表并返回这个节点。否则。请返回原先给定的节点。
+	//链接：https://leetcode-cn.com/problems/4ueAj6
+	//***//
+	//懒得构建循环链表
+	//lc.InsertListNode()
+
+	//***
+	//剑指 Offer II 030. 插入、删除和随机访问都是 O(1) 的容器
+	//设计一个支持在平均时间复杂度 O(1)下，执行以下操作的数据结构：
+	//insert(val)：当元素 val 不存在时返回 true，并向集合中插入该项，否则返回 false 。
+	//remove(val)：当元素 val 存在时返回 true，并从集合中移除该项，否则返回 false。
+	//getRandom：随机返回现有集合中的一项。每个元素应该有相同的概率被返回。
+	//链接：https://leetcode-cn.com/problems/FortPu
+	//***//
+	obj := lc.ConstructorOFFER30()
+
+	fmt.Println(obj.Insert(1))
+	fmt.Println(obj.Remove(2))
+	fmt.Println(obj.Insert(2))
+	fmt.Println(obj.Remove(1))
+	fmt.Println(obj.Insert(2))
+	obj.GetRandom()
+	fmt.Println(obj)
 }

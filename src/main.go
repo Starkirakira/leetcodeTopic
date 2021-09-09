@@ -1649,4 +1649,13 @@ func main() {
 	//void put(int key, int value)如果关键字已经存在，则变更其数据值；如果关键字不存在，则插入该组「关键字-值」。当缓存容量达到上限时，它应该在写入新数据之前删除最久未使用的数据值，从而为新的数据值留出空间。
 	//链接：https://leetcode-cn.com/problems/OrIXps
 	//***//
+
+	//***
+	//剑指 Offer II 033. 变位词组
+	//给定一个字符串数组 strs ，将变位词组合在一起。 可以按任意顺序返回结果列表。
+	//注意：若两个字符串中每个字符出现的次数都相同，则称它们互为变位词。
+	//链接：https://leetcode-cn.com/problems/sfvd7V
+	//***//
+	strs := []string{"eat", "tea", "tan", "ate", "nat", "bat"}
+	fmt.Println(lc.GroupAnagrams(strs))
 }

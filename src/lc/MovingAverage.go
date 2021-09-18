@@ -16,8 +16,7 @@ func (this *MovingAverage) Next(val int) float64 {
 	if n < size {
 		this.list = append(this.list, val)
 	} else {
-		this.list = this.list[1:]
-		this.list = append(this.list, val)
+		this.list = append(this.list[1:], val)
 	}
 	if len(this.list) == 1 {
 		return float64(this.list[0])
@@ -27,7 +26,7 @@ func (this *MovingAverage) Next(val int) float64 {
 		ret += j
 	}
 
-	return float64(ret / len(this.list))
+	return float64(ret) / float64(len(this.list))
 }
 
 /**

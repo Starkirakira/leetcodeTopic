@@ -499,9 +499,11 @@ func main() {
 	//}
 	//fmt.Println(lc.FindDuplicateSubtrees(root))
 
-	//***给定一个仅包含 0 和 1 、大小为 rows x cols 的二维二进制矩阵，找出只包含 1 的最大矩形，并返回其面积。***//
+	//***85 最大矩阵
+	//给定一个仅包含 0 和 1 、大小为 rows x cols 的二维二进制矩阵，找出只包含 1 的最大矩形，并返回其面积。***//
 	//matrix := [][]byte{{1,0,1,0,0},{1,0,1,1,1},{1,1,1,1,1},{1,0,0,1,0}}
 	//fmt.Println(lc.MaximalRectangle(matrix))
+	//https://leetcode-cn.com/problems/maximal-rectangle/
 
 	//***
 	//给定一个方形整数数组A，我们想要得到通过 A 的下降路径的最小和。

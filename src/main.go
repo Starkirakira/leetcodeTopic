@@ -499,9 +499,11 @@ func main() {
 	//}
 	//fmt.Println(lc.FindDuplicateSubtrees(root))
 
-	//***给定一个仅包含 0 和 1 、大小为 rows x cols 的二维二进制矩阵，找出只包含 1 的最大矩形，并返回其面积。***//
+	//***85 最大矩阵
+	//给定一个仅包含 0 和 1 、大小为 rows x cols 的二维二进制矩阵，找出只包含 1 的最大矩形，并返回其面积。***//
 	//matrix := [][]byte{{1,0,1,0,0},{1,0,1,1,1},{1,1,1,1,1},{1,0,0,1,0}}
 	//fmt.Println(lc.MaximalRectangle(matrix))
+	//https://leetcode-cn.com/problems/maximal-rectangle/
 
 	//***
 	//给定一个方形整数数组A，我们想要得到通过 A 的下降路径的最小和。
@@ -1695,10 +1697,25 @@ func main() {
 	fmt.Println(lc.AsteroidCollision(asteroids))
 
 	//***
-	//剑指 Offer II 038. 每日温度
-	//请根据每日 气温 列表 temperatures，重新生成一个列表，要求其对应位置的输出为：要想观测到更高的气温，至少需要等待的天数。如果气温在这之后都不会升高，请在该位置用0 来代替。
-	//链接：https://leetcode-cn.com/problems/iIQa4I
+	//剑指 Offer II 039. 直方图最大矩形面积
+	//给定非负整数数组 heights，数组中的数字用来表示柱状图中各个柱子的高度。每个柱子彼此相邻，且宽度为 1 。
+	//求在该柱状图中，能够勾勒出来的矩形的最大面积。
+	//链接：https://leetcode-cn.com/problems/0ynMMM
 	//***//
-	temperatures := []int{73, 74, 75, 71, 69, 72, 76, 73}
-	fmt.Println(lc.DailyTemperatures(temperatures))
+	heights := []int{2, 1, 5, 6, 2, 3}
+	fmt.Println(lc.LargestRectangleArea(heights))
+
+	//***
+	//剑指 Offer II 041. 滑动窗口的平均值
+	//给定一个整数数据流和一个窗口大小，根据该滑动窗口的大小，计算滑动窗口里所有数字的平均值。
+	//实现 MovingAverage 类：
+	//MovingAverage(int size) 用窗口大小 size 初始化对象。
+	//double next(int val)成员函数 next每次调用的时候都会往滑动窗口增加一个整数，请计算并返回数据流中最后 size 个值的移动平均值，即滑动窗口里所有数字的平均值。
+	//链接：https://leetcode-cn.com/problems/qIsx9U
+	//***//
+	objMoving := lc.ConstructorMoving(3)
+	objMoving.Next(3)
+	objMoving.Next(1)
+	objMoving.Next(2)
+	objMoving.Next(4)
 }

@@ -1,9 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"leetcode/lc"
-)
+import "leetcode/lc"
 
 func main() {
 
@@ -60,7 +57,7 @@ func main() {
 
 	//***
 	//一个 Nx N的 board仅由0和1组成。每次移动，你能任意交换两列或是两行的位置。
-	//输出将这个矩阵变为 “棋盘” 所需的最小移动次数。“棋盘” 是指任意一格的上下左右四个方向的值均与本身不同的矩阵。如果不存在可行的变换，输出 -1。
+	//输出将这个矩阵变为 “棋盘” 所需的最小移动次数。“棋盘” 是指任意一格的上下左右四个方向的值均与本身不同的矩阵。如果不存在可行地变换，输出 -1。
 	//***//
 	//board := [][]int{{0,1,1,0},{0,1,1,0},{1,0,0,1},{1,0,0,1}}
 	//fmt.Println(lc.MovesToChessboard(board))
@@ -1602,8 +1599,8 @@ func main() {
 	//给定一个链表的 头节点 head ，请判断其是否为回文链表。
 	//如果一个链表是回文，那么链表节点序列从前往后看和从后往前看是相同的。
 	//***//
-	head := &lc.ListNode{1, &lc.ListNode{2, &lc.ListNode{2, &lc.ListNode{1, nil}}}}
-	fmt.Println(lc.IsListPalindrome(head))
+	//head := &lc.ListNode{1, &lc.ListNode{2, &lc.ListNode{2, &lc.ListNode{1, nil}}}}
+	//fmt.Println(lc.IsListPalindrome(head))
 
 	//***
 	//剑指offer ii 28 展开多级双向链表
@@ -1632,15 +1629,15 @@ func main() {
 	//getRandom：随机返回现有集合中的一项。每个元素应该有相同的概率被返回。
 	//链接：https://leetcode-cn.com/problems/FortPu
 	//***//
-	obj := lc.ConstructorOFFER30()
-
-	fmt.Println(obj.Insert(1))
-	fmt.Println(obj.Remove(2))
-	fmt.Println(obj.Insert(2))
-	fmt.Println(obj.Remove(1))
-	fmt.Println(obj.Insert(2))
-	obj.GetRandom()
-	fmt.Println(obj)
+	//obj := lc.ConstructorOFFER30()
+	//
+	//fmt.Println(obj.Insert(1))
+	//fmt.Println(obj.Remove(2))
+	//fmt.Println(obj.Insert(2))
+	//fmt.Println(obj.Remove(1))
+	//fmt.Println(obj.Insert(2))
+	//obj.GetRandom()
+	//fmt.Println(obj)
 
 	//***
 	//剑指 Offer II 031. 最近最少使用缓存 2145
@@ -1658,8 +1655,8 @@ func main() {
 	//注意：若两个字符串中每个字符出现的次数都相同，则称它们互为变位词。
 	//链接：https://leetcode-cn.com/problems/sfvd7V
 	//***//
-	strs := []string{"eat", "tea", "tan", "ate", "nat", "bat"}
-	fmt.Println(lc.GroupAnagrams(strs))
+	//strs := []string{"eat", "tea", "tan", "ate", "nat", "bat"}
+	//fmt.Println(lc.GroupAnagrams(strs))
 
 	//***
 	//剑指 Offer II 034. 外星语言是否排序
@@ -1667,24 +1664,24 @@ func main() {
 	//给定一组用外星语书写的单词 words，以及其字母表的顺序 order，只有当给定的单词在这种外星语中按字典序排列时，返回 true；否则，返回 false。
 	//链接：https://leetcode-cn.com/problems/lwyVBB
 	//***//
-	words := []string{"hello", "leetcode"}
-	order := "hlabcdefgijkmnopqrstuvwxyz"
-	fmt.Println(lc.IsAlienSorted(words, order))
+	//words := []string{"hello", "leetcode"}
+	//order := "hlabcdefgijkmnopqrstuvwxyz"
+	//fmt.Println(lc.IsAlienSorted(words, order))
 
 	//***
 	//剑指 Offer II 035. 最小时间差
 	//给定一个 24 小时制（小时:分钟 "HH:MM"）的时间列表，找出列表中任意两个时间的最小时间差并以分钟数表示。
 	//***//
-	timePoints := []string{"00:00", "23:59", "00:00"}
-	fmt.Println(lc.FindMinDifference(timePoints))
+	//timePoints := []string{"00:00", "23:59", "00:00"}
+	//fmt.Println(lc.FindMinDifference(timePoints))
 
 	//***
 	//剑指 Offer II 036. 后缀表达式
 	//根据 逆波兰表示法，求该后缀表达式的计算结果。
 	//有效的算符包括 +、-、*、/ 。每个运算对象可以是整数，也可以是另一个逆波兰表达式。
 	//***//
-	tokens := []string{"2", "1", "+", "3", "*"}
-	fmt.Println(lc.EvalRPN(tokens))
+	//tokens := []string{"2", "1", "+", "3", "*"}
+	//fmt.Println(lc.EvalRPN(tokens))
 
 	//***
 	//剑指 Offer II 037. 小行星碰撞
@@ -1693,8 +1690,8 @@ func main() {
 	//找出碰撞后剩下的所有小行星。碰撞规则：两个行星相互碰撞，较小的行星会爆炸。如果两颗行星大小相同，则两颗行星都会爆炸。两颗移动方向相同的行星，永远不会发生碰撞。
 	//链接：https://leetcode-cn.com/problems/XagZNi
 	//***//
-	asteroids := []int{5, 10, -5}
-	fmt.Println(lc.AsteroidCollision(asteroids))
+	//asteroids := []int{5, 10, -5}
+	//fmt.Println(lc.AsteroidCollision(asteroids))
 
 	//***
 	//剑指 Offer II 039. 直方图最大矩形面积
@@ -1702,8 +1699,8 @@ func main() {
 	//求在该柱状图中，能够勾勒出来的矩形的最大面积。
 	//链接：https://leetcode-cn.com/problems/0ynMMM
 	//***//
-	heights := []int{2, 1, 5, 6, 2, 3}
-	fmt.Println(lc.LargestRectangleArea(heights))
+	//heights := []int{2, 1, 5, 6, 2, 3}
+	//fmt.Println(lc.LargestRectangleArea(heights))
 
 	//***
 	//剑指 Offer II 041. 滑动窗口的平均值
@@ -1713,9 +1710,24 @@ func main() {
 	//double next(int val)成员函数 next每次调用的时候都会往滑动窗口增加一个整数，请计算并返回数据流中最后 size 个值的移动平均值，即滑动窗口里所有数字的平均值。
 	//链接：https://leetcode-cn.com/problems/qIsx9U
 	//***//
-	objMoving := lc.ConstructorMoving(3)
-	objMoving.Next(3)
-	objMoving.Next(1)
-	objMoving.Next(2)
-	objMoving.Next(4)
+	//objMoving := lc.ConstructorMoving(3)
+	//objMoving.Next(3)
+	//objMoving.Next(1)
+	//objMoving.Next(2)
+	//objMoving.Next(4)
+
+	//***
+	//剑指 Offer II 042. 最近请求次数
+	//写一个RecentCounter类来计算特定时间范围内最近的请求。
+	//请实现 RecentCounter 类：
+	//RecentCounter() 初始化计数器，请求数为 0 。
+	//int ping(int t) 在时间 t 添加一个新请求，其中 t 表示以毫秒为单位的某个时间，并返回过去 3000 毫秒内发生的所有请求数（包括新请求）。确切地说，返回在 [t-3000, t] 内发生的请求数。
+	//保证 每次对 ping 的调用都使用比之前更大的 t 值。
+	//链接：https://leetcode-cn.com/problems/H8086Q
+	//***//
+	obj := lc.ConstructorRecentCounter()
+	obj.Ping(1)
+	obj.Ping(2000)
+	obj.Ping(3000)
+
 }

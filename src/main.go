@@ -1741,10 +1741,15 @@ func main() {
 	//只有在可以通过一系列的移动从源方格source 到达目标方格target 时才返回true。否则，返回 false。
 	//链接：https://leetcode-cn.com/problems/escape-a-large-maze
 	//***//
-	blocked := [][]int{{0,1},{1,0}}
-	source := []int{0,0}
-	target := []int{0,2}
-	fmt.Println(lc.IsEscapePossible(blocked,source,target))
+	//blocked := [][]int{{0,1},{1,0}}
+	//source := []int{0,0}
+	//target := []int{0,2}
+	//fmt.Println(lc.IsEscapePossible(blocked,source,target))
 
-
+	//***
+	//Random question 1422
+	//给你一个0和1组成的字符串s，通过分割字符串以获得得分，得分为：左边子字符串中0的个数加上右边子字符串中1的个数。
+	//***//
+	s := "0101010101"
+	fmt.Println(lc.MaxScore01(s))
 }

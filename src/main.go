@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"leetcode/lc"
 )
 
@@ -1750,6 +1749,13 @@ func main() {
 	//Random question 1422
 	//给你一个0和1组成的字符串s，通过分割字符串以获得得分，得分为：左边子字符串中0的个数加上右边子字符串中1的个数。
 	//***//
-	s := "0101010101"
-	fmt.Println(lc.MaxScore01(s))
+	//s := "0101010101"
+	//fmt.Println(lc.MaxScore01(s))
+
+	/***
+	给定一个正整数，可以交换奇偶性相同的数字，返回交换后的最大数字
+	***/
+	s := 122211
+	lc.LargestInteger(s)
+
 }

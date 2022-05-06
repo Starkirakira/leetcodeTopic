@@ -1,7 +1,5 @@
 package main
 
-import "leetcode/lc"
-
 func main() {
 
 	///***二叉树的序列化与反序列化***///
@@ -1766,6 +1764,12 @@ func main() {
 	/*
 		返回不同排列组合的字符串可能情况，不包含重复的。
 	*/
-	s := "sdasdad"
-	lc.Permutation(s)
+	//s := "sdasdad"
+	//lc.Permutation(s)
+
+	/*
+		给定一个正整数，返回一个只含有奇数个字符的字符串。
+		n=4 output="ohhh"
+	*/
+
 }

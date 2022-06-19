@@ -1782,47 +1782,54 @@ func main() {
 	子节点方向)。
 	链接：https://leetcode.cn/problems/paths-with-sum-lcci
 	***/
-	list := &lc.TreeNode{
-		Val: 5,
-		Left: &lc.TreeNode{
-			Val: 4,
-			Left: &lc.TreeNode{
-				Val: 11,
-				Left: &lc.TreeNode{
-					Val:   7,
-					Left:  nil,
-					Right: nil,
-				},
-				Right: &lc.TreeNode{
-					Val:   2,
-					Left:  nil,
-					Right: nil,
-				},
-			},
-			Right: nil,
-		},
-		Right: &lc.TreeNode{
-			Val: 8,
-			Left: &lc.TreeNode{
-				Val:   13,
-				Left:  nil,
-				Right: nil,
-			},
-			Right: &lc.TreeNode{
-				Val: 4,
-				Left: &lc.TreeNode{
-					Val:   5,
-					Left:  nil,
-					Right: nil,
-				},
-				Right: &lc.TreeNode{
-					Val:   1,
-					Left:  nil,
-					Right: nil,
-				},
-			},
-		},
-	}
-	fmt.Println(lc.PathSumNotFromRoot(list, 22))
-}
+	//list := &lc.TreeNode{
+	//	Val: 5,
+	//	Left: &lc.TreeNode{
+	//		Val: 4,
+	//		Left: &lc.TreeNode{
+	//			Val: 11,
+	//			Left: &lc.TreeNode{
+	//				Val:   7,
+	//				Left:  nil,
+	//				Right: nil,
+	//			},
+	//			Right: &lc.TreeNode{
+	//				Val:   2,
+	//				Left:  nil,
+	//				Right: nil,
+	//			},
+	//		},
+	//		Right: nil,
+	//	},
+	//	Right: &lc.TreeNode{
+	//		Val: 8,
+	//		Left: &lc.TreeNode{
+	//			Val:   13,
+	//			Left:  nil,
+	//			Right: nil,
+	//		},
+	//		Right: &lc.TreeNode{
+	//			Val: 4,
+	//			Left: &lc.TreeNode{
+	//				Val:   5,
+	//				Left:  nil,
+	//				Right: nil,
+	//			},
+	//			Right: &lc.TreeNode{
+	//				Val:   1,
+	//				Left:  nil,
+	//				Right: nil,
+	//			},
+	//		},
+	//	},
+	//}
+	//fmt.Println(lc.PathSumNotFromRoot(list, 22))
 
+	/***
+	500.给定一个字符串，要求挑选出只能在键盘上同一行打出来的单词
+	键盘布局：qwertyuiop, asdfghjkl, zxcvbnm
+	***/
+	words := []string{"Hello", "Alaska", "Peace", "Dad"}
+	fmt.Println(lc.FindWords(words))
+
+}

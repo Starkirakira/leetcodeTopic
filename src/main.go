@@ -1,5 +1,10 @@
 package main
 
+import (
+	"fmt"
+	"leetcode/lc"
+)
+
 func main() {
 
 	///***二叉树的序列化与反序列化***///
@@ -1754,22 +1759,70 @@ func main() {
 	//s := 122211
 	//lc.LargestInteger(s)
 
-	/*
+	/***
 		给定一组xy平面上的点，确定这些点组成的面积最小的矩形，矩形的边和xy平行
-	*/
+	***/
 	//points := [][]int{{36219, 4673}, {26311, 36047}, {26311, 4673}, {36219, 16024}, {17010, 16024}, {26311, 6287}, {22367, 6287}, {17010, 36047}, {17010, 6287}, {22367, 16024},
 	//	{36219, 6287}, {22367, 4673}, {17010, 4673}, {36219, 36047}}
 	//fmt.Println(lc.MinAreaRect(points))
 
-	/*
+	/***
 		返回不同排列组合的字符串可能情况，不包含重复的。
-	*/
+	***/
 	//s := "sdasdad"
 	//lc.Permutation(s)
 
-	/*
+	/***
 		给定一个正整数，返回一个只含有奇数个字符的字符串。
 		n=4 output="ohhh"
-	*/
+	***/
 
+	/***
+	给定一棵二叉树，其中每个节点都含有一个整数数值(该值或正或负)。设计一个算法，打印节点数值总和等于某个给定值的所有路径的数量。注意，路径不一定非得从二叉树的根节点或叶节点开始或结束，但是其方向必须向下(只能从父节点指向
+	子节点方向)。
+	链接：https://leetcode.cn/problems/paths-with-sum-lcci
+	***/
+	list := &lc.TreeNode{
+		Val: 5,
+		Left: &lc.TreeNode{
+			Val: 4,
+			Left: &lc.TreeNode{
+				Val: 11,
+				Left: &lc.TreeNode{
+					Val:   7,
+					Left:  nil,
+					Right: nil,
+				},
+				Right: &lc.TreeNode{
+					Val:   2,
+					Left:  nil,
+					Right: nil,
+				},
+			},
+			Right: nil,
+		},
+		Right: &lc.TreeNode{
+			Val: 8,
+			Left: &lc.TreeNode{
+				Val:   13,
+				Left:  nil,
+				Right: nil,
+			},
+			Right: &lc.TreeNode{
+				Val: 4,
+				Left: &lc.TreeNode{
+					Val:   5,
+					Left:  nil,
+					Right: nil,
+				},
+				Right: &lc.TreeNode{
+					Val:   1,
+					Left:  nil,
+					Right: nil,
+				},
+			},
+		},
+	}
+	fmt.Println(lc.PathSumNotFromRoot(list, 22))
 }
+

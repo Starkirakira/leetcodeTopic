@@ -1,6 +1,8 @@
 package lc
 
-import "sort"
+import (
+	"sort"
+)
 
 func Permutation(s string) (ans []string) {
 	t := []byte(s)

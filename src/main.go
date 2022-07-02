@@ -1829,7 +1829,23 @@ func main() {
 	500.给定一个字符串，要求挑选出只能在键盘上同一行打出来的单词
 	键盘布局：qwertyuiop, asdfghjkl, zxcvbnm
 	***/
-	words := []string{"Hello", "Alaska", "Peace", "Dad"}
-	fmt.Println(lc.FindWords(words))
+	//words := []string{"Hello", "Alaska", "Peace", "Dad"}
+	//fmt.Println(lc.FindWords(words))
+	/***
+	给定两个数组，返回两个数组里公共的、长度最长的子数组的长度
+	https://leetcode.cn/problems/maximum-length-of-repeated-subarray/
+	NO.718
+	***/
+	//nums1 := []int{1, 2, 3, 2, 1}
+	//nums2 := []int{3, 2, 1, 4, 7}
+	//fmt.Println(lc.FindLength(nums1, nums2))
 
+	/***
+	N个零件放在数组nums中，预算为target，假设只够买两个不超过预算的零件，请问有多少种采购方案。
+	答案需要对1e9+7取余
+	NO.2351
+	***/
+	nums := []int{2, 5, 3, 5}
+	target := 6
+	fmt.Println(lc.PurchasePlans(nums, target))
 }

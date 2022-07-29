@@ -1,12 +1,13 @@
+"use strict";
 function DistanceBetweenBusStops(distance, start, destination) {
     if (start > destination) {
-        var temp = start;
+        const temp = start;
         start = destination;
         destination = temp;
     }
-    var dis1 = 0;
-    var dis2 = 0;
-    for (var index = 0; index < distance.length; index++) {
+    let dis1 = 0;
+    let dis2 = 0;
+    for (let index = 0; index < distance.length; index++) {
         if (index >= start && index < destination) {
             dis1 += distance[index];
         }

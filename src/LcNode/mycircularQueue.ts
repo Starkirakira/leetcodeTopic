@@ -4,9 +4,12 @@ class MyCircularQueue {
     private n: number
     private c: number
     constructor(k: number) {
+        //The capacity of queue,the head qeual the tail, so it is k + 1
         this.c = k + 1
         this.list = new Array<number>(this.c).fill(0)
+        //the front index of queue
         this.f = 0
+        //the tail index of queue
         this.n = 0
         
     }
@@ -33,11 +36,11 @@ class MyCircularQueue {
         if (this.isEmpty()) return -1
         return this.list[(this.n - 1 + this.c) % this.c]
     }
-
+    //If front index equal tail index, it means the queue is empty
     isEmpty(): boolean {
         return this.f == this.n
     }
-
+    //If front index equal (tail index + 1) mod capacity, means the queue is full
     isFull(): boolean {
         return this.f == (this.n + 1) % this.c
     }

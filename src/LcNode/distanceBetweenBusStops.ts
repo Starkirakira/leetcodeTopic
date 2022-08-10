@@ -1,10 +1,11 @@
 function DistanceBetweenBusStops(distance: number[], start: number, destination: number): number {
+    //If the starting point is bigger than the ending point, then swap their positions
     if (start > destination) {
         const temp = start
         start = destination
         destination = temp
     }
-
+    //Two opposite directions result
     let dis1 = 0
     let dis2 = 0
 

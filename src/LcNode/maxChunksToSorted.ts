@@ -40,6 +40,7 @@ function MaxChunksToSorted(arr: number[]): number {
     //     console.log(cnt)
     // }
     // return res;
+    
 }
 
 MaxChunksToSorted([1,2,1])

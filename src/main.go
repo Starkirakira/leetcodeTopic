@@ -1,10 +1,5 @@
 package main
 
-import (
-	"fmt"
-	"leetcode/lc"
-)
-
 func main() {
 
 	///***二叉树的序列化与反序列化***///
@@ -1710,7 +1705,7 @@ func main() {
 	//给定一个整数数据流和一个窗口大小，根据该滑动窗口的大小，计算滑动窗口里所有数字的平均值。
 	//实现 MovingAverage 类：
 	//MovingAverage(int size) 用窗口大小 size 初始化对象。
-	//double next(int val)成员函数 next每次调用的时候都会往滑动窗口增加一个整数，请计算并返回数据流中最后 size 个值的移动平均值，即滑动窗口里所有数字的平均值。
+	//double next(int val)成员函数 next每次调用的时候都会往滑动窗口增加一个整数，请计算并返回数据a流中最后 size 个值的移动平均值，即滑动窗口里所有数字的平均值。
 	//链接：https://leetcode-cn.com/problems/qIsx9U
 	//***//
 	//objMoving := lc.ConstructorMoving(3)
@@ -1741,10 +1736,10 @@ func main() {
 	//只有在可以通过一系列的移动从源方格source 到达目标方格target 时才返回true。否则，返回 false。
 	//链接：https://leetcode-cn.com/problems/escape-a-large-maze
 	//***//
-	blocked := [][]int{{0,1},{1,0}}
-	source := []int{0,0}
-	target := []int{0,2}
-	fmt.Println(lc.IsEscapePossible(blocked,source,target))
+	//blocked := [][]int{{0,1},{1,0}}
+	//source := []int{0,0}
+	//target := []int{0,2}
+	//fmt.Println(lc.IsEscapePossible(blocked,source,target))
 
 
 }

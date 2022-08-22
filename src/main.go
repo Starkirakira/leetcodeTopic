@@ -1,5 +1,10 @@
 package main
 
+import (
+	"fmt"
+	"leetcode/lc"
+)
+
 func main() {
 
 	///***二叉树的序列化与反序列化***///
@@ -1741,5 +1746,107 @@ func main() {
 	//target := []int{0,2}
 	//fmt.Println(lc.IsEscapePossible(blocked,source,target))
 
+	//***
+	//Random question 1422
+	//给你一个0和1组成的字符串s，通过分割字符串以获得得分，得分为：左边子字符串中0的个数加上右边子字符串中1的个数。
+	//***//
+	//s := "0101010101"
+	//fmt.Println(lc.MaxScore01(s))
+
+	/***
+	给定一个正整数，可以交换奇偶性相同的数字，返回交换后的最大数字
+	***/
+	//s := 122211
+	//lc.LargestInteger(s)
+
+	/***
+		给定一组xy平面上的点，确定这些点组成的面积最小的矩形，矩形的边和xy平行
+	***/
+	//points := [][]int{{36219, 4673}, {26311, 36047}, {26311, 4673}, {36219, 16024}, {17010, 16024}, {26311, 6287}, {22367, 6287}, {17010, 36047}, {17010, 6287}, {22367, 16024},
+	//	{36219, 6287}, {22367, 4673}, {17010, 4673}, {36219, 36047}}
+	//fmt.Println(lc.MinAreaRect(points))
+
+	/***
+		返回不同排列组合的字符串可能情况，不包含重复的。
+	***/
+	//s := "sdasdad"
+	//lc.Permutation(s)
+
+	/***
+		给定一个正整数，返回一个只含有奇数个字符的字符串。
+		n=4 output="ohhh"
+	***/
+
+	/***
+	给定一棵二叉树，其中每个节点都含有一个整数数值(该值或正或负)。设计一个算法，打印节点数值总和等于某个给定值的所有路径的数量。注意，路径不一定非得从二叉树的根节点或叶节点开始或结束，但是其方向必须向下(只能从父节点指向
+	子节点方向)。
+	链接：https://leetcode.cn/problems/paths-with-sum-lcci
+	***/
+	//list := &lc.TreeNode{
+	//	Val: 5,
+	//	Left: &lc.TreeNode{
+	//		Val: 4,
+	//		Left: &lc.TreeNode{
+	//			Val: 11,
+	//			Left: &lc.TreeNode{
+	//				Val:   7,
+	//				Left:  nil,
+	//				Right: nil,
+	//			},
+	//			Right: &lc.TreeNode{
+	//				Val:   2,
+	//				Left:  nil,
+	//				Right: nil,
+	//			},
+	//		},
+	//		Right: nil,
+	//	},
+	//	Right: &lc.TreeNode{
+	//		Val: 8,
+	//		Left: &lc.TreeNode{
+	//			Val:   13,
+	//			Left:  nil,
+	//			Right: nil,
+	//		},
+	//		Right: &lc.TreeNode{
+	//			Val: 4,
+	//			Left: &lc.TreeNode{
+	//				Val:   5,
+	//				Left:  nil,
+	//				Right: nil,
+	//			},
+	//			Right: &lc.TreeNode{
+	//				Val:   1,
+	//				Left:  nil,
+	//				Right: nil,
+	//			},
+	//		},
+	//	},
+	//}
+	//fmt.Println(lc.PathSumNotFromRoot(list, 22))
+
+	/***
+	500.给定一个字符串，要求挑选出只能在键盘上同一行打出来的单词
+	键盘布局：qwertyuiop, asdfghjkl, zxcvbnm
+	***/
+	//words := []string{"Hello", "Alaska", "Peace", "Dad"}
+	//fmt.Println(lc.FindWords(words))
+	/***
+	给定两个数组，返回两个数组里公共的、长度最长的子数组的长度
+	https://leetcode.cn/problems/maximum-length-of-repeated-subarray/
+	NO.718
+	***/
+	//nums1 := []int{1, 2, 3, 2, 1}
+	//nums2 := []int{3, 2, 1, 4, 7}
+	//fmt.Println(lc.FindLength(nums1, nums2))
+
+	/***
+	N个零件放在数组nums中，预算为target，假设只够买两个不超过预算的零件，请问有多少种采购方案。
+	答案需要对1e9+7取余
+	NO.2351
+	***/
+	nums := []int{2, 5, 3, 5}
+	target := 6
+	fmt.Println(lc.PurchasePlans(nums, target))
 
 }

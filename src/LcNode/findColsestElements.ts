@@ -18,7 +18,7 @@ function findClosestElements(arr: number[], k: number, x: number): number[] {
     let binartSearch = (arr: number[],x: number) => {
         let low = 0
         let high = arr.length - 1
-        if(low < high) {
+        while(low < high) {
             let mid = low + Math.floor((high - low) / 2)
             if(arr[mid] >= x) high = mid
             else low = mid + 1

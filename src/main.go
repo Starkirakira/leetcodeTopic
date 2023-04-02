@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"leetcode/lc"
 )
 
@@ -1845,8 +1844,26 @@ func main() {
 	答案需要对1e9+7取余
 	NO.2351
 	***/
-	nums := []int{2, 5, 3, 5}
-	target := 6
-	fmt.Println(lc.PurchasePlans(nums, target))
+	//nums := []int{2, 5, 3, 5}
+	//target := 6
+	//fmt.Println(lc.PurchasePlans(nums, target))
+
+	/*
+		NO.328
+		给定单链表的头节点head，将所有索引为奇数的节点和索引为偶数的节点分别组合在一起，然后返回重新排序的列表。
+		第一个节点的索引被认为是 奇数 ， 第二个节点的索引为偶数 ，以此类推。
+		请注意，偶数组和奇数组内部的相对顺序应该与输入时保持一致。
+		你必须在O(1)的额外空间复杂度和O(n)的时间复杂度下解决这个问题。
+	*/
+	// None
+
+	/*
+			给你一个长度为 n 的 整数 数组 pref 。找出并返回满足下述条件且长度为 n 的数组 arr ：
+		pref[i] = arr[0] ^ arr[1] ^ ... ^ arr[i].
+		注意 ^ 表示 按位异或（bitwise-xor）运算。
+		可以证明答案是 唯一 的。
+	*/
+	pref := []int{5, 2, 0, 3, 1}
+	lc.FindArray(pref)
 
 }

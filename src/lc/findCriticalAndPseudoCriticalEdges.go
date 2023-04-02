@@ -5,7 +5,6 @@ import (
 	"sort"
 )
 
-
 func FindCriticalAndPseudoCriticalEdges(n int, edges [][]int) [][]int {
 	for i, e := range edges {
 		edges[i] = append(e, i)
@@ -14,10 +13,10 @@ func FindCriticalAndPseudoCriticalEdges(n int, edges [][]int) [][]int {
 		return edges[i][2] < edges[j][2]
 	})
 
-	calcMST := func(uf *unionFind1, ignoreID int)(mstValue int) {
+	calcMST := func(uf *unionFind1, ignoreID int) (mstValue int64) {
 		for i, e := range edges {
 			if i != ignoreID && uf.union(e[0], e[1]) {
-				mstValue += e[2]
+				mstValue += int64(e[2])
 			}
 		}
 		if uf.setCount > 1 {
@@ -37,14 +36,9 @@ func FindCriticalAndPseudoCriticalEdges(n int, edges [][]int) [][]int {
 
 		uf := newUnionFind1(n)
 		uf.union(e[0], e[1])
-		if e[2]+calcMST(uf, i) == mstValue {
+		if int64(e[2])+calcMST(uf, i) == mstValue {
 			pseudokeyEdges = append(pseudokeyEdges, e[3])
 		}
 	}
 	return [][]int{keyEdges, pseudokeyEdges}
 }
-
-
-
-
-

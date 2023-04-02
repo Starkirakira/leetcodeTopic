@@ -1,6 +1,6 @@
 package lc
 
-//多级双向链表
+// 多级双向链表
 type ListDoublePathList struct {
 	Val   int
 	Prev  *ListDoublePathList
@@ -8,27 +8,27 @@ type ListDoublePathList struct {
 	Child *ListDoublePathList
 }
 
-//单向链表
+// 单向链表
 type ListNode struct {
 	Val  int
 	Next *ListNode
 }
 
-//二叉树
+// 二叉树
 type TreeNodeii struct {
 	Val   int
 	Left  *TreeNodeii
 	Right *TreeNodeii
 }
 
-//二叉树
+// 二叉树
 type TreeNode struct {
 	Val   int
 	Left  *TreeNode
 	Right *TreeNode
 }
 
-//带权并查集
+// 带权并查集
 type unionFind1 struct {
 	parent, size []int
 	setCount     int
@@ -69,7 +69,7 @@ func (uf *unionFind1) isSameSet(x, y int) bool {
 	return uf.find(x) == uf.find(y)
 }
 
-func maxP(a ...int) int {
+func maxP(a ...int64) int64 {
 	res := a[0]
 	for _, v := range a[1:] {
 		if v > res {

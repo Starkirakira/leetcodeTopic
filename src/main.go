@@ -1,6 +1,9 @@
 package main
 
-import "leetcode/lc"
+import (
+	"fmt"
+	"leetcode/lc"
+)
 
 func main() {
 
@@ -1879,22 +1882,33 @@ func main() {
 		叶子节点 是指没有子节点的节点。
 		链接：https://leetcode.cn/problems/path-sum
 	*/
-	root := &lc.TreeNode{
-		5,
-		&lc.TreeNode{
-			4,
-			&lc.TreeNode{
-				11,
-				&lc.TreeNode{7, nil, nil},
-				&lc.TreeNode{2, nil, nil},
-			},
-			nil,
-		},
-		&lc.TreeNode{
-			8,
-			&lc.TreeNode{13, nil, nil},
-			&lc.TreeNode{4, nil, &lc.TreeNode{1, nil, nil}},
-		},
-	}
-	lc.HasPathSum(root, 12)
+	//root := &lc.TreeNode{
+	//	5,
+	//	&lc.TreeNode{
+	//		4,
+	//		&lc.TreeNode{
+	//			11,
+	//			&lc.TreeNode{7, nil, nil},
+	//			&lc.TreeNode{2, nil, nil},
+	//		},
+	//		nil,
+	//	},
+	//	&lc.TreeNode{
+	//		8,
+	//		&lc.TreeNode{13, nil, nil},
+	//		&lc.TreeNode{4, nil, &lc.TreeNode{1, nil, nil}},
+	//	},
+	//}
+	//lc.HasPathSum(root, 12)
+
+	/*
+		No.1874
+		给定两个长度相等的数组a和b，它们的乘积和为数组中所有的a[i] * b[i]之和，其中0 <= i < a.length。
+		比如a = [1,2,3,4]，b = [5,2,3,1]时，它们的乘积和为1*5 + 2*2 + 3*3 + 4*1 = 22
+		现有两个长度都为n的数组nums1和nums2，你可以以任意顺序排序nums1，请返回它们的最小乘积和。
+		链接：https://leetcode.cn/problems/minimize-product-sum-of-two-arrays
+	*/
+	nums1 := []int{5, 3, 3, 2}
+	nums2 := []int{4, 2, 2, 5}
+	fmt.Println(lc.MinProductSum(nums1, nums2))
 }

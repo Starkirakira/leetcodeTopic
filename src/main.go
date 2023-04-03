@@ -1,8 +1,6 @@
 package main
 
-import (
-	"leetcode/lc"
-)
+import "leetcode/lc"
 
 func main() {
 
@@ -1863,7 +1861,40 @@ func main() {
 		注意 ^ 表示 按位异或（bitwise-xor）运算。
 		可以证明答案是 唯一 的。
 	*/
-	pref := []int{5, 2, 0, 3, 1}
-	lc.FindArray(pref)
+	//pref := []int{5, 2, 0, 3, 1}
+	//lc.FindArray(pref)
 
+	/*
+		No.1053
+		给你一个正整数数组 arr（可能存在重复的元素），请你返回可在一次交换（交换两数字 arr[i] 和 arr[j] 的位置）后得到的、按字典序排列小于 arr 的最大排列。
+		如果无法这么操作，就请返回原数组。
+		链接：https://leetcode.cn/problems/previous-permutation-with-one-swap
+	*/
+	//arr := []int{3, 2, 1}
+	//fmt.Println(lc.PrevPermOpt1(arr))
+
+	/*
+		No.112
+		给你二叉树的根节点root 和一个表示目标和的整数targetSum 。判断该树中是否存在 根节点到叶子节点 的路径，这条路径上所有节点值相加等于目标和targetSum 。如果存在，返回 true ；否则，返回 false 。
+		叶子节点 是指没有子节点的节点。
+		链接：https://leetcode.cn/problems/path-sum
+	*/
+	root := &lc.TreeNode{
+		5,
+		&lc.TreeNode{
+			4,
+			&lc.TreeNode{
+				11,
+				&lc.TreeNode{7, nil, nil},
+				&lc.TreeNode{2, nil, nil},
+			},
+			nil,
+		},
+		&lc.TreeNode{
+			8,
+			&lc.TreeNode{13, nil, nil},
+			&lc.TreeNode{4, nil, &lc.TreeNode{1, nil, nil}},
+		},
+	}
+	lc.HasPathSum(root, 12)
 }

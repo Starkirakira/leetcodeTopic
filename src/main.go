@@ -1913,11 +1913,25 @@ func main() {
 	//fmt.Println(lc.MinProductSum(nums1, nums2))
 
 	/*
+		No.2002
 		给你一个字符串s，请你找到s中两个不相交回文子序列，使得它们长度的乘积最大。两个子序列在原字符串中如果没有任何相同下标的字符，则它们是不相交的。
 		请你返回两个回文子序列长度可以达到的最大乘积。
 		子序列指的是从原字符串中删除若干个字符（可以一个也不删除）后，剩余字符不改变顺序而得到的结果。如果一个字符串从前往后读和从后往前读一模一样，那么这个字符串是一个 回文字符串。
 		链接：https://leetcode.cn/problems/maximum-product-of-the-length-of-two-palindromic-subsequences
 	*/
-	s := "leetcode"
-	fmt.Println(lc.MaxPalindromicProduct(s))
+	//s := "leetcode"
+	//fmt.Println(lc.MaxPalindromicProduct(s))
+
+	/*
+		No.2429
+		给你两个正整数 num1 和 num2 ，找出满足下述条件的整数 x ：
+		x 的置位数和 num2 相同，且
+		x XOR num1 的值 最小
+		注意 XOR 是按位异或运算。
+		返回整数 x 。题目保证，对于生成的测试用例， x 是 唯一确定 的。
+		整数的 置位数 是其二进制表示中 1 的数目。
+		链接：https://leetcode.cn/problems/minimize-xor
+	*/
+	num1, num2 := 3, 5
+	fmt.Println(lc.MinimizeXor(num1, num2))
 }

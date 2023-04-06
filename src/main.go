@@ -1908,7 +1908,16 @@ func main() {
 		现有两个长度都为n的数组nums1和nums2，你可以以任意顺序排序nums1，请返回它们的最小乘积和。
 		链接：https://leetcode.cn/problems/minimize-product-sum-of-two-arrays
 	*/
-	nums1 := []int{5, 3, 3, 2}
-	nums2 := []int{4, 2, 2, 5}
-	fmt.Println(lc.MinProductSum(nums1, nums2))
+	//nums1 := []int{5, 3, 3, 2}
+	//nums2 := []int{4, 2, 2, 5}
+	//fmt.Println(lc.MinProductSum(nums1, nums2))
+
+	/*
+		给你一个字符串s，请你找到s中两个不相交回文子序列，使得它们长度的乘积最大。两个子序列在原字符串中如果没有任何相同下标的字符，则它们是不相交的。
+		请你返回两个回文子序列长度可以达到的最大乘积。
+		子序列指的是从原字符串中删除若干个字符（可以一个也不删除）后，剩余字符不改变顺序而得到的结果。如果一个字符串从前往后读和从后往前读一模一样，那么这个字符串是一个 回文字符串。
+		链接：https://leetcode.cn/problems/maximum-product-of-the-length-of-two-palindromic-subsequences
+	*/
+	s := "leetcode"
+	fmt.Println(lc.MaxPalindromicProduct(s))
 }

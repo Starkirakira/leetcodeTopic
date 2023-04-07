@@ -1,10 +1,5 @@
 package main
 
-import (
-	"fmt"
-	"leetcode/lc"
-)
-
 func main() {
 
 	///***二叉树的序列化与反序列化***///
@@ -1932,6 +1927,14 @@ func main() {
 		整数的 置位数 是其二进制表示中 1 的数目。
 		链接：https://leetcode.cn/problems/minimize-xor
 	*/
-	num1, num2 := 3, 5
-	fmt.Println(lc.MinimizeXor(num1, num2))
+	//num1, num2 := 3, 5
+	//fmt.Println(lc.MinimizeXor(num1, num2))
+
+	/*
+		No.2505
+		给你一个整数数组 nums ，返回对数组中所有可能的 子序列 之和进行按位 或 运算后得到的值。
+		数组的 子序列 是从数组中删除零个或多个元素且不改变剩余元素的顺序得到的序列。
+		链接：https://leetcode.cn/problems/bitwise-or-of-all-subsequence-sums
+	*/
+
 }

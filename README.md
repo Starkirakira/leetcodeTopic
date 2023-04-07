@@ -1,1 +1,2 @@
-# leetcode with codes (Unorganized）
+# Leetcode questions with Golang and TypeScript.
+# Keep updating :>

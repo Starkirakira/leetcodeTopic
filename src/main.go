@@ -1,5 +1,10 @@
 package main
 
+import (
+	"fmt"
+	"leetcode/lc"
+)
+
 func main() {
 
 	///***二叉树的序列化与反序列化***///
@@ -1960,4 +1965,11 @@ func main() {
 	*/
 	// lc/twitter.go
 
+	/*
+		No.660
+		从1开始，移除包含9的所有整数，返回从新获得的整数数列中的第n位是多少（下表从1开始）
+		Tip.参考9进制数，数列递增，那么返回的就是第n位9进制数字
+	*/
+	n := 20
+	fmt.Println(lc.NewInteger(n))
 }

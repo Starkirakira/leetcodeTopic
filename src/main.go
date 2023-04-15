@@ -1,9 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"leetcode/lc"
-)
+import "leetcode/lc"
 
 func main() {
 
@@ -1970,6 +1967,16 @@ func main() {
 		从1开始，移除包含9的所有整数，返回从新获得的整数数列中的第n位是多少（下表从1开始）
 		Tip.参考9进制数，数列递增，那么返回的就是第n位9进制数字
 	*/
-	n := 20
-	fmt.Println(lc.NewInteger(n))
+	//n := 20
+	//fmt.Println(lc.NewInteger(n))
+
+	/*
+		No.2592
+		给你一个下标从 0 开始的整数数组nums。你需要将nums重新排列成一个新的数组perm。
+		定义 nums的 伟大值为满足0 <= i < nums.length且perm[i] > nums[i]的下标数目。
+		请你返回重新排列 nums后的 最大伟大值。
+		链接：https://leetcode.cn/problems/maximize-greatness-of-an-array
+	*/
+	nums := []int{1, 3, 5, 2, 1, 3, 1}
+	lc.MaximizeGreatness(nums)
 }

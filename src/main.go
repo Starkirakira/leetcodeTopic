@@ -1,6 +1,9 @@
 package main
 
-import "leetcode/lc"
+import (
+	"fmt"
+	"leetcode/lc"
+)
 
 func main() {
 
@@ -1977,6 +1980,16 @@ func main() {
 		请你返回重新排列 nums后的 最大伟大值。
 		链接：https://leetcode.cn/problems/maximize-greatness-of-an-array
 	*/
-	nums := []int{1, 3, 5, 2, 1, 3, 1}
-	lc.MaximizeGreatness(nums)
+	//nums := []int{1, 3, 5, 2, 1, 3, 1}
+	//lc.MaximizeGreatness(nums)
+
+	/*
+		No.2734 子串操作后的字典序最小字符串
+		给你一个仅由小写英文字母组成的字符串 s 。在一步操作中，你可以完成以下行为：
+		选则 s 的任一非空子字符串，可能是整个字符串，接着将字符串中的每一个字符替换为英文字母表中的前一个字符。例如，'b' 用 'a' 替换，'a' 用 'z' 替换。
+		返回执行上述操作 恰好一次 后可以获得的 字典序最小 的字符串。
+		https://leetcode.cn/problems/lexicographically-smallest-string-after-substring-operation/
+	*/
+	s := "cbabc"
+	fmt.Println(lc.SmallestString(s))
 }

@@ -1,9 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"leetcode/lc"
-)
+import "leetcode/lc"
 
 func main() {
 
@@ -1990,6 +1987,13 @@ func main() {
 		返回执行上述操作 恰好一次 后可以获得的 字典序最小 的字符串。
 		https://leetcode.cn/problems/lexicographically-smallest-string-after-substring-operation/
 	*/
-	s := "cbabc"
-	fmt.Println(lc.SmallestString(s))
+	//s := "cbabc"
+	//fmt.Println(lc.SmallestString(s))
+
+	/*
+		No.66 整数+1
+		非空数组每一位都表示一位十进制数，默认首位非0，除非数字本身是0，请给整数+1
+	*/
+	s := []int{1, 2, 3}
+	lc.PlusOne(s)
 }

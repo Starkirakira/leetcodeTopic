@@ -1,7 +1,5 @@
 package main
 
-import "leetcode/lc"
-
 func main() {
 
 	///***二叉树的序列化与反序列化***///
@@ -2011,7 +2009,13 @@ func main() {
 		元素的顺序可以改变。你不需要考虑数组中超出新长度后面的元素。
 
 	*/
-	nums := []int{3, 2, 2, 3}
-	val := 3
-	lc.RemoveElement(nums, val)
+	//nums := []int{3, 2, 2, 3}
+	//val := 3
+	//lc.RemoveElement(nums, val)
+
+	/*
+		No.1262 可以被三整除的最大和
+	*/
+	nums := []int{3, 6, 5, 1, 8}
+
 }

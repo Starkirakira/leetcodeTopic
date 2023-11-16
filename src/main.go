@@ -1,5 +1,10 @@
 package main
 
+import (
+	"fmt"
+	"leetcode/lc"
+)
+
 func main() {
 
 	///***二叉树的序列化与反序列化***///
@@ -2016,6 +2021,16 @@ func main() {
 	/*
 		No.1262 可以被三整除的最大和
 	*/
-	nums := []int{3, 6, 5, 1, 8}
+	//nums := []int{3, 6, 5, 1, 8}
 
+	/*
+		No.1557 可以到达所有点的最少点数目
+		给你一个 有向无环图 ， n 个节点编号为 0 到 n-1 ，以及一个边数组 edges ，其中 edges[i] = [fromi, toi] 表示一条从点  fromi 到点 toi 的有向边。
+		找到最小的点集使得从这些点出发能到达图中所有点。题目保证解存在且唯一。
+		你可以以任意顺序返回这些节点编号。
+	*/
+	n := 6
+	var edges [][]int
+	edges = [][]int{{0, 1}, {0, 2}, {2, 5}, {3, 4}, {4, 2}}
+	fmt.Println(lc.FindSmallestSetOfVertices(n, edges))
 }

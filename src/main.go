@@ -1,9 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"leetcode/lc"
-)
+import "leetcode/lc"
 
 func main() {
 
@@ -2029,8 +2026,15 @@ func main() {
 		找到最小的点集使得从这些点出发能到达图中所有点。题目保证解存在且唯一。
 		你可以以任意顺序返回这些节点编号。
 	*/
-	n := 6
-	var edges [][]int
-	edges = [][]int{{0, 1}, {0, 2}, {2, 5}, {3, 4}, {4, 2}}
-	fmt.Println(lc.FindSmallestSetOfVertices(n, edges))
+	//n := 6
+	//var edges [][]int
+	//edges = [][]int{{0, 1}, {0, 2}, {2, 5}, {3, 4}, {4, 2}}
+	//fmt.Println(lc.FindSmallestSetOfVertices(n, edges))
+
+	/*
+		No.1496 判断路径是否相交
+		字符串path中的值表示向NSEW分别走动一个单位，从平面上原点出发，按path的方向走，判断是否走到之前走过的位置。
+	*/
+	path := "NESWW"
+	lc.IsPathCrossing(path)
 }

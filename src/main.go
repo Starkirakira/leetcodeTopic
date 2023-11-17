@@ -2035,6 +2035,16 @@ func main() {
 		No.1496 判断路径是否相交
 		字符串path中的值表示向NSEW分别走动一个单位，从平面上原点出发，按path的方向走，判断是否走到之前走过的位置。
 	*/
-	path := "NESWW"
-	lc.IsPathCrossing(path)
+	//path := "NESWW"
+	//lc.IsPathCrossing(path)
+
+	/*
+		No.1441 用栈操作构建数组
+		给定一个目标数组target和整数n，每次迭代都需要从list = {1,2,3,4,...,n}中读取一个数字，Push代表从list中读取一个新元素，
+		Pop代表删除数组中的最后一个元素，如果目标数组完成构建，就停止读取。
+		题目确保数组严格递增，并且只含有1到n之间的数字，请返回可行的任一操作序列
+	*/
+	target := []int{1, 3}
+	n := 3
+	lc.BuildArray(target, n)
 }
